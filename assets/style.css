@@ -102,7 +102,7 @@ License: none (public domain)
 	    padding: 0;
 	    border: 0;
 	    font-size: 100%;
-	    font-family: 'Comfortaa', cursive;
+	    font-family: 'Comfortaa';
 	    vertical-align: baseline;
 	}
 	/* HTML5 display-role reset for older browsers */
@@ -157,12 +157,12 @@ License: none (public domain)
 	h4,
 	h5,
 	h6 {
-	    font-family: 'Comfortaa', cursive;
+	    font-family: 'Comfortaa';
 	    font-size: 16px;
 	}
 	
 	p {
-	    font-family: 'Comfortaa', cursive;
+	    font-family: 'Comfortaa';
 	    font-size: 14px;
 	}
 	/*----- Helper Classes -----*/
@@ -232,7 +232,7 @@ License: none (public domain)
 	}
 	
 	.navbar .navbar-brand {
-	    font-family: 'Comfortaa', cursive;
+	    font-family: 'Comfortaa';
 	    font-size: 16px;
 	    font-weight: 600;
 	    letter-spacing: 0;
@@ -642,7 +642,7 @@ padding:10px;
 	    }
 	    .form input {
 	        color: #222222;
-	        font-family: 'Comfortaa', cursive;
+	        font-family: 'Comfortaa';
 	        padding: 0;
 	        font-size: 13px;
 	        font-weight: 500;
@@ -656,7 +656,7 @@ padding:10px;
 	    }
 		.form textarea{
 			color: #222222;
-	        font-family: 'Comfortaa', cursive;
+	        font-family: 'Comfortaa';
 	        padding: 0;
 	        font-size: 13px;
 	        font-weight: 500;
@@ -680,7 +680,7 @@ padding:10px;
 	        margin-left: -50px;
 	        padding: 0 25px 0 25px;
 	        background: #4285f4;
-	        font-family: 'Comfortaa', cursive;
+	        font-family: 'Comfortaa';
 	        font-size: 14px;
 	        font-weight: 500;
 	        text-transform: capitalize;
@@ -698,7 +698,7 @@ padding:10px;
 	        left: 20%;
 	        right: 0;
 	        bottom: 0%;
-	        font-family: 'Comfortaa', cursive;
+	        font-family: 'Comfortaa';
 	        font-size: 13px;
 	        font-weight: 500;
 	        color: #FF3333;
@@ -708,7 +708,7 @@ padding:10px;
 	        left: 20%;
 	        bottom: -90%;
 	        vertical-align: middle;
-	        font-family: 'Comfortaa', cursive;
+	        font-family: 'Comfortaa';
 	        font-size: 13px !important;
 	        font-weight: 500 !important;
 	        margin: 0 !important;
@@ -725,7 +725,7 @@ padding:10px;
 	        bottom: -90%;
 	        vertical-align: middle;
 	        text-align: center;
-	        font-family: 'Comfortaa', cursive;
+	        font-family: 'Comfortaa';
 	        font-size: 13px;
 	        font-weight: 500;
 	        color: red;
@@ -747,7 +747,7 @@ padding:10px;
 	        }
 	    }
 	    .btn-action {
-	        font-family: 'Comfortaa', cursive;
+	        font-family: 'Comfortaa';
 	        display: inline-block;
 	        height: 45px;
 	        padding: 0 30px;
@@ -1482,7 +1482,7 @@ padding:10px;
 	        line-height: 1.4;
 	    }
 	    .yd-reviews .card-single .review-attribution a {
-	        font-family: 'Comfortaa', cursive;
+	        font-family: 'Comfortaa';
 	        font-size: 12px;
 	        font-weight: 500;
 	        color: #4285f4;
@@ -1558,7 +1558,7 @@ background: #303c42; */
 	        text-align: center;
 	    }
 	    .footer-sm .footer-logo {
-	        font-family: 'Comfortaa', cursive;
+	        font-family: 'Comfortaa';
 	        font-size: 18px;
 	        font-weight: 600;
 	        color: #FFFFFF;
@@ -1643,7 +1643,7 @@ background: #303c42; */
 	        text-align: center;
 	    }
 	    .back-to-top {
-	        font-family: 'Comfortaa', cursive;
+	        font-family: 'Comfortaa';
 	        font-size: 12px;
 	        font-weight: 700;
 	        color: #FFFFFF;
