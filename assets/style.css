@@ -188,6 +188,7 @@ License: none (public domain)
 	
 	body {
 	    line-height: 1;
+		overflow-x:hidden;
 	}
 	
 	ol,
