@@ -335,9 +335,9 @@ License: none (public domain)
 	}
 	
 	.navbar-nav .nav-item {
-	    margin-right: 0;
+	    margin-right: 0px;
 	    margin-top: 1.5rem;
-	    font-size: 0.85rem;
+	    font-size: 1rem;
 	    font-weight: 400;
 	    text-transform: capitalize;
 	    color: #563D7C;
@@ -717,6 +717,7 @@ padding:10px;
 	        outline: none;
 	        padding: 0 100px 0 20px;
 	        box-shadow: 0 5px 30px rgba(255, 255, 255, 0.1);
+			width:100%;
 	    }
 		.form textarea{
 			color: #222222;
@@ -732,6 +733,7 @@ padding:10px;
 	        padding: 0 100px 0 20px;
 	        box-shadow: 0 5px 30px rgba(255, 255, 255, 0.1);
 			height:150px;
+			width:100%;
 		}
 	    .form input:focus {
 	        outline: none !important;
@@ -1773,7 +1775,7 @@ background: #303c42; */
 	        .navbar-nav .nav-item {
 	            margin-top: 0;
 	            margin-right: 15px;
-	            font-size: 0.85rem;
+	            font-size: 1rem;
 	            font-weight: 400;
 	        }
 	        .container-s {
