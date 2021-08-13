@@ -2132,6 +2132,7 @@ background: #303c42; */
 	        .flex-split .f-left {
 	            text-align: center;
 	        }
+		
 	    }
 	    @media only screen and (min-width: 1024px) {
 	        .hero img {
@@ -2160,3 +2161,33 @@ background: #303c42; */
 	            left: 0;
 	        }
 	    }
+	}
+
+
+	  @media screen and (max-width: 1115px) {
+		.label-box{
+			margin-bottom: 30%;
+		}
+
+	 
+	  @media screen and (max-width: 471px){
+
+		.form-control{
+			right: auto;
+		}
+	
+	}
+
+	.form-control{
+		width: 320px;
+		height: 30.86px;
+		font-weight: 600;
+		font-family: Inter;
+		font-size: 16px;
+		line-height: 20px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		letter-spacing: 0.80px;
+		color: #191919;
+	}
