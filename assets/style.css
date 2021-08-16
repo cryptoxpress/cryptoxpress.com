@@ -2200,7 +2200,7 @@ background: #303c42; */
 
 
 	 
-	  @media screen and (max-width: 471px){
+	  @media screen and (max-width: 1024px){
 
 		.form-control{
 			right: auto;
