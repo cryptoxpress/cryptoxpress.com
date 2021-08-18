@@ -28,8 +28,11 @@
       color="#5bbad5"
     />
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta
       name="msapplication-config"
@@ -155,9 +158,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto navbar-right">
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="/">Home</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="/features.html"
                   >Features</a
@@ -168,13 +171,19 @@
                   >XPRESS Token</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/team.html">Team</a>
-              </li>
-              <li class="nav-item">
+
+              <!-- <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="/whitepaper.pdf"
                   >Whitepaper</a
                 >
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="/investors.html"
+                  >Investors</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="/team.html">Team</a>
               </li>
               <li class="nav-item">
                 <a
@@ -205,7 +214,7 @@
                   <h2 class="hero-h2-text">Cryptocurrency Made Easy</h2>
                   <p>
                     We help simplify life with utility bill payments, lightning
-                    fast transfers and zero commision trades.
+                    fast transfers and zero commission trades.
                   </p>
                 </div>
               </div>
@@ -387,7 +396,7 @@
                 ERC20/BSC/Matic blockchains
               </div>
             </div>
-            <div class="ar-feature" style="padding-top: 200px">
+            <div class="ar-feature" style="padding-top: 10px">
               <div class="ar-list">
                 <div class="feature-list">
                   <div class="card-icon">
@@ -447,32 +456,73 @@
           </div>
         </div>
 
-      
- 
-<div class="container-fluid">
-  <div class="row g-0">
-    <div class="col-sm-4 text-center" style='background: #275097';>
-      <h1 style="font-size: 50px; text-align: center; margin-top: 50%;color: #f2f2f2; ">IDO</h1>
-      <h1 style=" text-align: center; color:#f2f2f2;"><b>Expression of Interest</b></h1>
-      <p style="font-family: Comfortaa;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 27px;
-      color:#fff" >Are you interested in our IDO? Submit your expression of interest if you'd like to be part of the crowdfund IDO.</p>
-      <label for="" class="label-box">
-        <input type="text" class="form-control mt-3" placeholder="I Want to Participate">
-      </label>
-    </div>
-    <div class="col-sm-8 image-center" style="background: #cfcfcf;width: 100%;height: auto;">
-      <img class="img-fluid" src="assets/images/Perfect_Binding_Brochure.png" alt="...">
-    </div>
-  </div>
-</div>
-   
-
-
-
+        <div class="container-fluid">
+          <div class="row g-0">
+            <div
+              class="col-sm-4 col-md-5 text-center"
+              style="background: #275097; padding: 15vh 5%"
+              ;
+            >
+              <h1
+                style="
+                  font-size: 50px;
+                  text-align: center;
+                  color: #f2f2f2;
+                  margin-bottom: 8px;
+                "
+              >
+                IDO
+              </h1>
+              <h1
+                style="
+                  text-align: center;
+                  color: #f2f2f2;
+                  font-family: Comfortaa;
+                  font-style: normal;
+                  font-weight: lighter;
+                  margin-bottom: 13px;
+                "
+              >
+                <b>Expression of Interest</b>
+              </h1>
+              <p
+                style="
+                  font-family: Comfortaa;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 18px;
+                  line-height: 27px;
+                  color: #fff;
+                  margin-bottom: 43px;
+                "
+              >
+                Are you interested in our IDO? Submit your expression of
+                interest if you'd like to be part of the crowdfund IDO.
+              </p>
+              <p>
+                <a
+                  class="btn-action"
+                  href="#ex6-1"
+                  rel="modal:open"
+                  style="border-radius: 5px"
+                  >I Want to Participate</a
+                >
+              </p>
+            </div>
+            <div
+              class="col-sm-8 col-md-7 image-center"
+              style="
+                background: #cfcfcf;
+                width: 100%;
+                height: auto;
+                background-image: url('assets/images/Perfect_Binding_Brochure.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+              "
+            ></div>
+          </div>
+        </div>
 
         <div class="container-fluid">
           <div class="row">
@@ -560,16 +610,512 @@
     </div>
     <!-- Wrapper -->
 
+    <!-- Modals -->
+    <div class="modal" id="ex6-1" style="display: none">
+      <div class="row">
+        <div
+          class="col-md-4 d-none d-md-block"
+          style="background-color: #18448d"
+        >
+          <div id="modal-ido-header" style="margin-top: 10%">
+            <h1
+              style="
+                font-size: 50px;
+                text-align: center;
+                color: #f2f2f2;
+                margin-bottom: 8px;
+              "
+            >
+              IDO
+            </h1>
+            <h1
+              style="
+                text-align: center;
+                color: #f2f2f2;
+                font-family: Comfortaa;
+                font-style: normal;
+                font-weight: lighter;
+                margin-bottom: 13px;
+              "
+            >
+              <b>Expression of Interest</b>
+            </h1>
+          </div>
+          <div id="modal-ido-steps" style="margin-top: 15%">
+            <img
+              src="assets/ido-header.png"
+              width="65%"
+              style="display: block; margin: 0 auto"
+            />
+          </div>
+          <div id="modal-ido-balloons" style="margin-top: 1%">
+            <img
+              src="assets/crypto-balloons.png"
+              width="65%"
+              style="display: block; margin: 0 auto"
+            />
+          </div>
+        </div>
+        <div class="col-md-8" style="padding: 50px">
+          <div class="row">
+            <img src="assets/modal-header.png" width="100%" />
+          </div>
+          <h3 style="margin-top: 32px; font-weight: bold">
+            Tell us about yourself so we can keep you in the loop
+          </h3>
+          <div style="width: 100%; margin: 0 auto">
+            <form
+              class="form"
+              action="https://formspree.io/f/xwkaepwg"
+              method="POST"
+              style="width: 100%"
+            >
+              <div class="row">
+                <div class="col-md-6">
+                  <div>First Name:</div>
+                  <div><input type="text" name="first_name" /></div>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <label> Last Name: </label>
+                  </div>
+                  <div>
+                    <input type="text" name="last_name" />
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div>
+                <label> Email: </label>
+              </div>
+              <div>
+                <input type="email" name="email" />
+              </div>
+              <br />
+              <div>
+                <label> Country of residence: </label>
+              </div>
+              <div>
+                <input type="text" name="country" />
+              </div>
+              <br />
+              <br />
+              <h3 style="margin-top: 0px; font-weight: bold">
+                Want to get invited to our telegram public and private groups?
+              </h3>
+              <br />
+              <div class="row">
+                <div class="col-md-6">
+                  <div>Telegram Handle (optional)</div>
+                  <div><input type="text" name="telegram_handle" /></div>
+                </div>
+              </div>
+              <br />
+              <!-- your other form fields go here -->
+              <div class="row">
+                <a rel="modal:close">
+                  <button
+                    style="margin-left: 20px"
+                    class="submit-button"
+                    type="submit"
+                  >
+                    Close
+                  </button></a
+                >
+                <a href="#ex6-2" rel="modal:open"
+                  ><button
+                    style="margin-left: 20px"
+                    class="submit-button"
+                    type="submit"
+                  >
+                    Continue
+                  </button></a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="ex6-2" style="display: none">
+      <div class="row">
+        <div
+          class="col-md-4 d-none d-md-block"
+          style="background-color: #18448d"
+        >
+          <div id="modal-ido-header" style="margin-top: 10%">
+            <h1
+              style="
+                font-size: 50px;
+                text-align: center;
+                color: #f2f2f2;
+                margin-bottom: 8px;
+              "
+            >
+              IDO
+            </h1>
+            <h1
+              style="
+                text-align: center;
+                color: #f2f2f2;
+                font-family: Comfortaa;
+                font-style: normal;
+                font-weight: lighter;
+                margin-bottom: 13px;
+              "
+            >
+              <b>Expression of Interest</b>
+            </h1>
+          </div>
+          <div id="modal-ido-steps" style="margin-top: 15%">
+            <img
+              src="assets/ido-header-2.png"
+              width="75%"
+              style="display: block; margin: 0 auto"
+            />
+          </div>
+          <div id="modal-ido-balloons" style="margin-top: 1%">
+            <img
+              src="assets/crypto-balloons.png"
+              width="65%"
+              style="display: block; margin: 0 auto"
+            />
+          </div>
+        </div>
+        <div class="col-md-8" style="padding: 50px">
+          <div class="row">
+            <img src="assets/modal-header.png" width="100%" />
+          </div>
+          <h3 style="margin-top: 32px; font-weight: bold">
+            More on the opportunity
+          </h3>
+          <div style="width: 100%; margin: 0 auto">
+            <form
+              class="form"
+              action="https://formspree.io/f/xwkaepwg"
+              method="POST"
+              style="width: 100%"
+            >
+              <div style="margin-top: 10px">Why are you interested:</div>
+              <div class="row" style="margin-top: 10px">
+                <div class="col-md-4" style="margin-bottom: 10px">
+                  <input
+                    type="checkbox"
+                    id="interested_for_great_features"
+                    name="interested_for_great_features"
+                    value="yes"
+                    style="width: 20px; height: auto"
+                  />
+                  <label for="interested_for_great_features">
+                    Great Features</label
+                  ><br />
+                </div>
+                <div class="col-md-4" style="margin-bottom: 10px">
+                  <input
+                    type="checkbox"
+                    id="interested_for_love_the_brand"
+                    name="interested_for_love_the_brand"
+                    value="yes"
+                    style="width: 20px; height: auto"
+                  />
+                  <label for="interested_for_love_the_brand"
+                    >Love the brand</label
+                  ><br />
+                </div>
+                <div class="col-md-4" style="margin-bottom: 10px">
+                  <input
+                    type="checkbox"
+                    id="interested_for_investment_opportunity"
+                    name="interested_for_investment_opportunity"
+                    value="yes"
+                    style="width: 20px; height: auto"
+                  />
+                  <label for="interested_for_investment_opportunity"
+                    >Investment Opportunity</label
+                  ><br />
+                </div>
+                <div class="col-md-4" style="margin-bottom: 10px">
+                  <input
+                    type="checkbox"
+                    id="interested_for_great_team"
+                    name="interested_for_great_team"
+                    value="yes"
+                    style="width: 20px; height: auto"
+                  />
+                  <label for="interested_for_great_team">Great Team</label
+                  ><br />
+                </div>
+              </div>
+
+              <div style="margin-top: 10px">
+                Have you invested in an early stage startup round before?
+                (optional)
+              </div>
+              <div class="row" style="margin-top: 10px">
+                <div class="col-md-3" style="margin-bottom: 10px">
+                  <input
+                    style="width: 20px; height: auto"
+                    type="radio"
+                    id="early_stage_invested_before_yes"
+                    name="early_stage_invested_before"
+                    value="yes"
+                  />
+                  <label for="early_stage_invested_before_yes">Yes</label><br />
+                </div>
+                <div class="col-md-3" style="margin-bottom: 10px">
+                  <input
+                    style="width: 20px; height: auto"
+                    type="radio"
+                    id="early_stage_invested_before_no"
+                    name="early_stage_invested_before"
+                    value="no"
+                  />
+                  <label for="early_stage_invested_before_no">No</label><br />
+                </div>
+              </div>
+
+              <div style="margin-top: 10px">
+                Have you invested in IDO before? (optional)
+              </div>
+              <div class="row" style="margin-top: 10px">
+                <div class="col-md-3" style="margin-bottom: 10px">
+                  <input
+                    style="width: 20px; height: auto"
+                    type="radio"
+                    id="invested_in_ido_before_yes"
+                    name="invested_in_ido_before"
+                    value="yes"
+                  />
+                  <label for="invested_in_ido_before_yes">Yes</label><br />
+                </div>
+                <div class="col-md-3" style="margin-bottom: 10px">
+                  <input
+                    style="width: 20px; height: auto"
+                    type="radio"
+                    id="invested_in_ido_before_no"
+                    name="invested_in_ido_before"
+                    value="no"
+                  />
+                  <label for="invested_in_ido_before_no">No</label><br />
+                </div>
+              </div>
+
+              <div style="margin-top: 10px">
+                How much would you consider investing? (optional)
+              </div>
+              <div class="row" style="margin-top: 10px">
+                <div class="col-md-6" style="margin-bottom: 10px">
+                  <select
+                    name="investment_consideration"
+                    id="investment_consideration"
+                  >
+                    <option value="$1000-$5000">USD $1000-$5000</option>
+                    <option value="$5000-$10,000">USD $5000-$10,000</option>
+                    <option value="$10,000-$50,000">USD $10,000-$50,000</option>
+                    <option value=">$50,000">USD >$50,000</option>
+                  </select>
+                </div>
+              </div>
+
+              <br />
+              <!-- your other form fields go here -->
+              <div class="row">
+                <a href="#ex6-1" rel="modal:open"
+                  ><button
+                    style="margin-left: 20px"
+                    class="submit-button"
+                    type="submit"
+                  >
+                    Back
+                  </button></a
+                >
+                <button
+                  style="margin-left: 20px"
+                  class="submit-button"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="ex6-3" style="display: none">
+      <div class="row">
+        <div
+          class="col-md-4 d-none d-md-block"
+          style="background-color: #18448d"
+        >
+          <div id="modal-ido-header" style="margin-top: 10%">
+            <h1
+              style="
+                font-size: 50px;
+                text-align: center;
+                color: #f2f2f2;
+                margin-bottom: 8px;
+              "
+            >
+              IDO
+            </h1>
+            <h1
+              style="
+                text-align: center;
+                color: #f2f2f2;
+                font-family: Comfortaa;
+                font-style: normal;
+                font-weight: lighter;
+                margin-bottom: 13px;
+              "
+            >
+              <b>Expression of Interest</b>
+            </h1>
+          </div>
+          <div id="modal-ido-steps" style="margin-top: 15%">
+            <img
+              src="assets/ido-modal-header-3.png"
+              width="70%"
+              style="display: block; margin: 0 auto"
+            />
+          </div>
+          <div id="modal-ido-balloons" style="margin-top: 1%">
+            <img
+              src="assets/crypto-balloons.png"
+              width="65%"
+              style="display: block; margin: 0 auto"
+            />
+          </div>
+        </div>
+        <div class="col-md-8" style="padding: 50px">
+          <div style="width: 100%; margin: 0 auto">
+            <div
+              style="
+                background-image: url('assets/pexels-adil-alimbetov-303159\ 1.png');
+                height: 100%;
+                width: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+              "
+            >
+              <div
+                class="col-sm-12 col-lg-4"
+                style="margin: 0 auto; margin-top: 10px; padding: 100px 0"
+              >
+                <div class="ar-list">
+                  <div class="feature-list">
+                    <div class="card-icon">
+                      <div class="card-img">
+                        <!-- <img src="assets/buysell2x.png" alt="Feature" width="200"> -->
+                      </div>
+                    </div>
+                    <div class="card-text">
+                      <p style="text-align: center">Thanks for backing us 🚀</p>
+                      <br />
+                      <h3 style="text-align: center">EOI Submitted</h3>
+                      <p>
+                        What happens now? You will get invited to join the IDO
+                        crowdfund round once we finalised the date. In the
+                        meantime please follow our socials and get involved in
+                        the conversations on Telegram.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br />
+            <!-- your other form fields go here -->
+            <div class="row">
+              <a href="#ex6-1" rel="modal:close"
+                ><button style="margin-left: 20px" class="btn-action">
+                  Ok, Can't wait!
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="ex6-err" style="display: none">
+      <p style="padding: 100px">
+        Oops, something went wrong. Please mail us at tech@cryptoxpress.com
+      </p>
+    </div>
+    <div
+      id="spinner"
+      style="
+        display: none;
+        z-index: 9999;
+        position: fixed;
+        top: 0;
+        margin: 0 auto;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background: url('//upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Phi_fenomeni.gif/50px-Phi_fenomeni.gif')
+          50% 50% no-repeat rgb(249, 249, 249);
+        opacity: 0.5;
+      "
+    ></div>
+    <!-- end of modals -->
     <!-- Jquery and Js Plugins -->
     <script type="text/javascript" src="assets/jquery-2.js"></script>
     <script type="text/javascript" src="assets/popper.js"></script>
     <script type="text/javascript" src="assets/bootstrap.js"></script>
-    <script type="text/javascript" src="assets/jquery.js"></script>
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
     <script type="text/javascript" src="assets/plugins.js"></script>
     <script type="text/javascript" src="assets/custom.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        function getFormData($form) {
+          var unindexed_array = $form.serializeArray();
+          var indexed_array = {};
+
+          $.map(unindexed_array, function (n, i) {
+            indexed_array[n["name"]] = n["value"];
+          });
+
+          return indexed_array;
+        }
+
+        $("form").submit(function (event) {
+          var $form = $("form");
+          var formData = getFormData($form);
+          console.log(formData);
+          $("#spinner").show();
+          $.ajax({
+            type: "POST",
+            url: "https://formspree.io/f/xwkaepwg",
+            data: formData,
+            dataType: "json",
+            encode: true,
+          })
+            .done(function (data) {
+              $("#spinner").hide();
+              console.log(data);
+              $("#ex6-3").modal();
+            })
+            .fail(() => {
+              $("#spinner").hide();
+              $("#ex6-err").modal();
+            });
+
+          event.preventDefault();
+        });
+      });
+    </script>
     <!-- <script type="text/javascript" src="assets/livereload.js"></script> -->
   </body>
 </html>
-
-
-
