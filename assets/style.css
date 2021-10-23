@@ -20,375 +20,341 @@ License: none (public domain)
   font-family: "Comfortaa";
   font-style: normal;
   font-weight: 300;
-  src: url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-300.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-300.eot");
+  /* IE9 Compat Modes */
   src: local(""),
-    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-300.eot?#iefix")
-      format("embedded-opentype"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-300.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-300.woff2")
-      format("woff2"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-300.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-300.woff")
-      format("woff"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-300.woff") format("woff"),
     /* Modern Browsers */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-300.ttf")
-      format("truetype"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-300.ttf") format("truetype"),
     /* Safari, Android, iOS */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-300.svg#Comfortaa")
-      format("svg"); /* Legacy iOS */
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-300.svg#Comfortaa") format("svg");
+  /* Legacy iOS */
 }
+
 /* comfortaa-regular - latin */
 @font-face {
   font-family: "Comfortaa";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-regular.eot");
+  /* IE9 Compat Modes */
   src: local(""),
-    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-regular.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-regular.woff2")
-      format("woff2"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-regular.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-regular.woff")
-      format("woff"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-regular.woff") format("woff"),
     /* Modern Browsers */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-regular.ttf")
-      format("truetype"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-regular.ttf") format("truetype"),
     /* Safari, Android, iOS */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-regular.svg#Comfortaa")
-      format("svg"); /* Legacy iOS */
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-regular.svg#Comfortaa") format("svg");
+  /* Legacy iOS */
 }
+
 /* comfortaa-500 - latin */
 @font-face {
   font-family: "Comfortaa";
   font-style: normal;
   font-weight: 500;
-  src: url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-500.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-500.eot");
+  /* IE9 Compat Modes */
   src: local(""),
-    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-500.eot?#iefix")
-      format("embedded-opentype"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-500.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-500.woff2")
-      format("woff2"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-500.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-500.woff")
-      format("woff"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-500.woff") format("woff"),
     /* Modern Browsers */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-500.ttf")
-      format("truetype"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-500.ttf") format("truetype"),
     /* Safari, Android, iOS */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-500.svg#Comfortaa")
-      format("svg"); /* Legacy iOS */
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-500.svg#Comfortaa") format("svg");
+  /* Legacy iOS */
 }
+
 /* comfortaa-600 - latin */
 @font-face {
   font-family: "Comfortaa";
   font-style: normal;
   font-weight: 600;
-  src: url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-600.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-600.eot");
+  /* IE9 Compat Modes */
   src: local(""),
-    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-600.eot?#iefix")
-      format("embedded-opentype"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-600.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-600.woff2")
-      format("woff2"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-600.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-600.woff")
-      format("woff"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-600.woff") format("woff"),
     /* Modern Browsers */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-600.ttf")
-      format("truetype"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-600.ttf") format("truetype"),
     /* Safari, Android, iOS */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-600.svg#Comfortaa")
-      format("svg"); /* Legacy iOS */
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-600.svg#Comfortaa") format("svg");
+  /* Legacy iOS */
 }
+
 /* comfortaa-700 - latin */
 @font-face {
   font-family: "Comfortaa";
   font-style: normal;
   font-weight: 700;
-  src: url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-700.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-700.eot");
+  /* IE9 Compat Modes */
   src: local(""),
-    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-700.eot?#iefix")
-      format("embedded-opentype"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-700.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-700.woff2")
-      format("woff2"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-700.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-700.woff")
-      format("woff"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-700.woff") format("woff"),
     /* Modern Browsers */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-700.ttf")
-      format("truetype"),
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-700.ttf") format("truetype"),
     /* Safari, Android, iOS */
-      url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-700.svg#Comfortaa")
-      format("svg"); /* Legacy iOS */
+    url("./fonts/comfortaa-v30-latin/comfortaa-v30-latin-700.svg#Comfortaa") format("svg");
+  /* Legacy iOS */
 }
+
 /* source-sans-pro-200 - latin */
 @font-face {
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 200;
-  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200.eot");
+  /* IE9 Compat Modes */
   src: local(""),
-    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200.eot?#iefix")
-      format("embedded-opentype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200.woff2")
-      format("woff2"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200.woff")
-      format("woff"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200.woff") format("woff"),
     /* Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200.ttf")
-      format("truetype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200.ttf") format("truetype"),
     /* Safari, Android, iOS */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200.svg#SourceSansPro")
-      format("svg"); /* Legacy iOS */
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200.svg#SourceSansPro") format("svg");
+  /* Legacy iOS */
 }
+
 /* source-sans-pro-200italic - latin */
 @font-face {
   font-family: "Source Sans Pro";
   font-style: italic;
   font-weight: 200;
-  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200italic.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200italic.eot");
+  /* IE9 Compat Modes */
   src: local(""),
-    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200italic.eot?#iefix")
-      format("embedded-opentype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200italic.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200italic.woff2")
-      format("woff2"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200italic.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200italic.woff")
-      format("woff"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200italic.woff") format("woff"),
     /* Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200italic.ttf")
-      format("truetype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200italic.ttf") format("truetype"),
     /* Safari, Android, iOS */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200italic.svg#SourceSansPro")
-      format("svg"); /* Legacy iOS */
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-200italic.svg#SourceSansPro") format("svg");
+  /* Legacy iOS */
 }
+
 /* source-sans-pro-300 - latin */
 @font-face {
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 300;
-  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300.eot");
+  /* IE9 Compat Modes */
   src: local(""),
-    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300.eot?#iefix")
-      format("embedded-opentype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300.woff2")
-      format("woff2"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300.woff")
-      format("woff"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300.woff") format("woff"),
     /* Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300.ttf")
-      format("truetype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300.ttf") format("truetype"),
     /* Safari, Android, iOS */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300.svg#SourceSansPro")
-      format("svg"); /* Legacy iOS */
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300.svg#SourceSansPro") format("svg");
+  /* Legacy iOS */
 }
+
 /* source-sans-pro-300italic - latin */
 @font-face {
   font-family: "Source Sans Pro";
   font-style: italic;
   font-weight: 300;
-  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300italic.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300italic.eot");
+  /* IE9 Compat Modes */
   src: local(""),
-    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300italic.eot?#iefix")
-      format("embedded-opentype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300italic.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300italic.woff2")
-      format("woff2"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300italic.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300italic.woff")
-      format("woff"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300italic.woff") format("woff"),
     /* Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300italic.ttf")
-      format("truetype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300italic.ttf") format("truetype"),
     /* Safari, Android, iOS */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300italic.svg#SourceSansPro")
-      format("svg"); /* Legacy iOS */
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-300italic.svg#SourceSansPro") format("svg");
+  /* Legacy iOS */
 }
+
 /* source-sans-pro-regular - latin */
 @font-face {
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-regular.eot");
+  /* IE9 Compat Modes */
   src: local(""),
-    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-regular.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-regular.woff2")
-      format("woff2"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-regular.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-regular.woff")
-      format("woff"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-regular.woff") format("woff"),
     /* Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-regular.ttf")
-      format("truetype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-regular.ttf") format("truetype"),
     /* Safari, Android, iOS */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-regular.svg#SourceSansPro")
-      format("svg"); /* Legacy iOS */
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-regular.svg#SourceSansPro") format("svg");
+  /* Legacy iOS */
 }
+
 /* source-sans-pro-italic - latin */
 @font-face {
   font-family: "Source Sans Pro";
   font-style: italic;
   font-weight: 400;
-  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-italic.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-italic.eot");
+  /* IE9 Compat Modes */
   src: local(""),
-    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-italic.eot?#iefix")
-      format("embedded-opentype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-italic.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-italic.woff2")
-      format("woff2"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-italic.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-italic.woff")
-      format("woff"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-italic.woff") format("woff"),
     /* Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-italic.ttf")
-      format("truetype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-italic.ttf") format("truetype"),
     /* Safari, Android, iOS */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-italic.svg#SourceSansPro")
-      format("svg"); /* Legacy iOS */
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-italic.svg#SourceSansPro") format("svg");
+  /* Legacy iOS */
 }
+
 /* source-sans-pro-600 - latin */
 @font-face {
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 600;
-  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600.eot");
+  /* IE9 Compat Modes */
   src: local(""),
-    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600.eot?#iefix")
-      format("embedded-opentype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600.woff2")
-      format("woff2"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600.woff")
-      format("woff"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600.woff") format("woff"),
     /* Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600.ttf")
-      format("truetype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600.ttf") format("truetype"),
     /* Safari, Android, iOS */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600.svg#SourceSansPro")
-      format("svg"); /* Legacy iOS */
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600.svg#SourceSansPro") format("svg");
+  /* Legacy iOS */
 }
+
 /* source-sans-pro-600italic - latin */
 @font-face {
   font-family: "Source Sans Pro";
   font-style: italic;
   font-weight: 600;
-  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600italic.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600italic.eot");
+  /* IE9 Compat Modes */
   src: local(""),
-    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600italic.eot?#iefix")
-      format("embedded-opentype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600italic.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600italic.woff2")
-      format("woff2"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600italic.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600italic.woff")
-      format("woff"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600italic.woff") format("woff"),
     /* Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600italic.ttf")
-      format("truetype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600italic.ttf") format("truetype"),
     /* Safari, Android, iOS */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600italic.svg#SourceSansPro")
-      format("svg"); /* Legacy iOS */
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-600italic.svg#SourceSansPro") format("svg");
+  /* Legacy iOS */
 }
+
 /* source-sans-pro-700 - latin */
 @font-face {
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 700;
-  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700.eot");
+  /* IE9 Compat Modes */
   src: local(""),
-    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700.eot?#iefix")
-      format("embedded-opentype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700.woff2")
-      format("woff2"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700.woff")
-      format("woff"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700.woff") format("woff"),
     /* Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700.ttf")
-      format("truetype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700.ttf") format("truetype"),
     /* Safari, Android, iOS */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700.svg#SourceSansPro")
-      format("svg"); /* Legacy iOS */
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700.svg#SourceSansPro") format("svg");
+  /* Legacy iOS */
 }
+
 /* source-sans-pro-700italic - latin */
 @font-face {
   font-family: "Source Sans Pro";
   font-style: italic;
   font-weight: 700;
-  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700italic.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700italic.eot");
+  /* IE9 Compat Modes */
   src: local(""),
-    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700italic.eot?#iefix")
-      format("embedded-opentype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700italic.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700italic.woff2")
-      format("woff2"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700italic.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700italic.woff")
-      format("woff"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700italic.woff") format("woff"),
     /* Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700italic.ttf")
-      format("truetype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700italic.ttf") format("truetype"),
     /* Safari, Android, iOS */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700italic.svg#SourceSansPro")
-      format("svg"); /* Legacy iOS */
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-700italic.svg#SourceSansPro") format("svg");
+  /* Legacy iOS */
 }
+
 /* source-sans-pro-900 - latin */
 @font-face {
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 900;
-  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900.eot");
+  /* IE9 Compat Modes */
   src: local(""),
-    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900.eot?#iefix")
-      format("embedded-opentype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900.woff2")
-      format("woff2"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900.woff")
-      format("woff"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900.woff") format("woff"),
     /* Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900.ttf")
-      format("truetype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900.ttf") format("truetype"),
     /* Safari, Android, iOS */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900.svg#SourceSansPro")
-      format("svg"); /* Legacy iOS */
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900.svg#SourceSansPro") format("svg");
+  /* Legacy iOS */
 }
+
 /* source-sans-pro-900italic - latin */
 @font-face {
   font-family: "Source Sans Pro";
   font-style: italic;
   font-weight: 900;
-  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900italic.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900italic.eot");
+  /* IE9 Compat Modes */
   src: local(""),
-    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900italic.eot?#iefix")
-      format("embedded-opentype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900italic.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900italic.woff2")
-      format("woff2"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900italic.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900italic.woff")
-      format("woff"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900italic.woff") format("woff"),
     /* Modern Browsers */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900italic.ttf")
-      format("truetype"),
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900italic.ttf") format("truetype"),
     /* Safari, Android, iOS */
-      url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900italic.svg#SourceSansPro")
-      format("svg"); /* Legacy iOS */
+    url("./fonts/source-sans-pro/source-sans-pro-v14-latin-900italic.svg#SourceSansPro") format("svg");
+  /* Legacy iOS */
 }
+
 html,
 body,
 div,
@@ -477,10 +443,12 @@ video {
   font-family: "Comfortaa";
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 html {
   overflow-x: hidden;
 }
+
 article,
 aside,
 details,
@@ -522,6 +490,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 /* --- Common Styles ---*/
 
 h1,
@@ -538,6 +507,7 @@ p {
   font-family: "Comfortaa";
   font-size: 14px;
 }
+
 /*----- Helper Classes -----*/
 
 html * {
@@ -593,6 +563,7 @@ body {
   padding-right: 20px;
   position: relative;
 }
+
 /*------ Navbar Styling ------*/
 
 .navbar {
@@ -702,7 +673,7 @@ body {
 }
 
 .payment-desk-background {
-  background-image: url("./images/CX-Bil-Payment-Desk-Mockup.png") !important;
+  background-image: url("./images/CX-Bil-Payment-Desk1x.png") !important;
   min-height: 400px;
   background-position: center;
   background-repeat: no-repeat;
@@ -741,6 +712,7 @@ top:50%; */
   background-color: #f2f2f2;
   /* color: #fff; */
 }
+
 .xpress-token-info {
   line-height: 1.2;
   padding: 10px;
@@ -748,14 +720,17 @@ top:50%; */
   font-size: 18px;
   margin-bottom: 40px;
 }
+
 .team-member-position {
   font-size: 16px;
   font-weight: 700;
   padding-bottom: 10px;
 }
+
 .team-member-social-link {
   padding-top: 30px;
 }
+
 .vertical-center-align-outer {
   display: table;
 }
@@ -769,30 +744,37 @@ top:50%; */
   background-color: #2f2f2f;
   color: #fff;
 }
+
 .timeline-tag {
   font-size: 14px;
   padding: 25px;
 }
+
 .timeline-heading {
   font-size: 27px;
   font-weight: 700;
 }
+
 .timeline-date {
   font-size: 12px;
   padding: 10px;
   font-weight: 400;
 }
+
 .timeline-stage-no {
   padding: 10px;
   font-size: 18px;
 }
+
 .timeline-stage {
   font-size: 14px;
   padding: 10px;
 }
+
 .timeline-text {
   font-size: 12px !important;
 }
+
 .feature-heading {
   font-size: 40px;
   font-weight: 300;
@@ -807,6 +789,7 @@ top:50%; */
   font-size: 14px;
   line-height: 1.5;
 }
+
 #binance-broker-header {
   font-size: 52px;
   font-family: "Source Sans Pro";
@@ -815,24 +798,30 @@ top:50%; */
   /* padding-top:20px;
 		padding-bottom:20px; */
 }
+
 @media only screen and (max-width: 768px) {
   .navbar {
     /*background: rgba(255, 255, 255, 0.99) !important;*/
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
   .navbar .navbar-nav {
     padding-bottom: 25px;
   }
+
   .navbar-nav {
     background-color: #2f2f2f;
   }
+
   .nav-white .nav-item .nav-link {
     color: #4957b8;
   }
+
   .navbar .btn-cta {
     padding: 0 30px;
   }
+
   #binance-broker-header {
     font-size: 48px;
     color: #fff;
@@ -849,14 +838,17 @@ top:50%; */
     width: 100%;
     display: none;
   }
+
   .features-hero-moonboy-background {
     width: 100%;
     position: absolute;
     margin: 0 auto;
   }
+
   .hero-features-padding {
     padding: 81px 0 58% 1px !important;
   }
+
   .feature-list-home-left {
     margin: 30px 0px;
     padding: 50px 30px;
@@ -878,6 +870,7 @@ top:50%; */
     /* position: relative; */
     /* max-width: 230px; */
   }
+
   .navbar.past-main {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -887,36 +880,45 @@ top:50%; */
     -moz-box-shadow: 0 2px 3px 0 rgba(96, 96, 96, 0.1);
     box-shadow: 0 2px 3px 0 rgba(96, 96, 96, 0.1);
   }
+
   .navbar.effect-main {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
+
   .navbar.past-main .navbar-brand {
     color: #4285f4 !important;
   }
+
   .nav-white.past-main .nav-item .nav-link {
     color: #364655;
     font-weight: 500;
   }
+
   .navbar.past-main .nav-item .nav-link {
     font-weight: 500;
   }
+
   .nav-white.past-main .navbar-brand {
     color: #364655;
   }
+
   .navbar.past-main span.navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
+
   .nav-white.effect-main {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
+
   /*----------------------------------------------------------
 --------------- Hero Home Styling Starts -------------------
 ----------------------------------------------------------*/
   .home {
     background: #f7f8f9;
   }
+
   .oval-background-right-bottom {
     /* background-image: url('/assets/images/bottom-right-dual-oval.png') !important; */
     background-image: url("/assets/images/Oval.png") !important;
@@ -924,12 +926,14 @@ top:50%; */
     background-repeat: no-repeat !important;
     background-size: 500px !important;
   }
+
   .oval-moon-background-bottom {
     background-image: url("/assets/images/Oval-moon.png") !important;
     background-position: bottom !important;
     background-repeat: no-repeat !important;
     background-size: 100vw !important;
   }
+
   .buy-sell-background-right-bottom {
     background-image: url("/assets/images/CX-02-iPhone-12-Front-Mockup.png");
     background-position: -30px bottom;
@@ -937,17 +941,21 @@ top:50%; */
     background-size: 500px;
     background-repeat: no-repeat;
   }
+
   .hero {
     /* padding: 100px 0 100px 0; */
     padding: 70px 0 177px 0;
     background: #2f2f2f;
   }
+
   .hero .hero-content {
     text-align: center;
   }
+
   .hero-h2-text {
     font-size: 40px;
   }
+
   .hero .hero-image-right-div {
     position: relative;
     /* width: 249px; */
@@ -956,6 +964,7 @@ top:50%; */
     height: 480px;
     margin-left: 0%;
   }
+
   .hero h5 {
     font-size: 13px;
     font-weight: 600;
@@ -965,6 +974,7 @@ top:50%; */
     letter-spacing: 1px;
     margin-bottom: 20px;
   }
+
   .hero h2 {
     font-size: 28px;
     font-weight: 300;
@@ -972,6 +982,7 @@ top:50%; */
     line-height: 1.3;
     letter-spacing: -1px;
   }
+
   .hero p {
     font-size: 16px;
     font-weight: 500;
@@ -981,15 +992,19 @@ top:50%; */
     letter-spacing: 0;
     margin-top: 20px;
   }
+
   .hero img {
     margin-top: 25px;
   }
+
   .hero-img-box img {
     margin-top: 50px;
   }
+
   .form-note p {
     font-size: 12px;
   }
+
   .hero .row,
   .app-feature .row,
   .flex-split .row,
@@ -1004,12 +1019,14 @@ top:50%; */
     margin-right: -15px;
     margin-left: -15px;
   }
+
   .align-center {
     -webkit-box-align: center !important;
     -webkit-align-items: center !important;
     -ms-flex-align: center !important;
     align-items: center !important;
   }
+
   .chimp-form .mail {
     position: relative;
     background-color: #f9f9f9;
@@ -1019,10 +1036,12 @@ top:50%; */
     box-sizing: content-box;
     transition: all 0.3s;
   }
+
   .form {
     padding-top: 25px;
     position: relative;
   }
+
   .form input {
     color: #222222;
     font-family: "Comfortaa";
@@ -1038,6 +1057,7 @@ top:50%; */
     box-shadow: 0 5px 30px rgba(255, 255, 255, 0.1);
     width: 100%;
   }
+
   .form select {
     color: #222222;
     font-family: "Comfortaa";
@@ -1053,6 +1073,7 @@ top:50%; */
     box-shadow: 0 5px 30px rgba(255, 255, 255, 0.1);
     width: 100%;
   }
+
   .form textarea {
     color: #222222;
     font-family: "Comfortaa";
@@ -1069,10 +1090,12 @@ top:50%; */
     height: 150px;
     width: 100%;
   }
+
   .form input:focus {
     outline: none !important;
     border-color: transparent;
   }
+
   .form .submit-button {
     height: 45px;
     border: 0;
@@ -1093,6 +1116,7 @@ top:50%; */
     -moz-transition: 500ms;
     transition: 500ms;
   }
+
   #email-error {
     position: absolute;
     left: 20%;
@@ -1103,6 +1127,7 @@ top:50%; */
     font-weight: 500;
     color: #ff3333;
   }
+
   #response {
     position: absolute;
     left: 20%;
@@ -1114,11 +1139,13 @@ top:50%; */
     margin: 0 !important;
     color: #15ccbe;
   }
+
   #response h4 {
     font-size: 13px !important;
     font-weight: 500 !important;
     text-align: center;
   }
+
   #chimp-email-error {
     position: absolute;
     left: 20%;
@@ -1130,22 +1157,27 @@ top:50%; */
     font-weight: 500;
     color: red;
   }
+
   .success-message {
     color: #33cc33;
     margin-top: 5px;
   }
+
   .form-note p {
     font-size: 12px;
   }
+
   @media only screen and (max-width: 420px) {
     .form input {
       padding: 0 75px 0 20px;
     }
+
     .form .submit-button {
       margin-left: 0;
       margin-top: 10px;
     }
   }
+
   .btn-action {
     font-family: "Comfortaa";
     display: inline-block;
@@ -1171,6 +1203,7 @@ top:50%; */
     -moz-transition: 0.2s;
     transition: 0.2s;
   }
+
   .btn-action:hover {
     color: #ffffff;
     box-shadow: 0 5px 25px 0 rgba(0, 0, 100, 0.2);
@@ -1178,6 +1211,7 @@ top:50%; */
     outline: none !important;
     text-decoration: none;
   }
+
   .btn-action:focus,
   .btn-action:active {
     background: #663399;
@@ -1185,6 +1219,7 @@ top:50%; */
     border: 1px solid transparent !important;
     outline: none !important;
   }
+
   /*---------------------------------------------
 ----------- Features Section Styles------------
 ---------------------------------------------*/
@@ -1192,9 +1227,11 @@ top:50%; */
     padding: 100px 0;
     /* background: #f8f9fa; */
   }
+
   .features-intro {
     margin-bottom: 50px;
   }
+
   .features-intro h2 {
     font-size: 28px;
     font-weight: 700;
@@ -1204,6 +1241,7 @@ top:50%; */
     margin: 0 auto;
     margin-bottom: 10px;
   }
+
   .features-intro h1 {
     font-size: 60px;
     font-weight: 300;
@@ -1213,6 +1251,7 @@ top:50%; */
     margin: 0 auto;
     margin-bottom: 10px;
   }
+
   .features-intro p {
     font-size: 16px;
     font-weight: 500;
@@ -1224,6 +1263,7 @@ top:50%; */
     margin-top: 15px;
     margin-bottom: 15px;
   }
+
   .feature-list {
     margin: 30px 0px;
     padding: 50px 30px;
@@ -1233,6 +1273,7 @@ top:50%; */
     max-height: 450px;
     /* max-width: 230px; */
   }
+
   .feature-list-350 {
     margin: 30px 0px;
     padding: 50px 30px;
@@ -1242,6 +1283,7 @@ top:50%; */
     max-height: 350px;
     /* max-width: 230px; */
   }
+
   .team-member-card {
     margin: 30px 0px;
     padding: 50px 30px;
@@ -1251,9 +1293,11 @@ top:50%; */
     max-height: 500px;
     /* max-width: 230px; */
   }
+
   .team-container {
     padding: 30px;
   }
+
   .payment-desk-card {
     margin: 30px 10px;
     border-radius: 10px;
@@ -1261,18 +1305,22 @@ top:50%; */
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
     overflow: hidden;
   }
+
   .card-img img {
     vertical-align: middle;
   }
+
   .card-text {
     /* margin-top: 25px; */
   }
+
   .card-text h3 {
     font-size: 24px;
     font-weight: 600;
     color: #222a41;
     margin-bottom: 15px;
   }
+
   .card-text p {
     font-size: 15px;
     font-weight: 500;
@@ -1281,21 +1329,26 @@ top:50%; */
     /* max-width: 320px; */
     margin: 0 auto;
   }
+
   .flex-inner {
     margin: 50px 0;
   }
+
   .flex-inner .f-image {
     padding: 0 35px;
   }
+
   .flex-inner .f-text {
     padding: 0 35px;
   }
+
   .flex-inner .f-text {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
     text-align: center;
   }
+
   .flex-inner .f-text h1 {
     font-size: 24px;
     font-weight: 700;
@@ -1304,6 +1357,7 @@ top:50%; */
     letter-spacing: -1px;
     margin-top: 20px;
   }
+
   .flex-inner .f-text p {
     font-size: 14px;
     font-weight: 400;
@@ -1313,6 +1367,7 @@ top:50%; */
     margin-top: 15px;
     margin-bottom: 10px;
   }
+
   .flex-inner .f-text .left-content a {
     font-family: "Montserrat";
     font-size: 14px;
@@ -1321,16 +1376,19 @@ top:50%; */
     display: inline-block;
     text-decoration: none;
   }
+
   /* ----- Client Sectiion Styling ----- */
   .client-section {
     background-color: #eef2f5;
     padding: 25px 25px;
     border: 1px solid #eef2f5;
   }
+
   .clients .single img {
     max-width: 50%;
     display: inline-block;
   }
+
   /* ----- Pricing Tables Styling Starts ----- */
   .pricing-section {
     width: 100%;
@@ -1339,6 +1397,7 @@ top:50%; */
     padding-bottom: 100px;
     background: #ffffff;
   }
+
   .pricing-intro h1 {
     font-size: 28px;
     color: #364655;
@@ -1346,6 +1405,7 @@ top:50%; */
     line-height: 1.4;
     margin-bottom: 20px;
   }
+
   .pricing-intro p {
     font-size: 16px;
     font-weight: 500;
@@ -1355,9 +1415,11 @@ top:50%; */
     margin-top: 10px;
     margin-bottom: 50px;
   }
+
   .pricing-details {
     padding: 50px 0 0 0;
   }
+
   .pricing-section .table-left,
   .pricing-section .table-right {
     padding: 15%;
@@ -1367,6 +1429,7 @@ top:50%; */
     border: transparent;
     max-width: 400px;
   }
+
   .table-left h3,
   .table-right h3 {
     font-size: 21px;
@@ -1374,6 +1437,7 @@ top:50%; */
     color: #505050;
     margin-bottom: 15px;
   }
+
   .table-left p,
   .table-right p {
     font-size: 14px;
@@ -1381,24 +1445,29 @@ top:50%; */
     color: #505050;
     line-height: 1.4;
   }
+
   .pricing-section .table-right {
     color: #ffffff !important;
     background-color: #4285f4;
   }
+
   .pricing-section .table-right h3,
   .pricing-section .table-right p {
     color: #ffffff !important;
   }
+
   .table-left .icon,
   .table-right .icon {
     padding: 50px 50px 40px 50px;
   }
+
   .table-left .icon img,
   .table-right .icon img {
     width: 60px;
     height: 60px;
     margin: 0 auto;
   }
+
   .table-left .pricing-details span,
   .table-right .pricing-details span {
     display: inline-block;
@@ -1409,6 +1478,7 @@ top:50%; */
     color: #343434;
     margin-bottom: 20px;
   }
+
   .table-left .pricing-details h2,
   .table-right .pricing-details h2 {
     font-size: 21px;
@@ -1416,6 +1486,7 @@ top:50%; */
     color: #505050;
     margin-bottom: 30px;
   }
+
   .table-left .pricing-details p,
   .table-right .pricing-details p {
     font-size: 14px;
@@ -1424,34 +1495,42 @@ top:50%; */
     letter-spacing: 1px;
     line-height: 1.4;
   }
+
   .table-right .pricing-details h2,
   .table-right .pricing-details span {
     color: #ffffff !important;
   }
+
   .pricing-section .table-left,
   .pricing-section .table-right {
     margin-top: 20px;
   }
+
   .pricing-section .table-center {
     margin-top: 0;
   }
+
   .pricing-section .btn-action {
     background-color: #4285f4;
     border-color: #4285f4;
   }
+
   .btn-white {
     color: #555da8;
     background-color: #ffffff !important;
     border-color: #ffffff !important;
   }
+
   .pricing-section .btn-white:hover {
     color: #555da8;
   }
+
   .pricing-section .refund-txt {
     font-size: 12px;
     font-weight: 500;
     color: #505050;
   }
+
   /* ----- Features Section Styling Starts ----- */
   .flex-split {
     width: 100%;
@@ -1462,26 +1541,29 @@ top:50%; */
     -webkit-flex-direction: column;
     flex-direction: column;
   }
+
   .flex-split .f-left {
     flex: 1 0 50%;
     background: #f9f9f9;
   }
+
   .flex-split .f-right {
     flex: 1 0 50%;
-    background: linear-gradient(
-        to right,
+    background: linear-gradient(to right,
         rgba(0, 0, 0, 0),
-        rgba(86, 61, 124, 0)
-      ),
+        rgba(86, 61, 124, 0)),
       url(../images/ww.jpg) no-repeat center center;
     background-size: cover;
   }
+
   .flex-split .f-right img {
     margin-top: 0;
   }
+
   .flex-split .f-left {
     padding: 50px;
   }
+
   .flex-split .f-left h2 {
     font-size: 28px;
     color: #364655;
@@ -1489,6 +1571,7 @@ top:50%; */
     line-height: 1.2;
     margin-top: 40px;
   }
+
   .flex-split .f-left p {
     font-size: 16px;
     color: #627382;
@@ -1498,10 +1581,12 @@ top:50%; */
     margin-top: 20px;
     margin-bottom: 30px;
   }
+
   .flex-split .btn-action {
     margin-top: 15px;
     margin-bottom: 20px;
   }
+
   .flex-split .video-icon {
     position: absolute;
     top: 45%;
@@ -1509,6 +1594,7 @@ top:50%; */
     right: 0;
     outline: none;
   }
+
   .flex-split .video-icon i {
     display: inline-block;
     position: relative;
@@ -1527,22 +1613,27 @@ top:50%; */
     border-radius: 50%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
   }
+
   .main-2 .flex-split .f-right {
     flex: 1 0 50%;
     background: url(../images/half_bg.jpg) no-repeat center center;
     background-size: cover;
   }
+
   .main-2 .flex-split .video-icon i {
     color: rgba(0, 0, 0, 0.9);
   }
+
   /*----------- Flex Features ------------*/
   .features-flex {
     padding: 100px 0;
   }
+
   .flex-intro {
     margin-bottom: 50px;
     text-align: center;
   }
+
   .flex-intro h2 {
     font-size: 28px;
     font-weight: 600;
@@ -1550,6 +1641,7 @@ top:50%; */
     line-height: 1.3;
     margin-bottom: 10px;
   }
+
   .flex-intro p {
     font-size: 16px;
     font-weight: 500;
@@ -1561,21 +1653,26 @@ top:50%; */
     margin-top: 15px;
     margin-bottom: 15px;
   }
+
   .flex-inner {
     margin: 50px 0;
   }
+
   .flex-inner .f-image {
     padding: 0 35px;
   }
+
   .flex-inner .f-text {
     padding: 0 35px;
   }
+
   .flex-inner .f-text {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
     text-align: center;
   }
+
   .flex-inner .f-text h2 {
     font-size: 24px;
     font-weight: 600;
@@ -1583,6 +1680,7 @@ top:50%; */
     line-height: 1.3;
     margin-top: 20px;
   }
+
   .flex-inner .f-text p {
     font-size: 14px;
     font-weight: 400;
@@ -1592,6 +1690,7 @@ top:50%; */
     margin-top: 15px;
     margin-bottom: 15px;
   }
+
   .flex-inner .f-text .left-content a {
     font-family: "Montserrat";
     font-size: 14px;
@@ -1601,6 +1700,7 @@ top:50%; */
     display: inline-block;
     text-decoration: none;
   }
+
   .flex-inner .f-text .left-content a::after {
     content: "";
     position: absolute;
@@ -1612,23 +1712,28 @@ top:50%; */
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
+
   .flex-inner .f-text .left-content a:hover::after {
     width: 75px;
   }
+
   .flex-inner .f-text .left-content a:hover {
     text-decoration: none;
   }
+
   .flex-inner.flex-inverted .f-image {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
   }
+
   /*---------------------------------------------------
 -------------- Ar Feature Item Styling --------------
 ---------------------------------------------------*/
   .ar-ft-single {
     padding: 100px 0;
   }
+
   .ar-feature {
     text-align: center;
     display: block;
@@ -1637,39 +1742,47 @@ top:50%; */
     align-items: center;
     overflow: hidden;
   }
+
   .ar-feature .ar-list {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 40%;
     flex: 1 0 40%;
     text-align: left;
   }
+
   .ar-feature .ar-image {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 40%;
     flex: 1 0 40%;
     margin-left: 0;
   }
+
   .ar-list ul {
     list-style-type: none;
     overflow: hidden;
     margin-top: 0;
   }
+
   .ar-list ul li {
     margin-bottom: 30px;
     overflow: hidden;
   }
+
   .ar-feature .ar-icon {
     float: left;
     width: 15%;
   }
+
   .ar-feature .ar-icon img {
     margin-top: 0;
     vertical-align: middle;
   }
+
   .ar-feature .ar-text {
     float: right;
     width: 85%;
   }
+
   .ar-feature .ar-text h3 {
     font-size: 21px;
     color: #364655;
@@ -1677,12 +1790,14 @@ top:50%; */
     line-height: 1.2;
     margin-bottom: 10px;
   }
+
   .ar-feature .ar-text p {
     font-size: 15px;
     font-weight: 500;
     line-height: 1.6;
     color: #959597;
   }
+
   /*----------------------------------------------
 ------------ Service Section Styling ------------
 ----------------------------------------------*/
@@ -1692,24 +1807,29 @@ top:50%; */
     background-position: center;
     background-size: cover;
   }
+
   #nft-services {
     background-image: url("./images/marketplace-background-new.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
+
   #nft-services .feature-list {
     text-align: center;
   }
+
   .services-section {
     padding: 75px 0;
     background: rgb(246, 246, 253);
   }
+
   .service-intro {
     max-width: 600px;
     margin: 0 auto;
     margin-bottom: 50px;
   }
+
   .service-intro h2 {
     font-size: 24px;
     font-weight: 600;
@@ -1717,6 +1837,7 @@ top:50%; */
     line-height: 1.3;
     margin-top: 20px;
   }
+
   .service-intro p {
     font-size: 14px;
     font-weight: 500;
@@ -1726,17 +1847,20 @@ top:50%; */
     margin-top: 15px;
     margin-bottom: 15px;
   }
+
   .service-box {
     text-align: left;
     padding: 20px 20px;
     overflow: hidden;
   }
+
   .service-box h3 {
     font-size: 18px;
     font-weight: 600;
     color: #364655;
     line-height: 1.3;
   }
+
   .service-box p {
     font-size: 14px;
     font-weight: 500;
@@ -1746,18 +1870,22 @@ top:50%; */
     margin-top: 10px;
     margin-bottom: 15px;
   }
+
   .service-box .service-icon {
     float: left;
     width: 15%;
   }
+
   .service-box .service-icon img {
     margin-top: 0;
     vertical-align: middle;
   }
+
   .service-box .service-text {
     float: right;
     width: 80%;
   }
+
   /*--------------------------------------
 --------- Stat Section Styling ---------
 --------------------------------------*/
@@ -1765,6 +1893,7 @@ top:50%; */
     padding: 100px 0;
     background: #ffffff;
   }
+
   .yd-stats .intro h4 {
     font-size: 12px;
     font-weight: 600;
@@ -1773,6 +1902,7 @@ top:50%; */
     letter-spacing: 1px;
     margin-bottom: 15px;
   }
+
   .yd-stats .intro h2 {
     font-size: 28px;
     font-weight: 700;
@@ -1782,6 +1912,7 @@ top:50%; */
     margin: 0 auto;
     margin-bottom: 10px;
   }
+
   .yd-stats .intro p {
     font-size: 16px;
     font-weight: 500;
@@ -1793,24 +1924,30 @@ top:50%; */
     margin-top: 15px;
     margin-bottom: 15px;
   }
+
   .yd-stats .counter-up {
     margin-top: 50px;
   }
+
   .counter-icon {
     padding: 15px;
   }
+
   .counter-icon img {
     width: 80px;
     height: 80px;
   }
+
   .counter-text {
     margin: 10px 0;
   }
+
   .counter-up h3 {
     font-size: 24px;
     font-weight: 700;
     color: #364655;
   }
+
   .counter-text h2 {
     font-size: 14px;
     font-weight: 500;
@@ -1818,6 +1955,7 @@ top:50%; */
     color: #364655;
     color: #959597;
   }
+
   /*----------------------------------------------
 ------------ Review Section Styling ------------
 ----------------------------------------------*/
@@ -1828,12 +1966,14 @@ top:50%; */
     background: #f6f6fd;
     background-size: cover;
   }
+
   .yd-reviews .intro {
     padding: 0;
     max-width: 800px;
     margin: 0 auto;
     margin-bottom: 75px;
   }
+
   .yd-reviews .intro h1 {
     font-size: 28px;
     font-weight: 700;
@@ -1841,6 +1981,7 @@ top:50%; */
     line-height: 1.2;
     margin-bottom: 20px;
   }
+
   .yd-reviews .intro p {
     font-size: 16px;
     font-weight: 500;
@@ -1848,25 +1989,31 @@ top:50%; */
     line-height: 1.6;
     margin: 0px auto;
   }
+
   .yd-reviews .intro p:nth-child(4) {
     font-size: 13px;
   }
+
   .yd-reviews .intro a {
     color: #0000ff;
     text-decoration: none;
   }
+
   .yd-reviews .card-single {
     display: block;
   }
+
   .yd-reviews .card-single .review-text {
     background: #ffffff;
     padding: 50px;
     text-align: center;
   }
+
   .yd-reviews .card-single .review-attribution {
     padding-bottom: 30px;
     background: #ffffff;
   }
+
   .yd-reviews .card-single h1 {
     font-size: 16px;
     font-weight: 500;
@@ -1875,10 +2022,12 @@ top:50%; */
     letter-spacing: 0;
     margin-bottom: 0;
   }
+
   .yd-reviews .card-single .review-attribution i {
     font-size: 13px;
     color: #ffd700;
   }
+
   .yd-reviews .card-single .review-attribution h2 {
     font-size: 15px;
     font-weight: 600;
@@ -1886,12 +2035,14 @@ top:50%; */
     line-height: 1.4;
     margin-top: 5px;
   }
+
   .yd-reviews .card-single .review-attribution h6 {
     font-size: 12px;
     font-weight: 500;
     color: #97a6b5;
     line-height: 1.4;
   }
+
   .yd-reviews .card-single .review-attribution a {
     font-family: "Comfortaa";
     font-size: 12px;
@@ -1901,6 +2052,7 @@ top:50%; */
     display: inline-block;
     text-decoration: none;
   }
+
   .yd-reviews .card-single .review-attribution a:before {
     content: "";
     position: absolute;
@@ -1915,30 +2067,36 @@ top:50%; */
     -webkit-transition: all 0.2s ease-in-out 0s;
     transition: all 0.2s ease-in-out 0s;
   }
+
   .yd-reviews .card-single .review-attribution a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
+
   .yd-reviews .card-single .review-attribution .review-img {
     text-align: center;
     margin-bottom: 20px;
   }
+
   .yd-reviews .card-single .review-attribution img {
     height: 60px;
     width: 60px;
     margin: 0 auto;
   }
+
   /*--------- Cta Small Section Styling ------------*/
   .cta-sm {
     padding: 100px 0 100px 0;
     background: rgba(30, 166, 154, 0.1);
     background: #f8f9fa;
   }
+
   .cta-sm .cta-content {
     max-width: 768px;
     margin: 0 auto;
   }
+
   .cta-sm h1 {
     font-size: 28px;
     font-weight: 600;
@@ -1946,12 +2104,14 @@ top:50%; */
     line-height: 1.2;
     margin-bottom: 20px;
   }
+
   .cta-sm h4 {
     font-size: 13px;
     font-weight: 500;
     color: #4285f4;
     margin-bottom: 15px;
   }
+
   /*--------- Cta Small Section Styling ends ------------*/
   /*--------------------------------------------------------------
 -------------------- Footer Small Styling Starts ---------------
@@ -1965,9 +2125,11 @@ background: #555da8;
 background: #303c42; */
     text-align: center;
   }
+
   .footer-sm .col-md-4:nth-child(even) {
     text-align: center;
   }
+
   .footer-sm .footer-logo {
     font-family: "Comfortaa";
     font-size: 18px;
@@ -1978,6 +2140,7 @@ background: #303c42; */
     margin-bottom: 15px;
     text-decoration: none;
   }
+
   .footer-sm h6 {
     font-size: 13px;
     font-weight: 500;
@@ -1985,11 +2148,13 @@ background: #303c42; */
     letter-spacing: 0;
     display: inline-block;
   }
+
   .footer-sm ul {
     list-style-type: none;
     text-align: center;
     margin-top: 10px;
   }
+
   .footer-sm ul li {
     font-family: "Montserrat";
     font-size: 13px;
@@ -1999,6 +2164,7 @@ background: #303c42; */
     margin-left: 6px;
     margin-right: 6px;
   }
+
   .footer-sm ul li a {
     font-size: 13px;
     font-weight: 500;
@@ -2007,6 +2173,7 @@ background: #303c42; */
     color: #ffffff;
     text-decoration: none;
   }
+
   .footer-sm ul li a:before {
     content: "";
     position: absolute;
@@ -2021,15 +2188,18 @@ background: #303c42; */
     -webkit-transition: all 0.2s ease-in-out 0s;
     transition: all 0.2s ease-in-out 0s;
   }
+
   .footer-sm ul li a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
+
   .no-touch .footer-sm ul li a:hover {
     text-decoration: none;
     color: #000;
   }
+
   /* -------------------------------------------------------
 ----------- Bact-to-Top Styling Starts Here --------------
 ---------------------------------------------------------*/
@@ -2048,11 +2218,13 @@ background: #303c42; */
     display: table;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
+
   .bk-top-txt {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
   }
+
   .back-to-top {
     font-family: "Comfortaa";
     font-size: 12px;
@@ -2064,14 +2236,17 @@ background: #303c42; */
     -o-transition: 200ms;
     transition: 200ms;
   }
+
   .back-to-top:hover {
     color: #ffffff;
     text-decoration: none;
     font-size: 13px;
   }
+
   .back-to-top:focus {
     color: #ffffff;
   }
+
   /*------------------------------------------
 -------------- Media Queries ---------------
 ------------------------------------------*/
@@ -2086,14 +2261,17 @@ background: #303c42; */
       width: 234%;
       display: block;
     }
+
     .features-hero-moonboy-background {
       width: 100%;
       position: absolute;
       margin: 0 auto;
     }
+
     .hero-features-padding {
       padding: 130px 0 44% 1px !important;
     }
+
     .feature-list-home-left {
       margin: 30px 0px;
       /* padding: 50px 30px; */
@@ -2117,37 +2295,47 @@ background: #303c42; */
       position: relative;
       /* max-width: 230px; */
     }
+
     .navbar-nav {
       margin-top: 0;
     }
+
     .navbar-nav .nav-item {
       margin-top: 0;
       margin-right: 15px;
       font-size: 1rem;
       font-weight: 400;
     }
+
     .container-s {
       padding-left: 20px;
       padding-right: 20px;
     }
+
     .hero h2 {
       font-size: 38px;
     }
+
     .features-intro h2 {
       font-size: 34px;
     }
+
     .yd-stats .intro h2 {
       font-size: 34px;
     }
+
     .yd-reviews .intro h1 {
       font-size: 34px;
     }
+
     .pricing-intro h1 {
       font-size: 34px;
     }
+
     .cta-sm h1 {
       font-size: 34px;
     }
+
     .flex-inner {
       position: relative;
       display: -webkit-box;
@@ -2158,22 +2346,27 @@ background: #303c42; */
       align-items: center;
       margin: 50px 0;
     }
+
     .flex-inner .f-image {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 400px;
       flex: 0 0 400px;
     }
+
     .flex-inner .f-text h1 {
       font-size: 32px;
     }
+
     .flex-inner .f-text p {
       font-size: 16px;
       font-weight: 500;
     }
+
     .hero {
       /* padding: 125px 0 100px 0; */
       padding: 164px 0 172px 0;
     }
+
     .orb-background-center {
       background-image: url("/assets/images/orb.png") !important;
       background-position: center !important;
@@ -2181,6 +2374,7 @@ background: #303c42; */
       /* background-size: 800px !important; */
       background-size: 50vw !important;
     }
+
     .oval-background-right-bottom {
       /* background-image: url('/assets/images/bottom-right-dual-oval.png') !important; */
       background-image: url("/assets/images/Oval.png") !important;
@@ -2189,6 +2383,7 @@ background: #303c42; */
       /* background-size: 800px !important; */
       background-size: 50vw !important;
     }
+
     .buy-sell-background-right-bottom {
       background-image: url("/assets/images/CX-02-iPhone-12-Front-Mockup.png");
       background-position: 90% bottom;
@@ -2196,15 +2391,18 @@ background: #303c42; */
       background-size: 500px;
       background-repeat: no-repeat;
     }
+
     .feature-content-box {
       padding: 70px;
     }
+
     .oval-moon-background-bottom {
       background-image: url("/assets/images/Oval-moon.png") !important;
       background-position: bottom !important;
       background-repeat: no-repeat !important;
       background-size: 100% 367px !important;
     }
+
     .hero .hero-image-right-div {
       position: relative;
       /* width: 65%; */
@@ -2213,25 +2411,32 @@ background: #303c42; */
       /* margin-left: 20%; */
       margin-left: 40%;
     }
+
     .hero-h2-text {
       font-size: 50px !important;
     }
+
     .hero .feature-img {
       margin-bottom: 0;
     }
+
     .flex-split {
       -webkit-flex-direction: row;
       flex-direction: row;
     }
+
     .flex-split .f-left h2 {
       font-size: 34px;
     }
+
     .flex-split .f-left {
       padding: 50px;
     }
+
     .flex-split .f-right {
       flex: 1 0 50%;
     }
+
     .ar-feature {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2240,44 +2445,56 @@ background: #303c42; */
       -ms-flex-align: center;
       align-items: center;
     }
+
     .ar-feature .ar-image {
       margin-left: 25px;
     }
+
     .service-intro h2 {
       font-size: 32px;
     }
+
     .service-intro p {
       font-size: 16px;
     }
+
     .service-box {
       padding: 30px 30px;
     }
+
     .counter-up h3 {
       font-size: 32px;
     }
+
     .footer-sm {
       text-align: left;
     }
+
     .footer-sm .footer-logo {
       margin-bottom: 0;
       font-size: 16px;
       display: block;
     }
+
     .footer-sm ul {
       list-style-type: none;
       text-align: right;
       margin-top: 0;
     }
+
     #email-error {
       left: 30%;
     }
+
     #response {
       left: 30%;
     }
+
     #chimp-email-error {
       left: 30%;
     }
   }
+
   @media only screen and (min-width: 992px) {
     .hero .hero-image-right-div {
       position: relative;
@@ -2287,6 +2504,7 @@ background: #303c42; */
       height: 377px;
       margin-left: 20%;
     }
+
     .feature-list-home-left {
       margin: 30px 0px;
       padding: 50px 30px;
@@ -2311,11 +2529,13 @@ background: #303c42; */
       /* max-width: 230px; */
     }
   }
+
   @media only screen and (min-width: 480px) {
     .container-s {
       padding-left: 40px;
       padding-right: 40px;
     }
+
     .flex-inner .f-text {
       -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -2323,45 +2543,57 @@ background: #303c42; */
       text-align: left;
     }
   }
+
   @media only screen and (max-width: 766px) {
     .flex-split .f-right {
       flex: 1 0 50%;
       height: 360px;
     }
+
     .hero-split .f-right {
       flex: 1 0 50%;
       height: 360px;
     }
+
     .flex-split .video-icon {
       display: none;
     }
+
     .flex-split .f-left {
       text-align: center;
     }
   }
+
   @media only screen and (min-width: 1024px) {
     .hero img {
       margin-top: 0;
     }
+
     .hero .hero-content {
       text-align: left;
     }
+
     .service-box {
       padding: 30px 50px;
     }
+
     .service-box .service-text {
       float: right;
       width: 85%;
     }
+
     .flex-split .f-left {
       padding: 80px 100px;
     }
+
     #email-error {
       left: 0;
     }
+
     #chimp-email-error {
       left: 0%;
     }
+
     #response {
       left: 0;
     }
@@ -2386,6 +2618,7 @@ background: #303c42; */
     color: #191919;
   }
 }
+
 .form-control {
   width: 320px;
   height: 30.86px;
@@ -2404,10 +2637,12 @@ background: #303c42; */
   .form-control {
     right: auto;
   }
+
   .label-box {
     margin-bottom: 30%;
   }
 }
+
 .modal {
   overflow: visible !important;
   z-index: 999;
@@ -2418,6 +2653,7 @@ background: #303c42; */
 .blocker {
   z-index: 999 !important;
 }
+
 .navbar.past-main {
   z-index: 998;
 }
