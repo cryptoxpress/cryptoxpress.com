@@ -830,6 +830,11 @@ top:50%; */
 }
 
 @media only screen and (min-width: 240px) {
+   .apple-badge{
+        width:80%;
+        margin-top:34px !important;
+    }
+
   .home-orb-background {
     position: absolute;
     z-index: -1;
@@ -2253,6 +2258,11 @@ background: #303c42; */
 ------------------------------------------*/
 
   @media only screen and (min-width: 767px) {
+     .apple-badge{
+        width:82%;
+        margin-top:42px !important;
+    }
+
     .home-orb-background {
       /* background-image:url('/assets/images/orb.png'); */
       position: absolute;
