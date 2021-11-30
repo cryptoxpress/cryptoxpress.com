@@ -2569,6 +2569,8 @@ background: #303c42; */
     .hero img {
       margin-top: 0;
     }
+    .apple-badge{
+width:85%;margin-top:8px}
 
     .hero .hero-content {
       text-align: left;
