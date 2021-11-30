@@ -2570,7 +2570,9 @@ background: #303c42; */
       margin-top: 0;
     }
     .apple-badge{
-width:85%;margin-top:8px}
+        width:80%;
+        margin-top:10px !important;
+    }
 
     .hero .hero-content {
       text-align: left;
