@@ -16,6 +16,33 @@
 v2.0 | 20110126
 License: none (public domain)
 */
+/* knewave-regular - latin */
+@font-face {
+  font-family: 'Knewave';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/knewave-v9-latin/knewave-v9-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/knewave-v9-latin/knewave-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/knewave-v9-latin/knewave-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/knewave-v9-latin/knewave-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/knewave-v9-latin/knewave-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/knewave-v9-latin/knewave-v9-latin-regular.svg#Knewave') format('svg'); /* Legacy iOS */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v29-latin/roboto-v29-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/roboto-v29-latin/roboto-v29-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v29-latin/roboto-v29-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v29-latin/roboto-v29-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v29-latin/roboto-v29-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v29-latin/roboto-v29-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
 @font-face {
   font-family: "Comfortaa";
   font-style: normal;
@@ -563,6 +590,19 @@ body {
   padding-right: 20px;
   position: relative;
 }
+.knewave{
+font-family: Knewave,sans-serif;
+}
+.roboto-bold{
+  font-family: Roboto,sans-serif;
+  font-weight: bolder;
+  font-size: 14px;
+}
+.knewave-title{
+  font-family: Knewave,sans-serif;
+  font-size: 48px;
+color: #103C4A;
+  }
 
 /*------ Navbar Styling ------*/
 
@@ -647,7 +687,22 @@ body {
 .nav-white .navbar-brand {
   color: #ffffff;
 }
-
+.lp-features{
+  background-image: url("./images/cryptoxpress-liquidity-pool-mining.png") !important;
+background-repeat: no-repeat;
+/* padding: 350px 0px; */
+height:56vw;
+background-size: 100%;
+color: #ffffff;
+}
+.nft-features{
+  background-image: url("./images/cx-nft-hero.png") !important;
+background-repeat: no-repeat;
+/* padding: 350px 0px; */
+height:56vw;
+background-size: 100%;
+color: #ffffff;
+}
 .appshowcase-background {
   background-image: url("./images/CX-App-Showcase-Mockup.png") !important;
   min-height: 600px;
@@ -657,7 +712,28 @@ body {
 }
 
 .trading-desk-background {
-  background-image: url("./images/cryptoxpress-trading-desk.png") !important;
+  background-image: url("./images/trading-desk-2.png") !important;
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.xpress-trading-background {
+  background-image: url("./images/cx-footer-front-iphone.png") !important;
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nft-tab-background {
+  background-image: url("./images/cx-footer-nft-tab.png") !important;
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.trading-iphone-ui-background {
+  background-image: url("./images/CX-footer-trade-iphone-13-pro-in-hand.png") !important;
   min-height: 600px;
   background-position: center;
   background-repeat: no-repeat;
@@ -681,7 +757,9 @@ body {
 }
 
 .background-alien-blue {
-  background-color: #b9dbff;
+  /* background-color: #b9dbff; */
+  background: radial-gradient(at -50% bottom,#2F9E8A, #257E84, #19645B,#11494D,#0C1B40,#0A183B, #000920);
+  color:#fff;
 }
 
 .rocket-science {
@@ -789,7 +867,14 @@ top:50%; */
   font-size: 14px;
   line-height: 1.5;
 }
-
+.trade-features{
+background: url(../assets/images/trade-features-bg.png) no-repeat center;
+color:#fff;
+}
+.xpress-features{
+  background: #0056B0;
+  color:#fff;
+  }
 #binance-broker-header {
   font-size: 52px;
   font-family: "Source Sans Pro";
@@ -799,8 +884,13 @@ top:50%; */
 		padding-bottom:20px; */
 }
 
+
+  .navbar-radial-bg {
+    background: linear-gradient(to right,#000920,#0C1B40,#0A183B) 
+  }
 @media only screen and (max-width: 768px) {
   .navbar {
+    /* background: radial-gradient(at -50% bottom,#2F9E8A,#257E84,#19645B,#11494D,#0C1B40,#0A183B,#000920); */
     /*background: rgba(255, 255, 255, 0.99) !important;*/
     padding-top: 10px;
     padding-bottom: 10px;
@@ -864,6 +954,38 @@ top:50%; */
     /* max-width: 230px; */
   }
 
+  .nft-card {
+    margin: 13px 0px;
+    /* padding: 50px 30px; */
+    border-radius: 18px;
+    background: #ffffff;
+    /* box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.35); */
+    box-shadow: 3px 2px 8px 0 rgba(0, 0, 0, 0.35);
+    /* max-height: 450px; */
+    flex-direction:column;
+    display: flex;
+    position: relative;
+    /* top: 100px; */
+    /* position: relative; */
+    /* max-width: 230px; */
+  }
+  .xpress-card {
+    margin: 13px 0px;
+    /* padding: 50px 30px; */
+    /* height: 90px; */
+    border-radius: 3px;
+    background: #ffffff;
+    /* box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.35); */
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+    /* max-height: 450px; */
+    flex-direction:column;
+    display: flex;
+    position: relative;
+    /* top: 100px; */
+    /* position: relative; */
+    /* max-width: 230px; */
+  }
+  
   .feature-list-home-right {
     margin: 30px 0px;
     padding: 50px 30px;
@@ -949,8 +1071,9 @@ top:50%; */
 
   .hero {
     /* padding: 100px 0 100px 0; */
-    padding: 70px 0 177px 0;
-    background: #2f2f2f;
+    padding: 70px 0 0px 0;
+    /* background: #2f2f2f; */
+    background: radial-gradient(at 200% bottom,#2F9E8A, #257E84, #19645B,#11494D,#0C1B40,#0A183B, #000920)
   }
 
   .hero .hero-content {
@@ -966,7 +1089,8 @@ top:50%; */
     /* width: 249px; */
     width: 100%;
     /* height: 270px; */
-    height: 480px;
+    /* height: 480px; */
+    /* height:231px; */
     margin-left: 0%;
   }
 
@@ -1199,7 +1323,7 @@ top:50%; */
     white-space: nowrap;
     cursor: pointer;
     background-color: #387ed1;
-    background: #4285f4;
+    background: #00B7A1;
     color: #ffffff;
     border: 1px solid transparent !important;
     border-radius: 50px;
@@ -1232,10 +1356,31 @@ top:50%; */
     padding: 100px 0;
     /* background: #f8f9fa; */
   }
-
+  .features-xpress{
+    padding: 20px 0;
+  }
+  .xpress-stats{
+    padding:10px;
+    background-color:#F8FAFD;
+    border-radius: 10px;
+  }
+  .xpress-stats-body{
+    margin: 5%;
+    /* font-weight:bolder */
+  }
+  .xpress-stats-head{
+    font-size: 150%;
+    margin-top:30px;
+    margin-bottom:30px;
+    font-weight:bolder
+  }
   .features-intro {
     margin-bottom: 50px;
   }
+  .trade-features-intro {
+    margin-bottom: 0px;
+  }
+
 
   .features-intro h2 {
     font-size: 28px;
@@ -1315,6 +1460,16 @@ top:50%; */
   .card-img img {
     vertical-align: middle;
   }
+
+  .card-img-left {
+    width: 100%;
+    border-bottom-left-radius: calc(.25rem - 1px);
+    /* border-top-right-radius: calc(.25rem - 1px); */
+    /* border-bottom-r-radius: calc(.25rem - 1px); */
+    border-top-left-radius: calc(.25rem - 1px);
+    height: 100%;
+  }
+
 
   .card-text {
     /* margin-top: 25px; */
@@ -1813,9 +1968,15 @@ top:50%; */
     background-position: center;
     background-size: cover;
   }
+  #alliance-mining-pools {
+    background-image: url("./images/alliance-block-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
   #nft-services {
-    background-image: url("./images/marketplace-background-new.png");
+    background-image: url("./images/marketplace-background-4.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -2124,7 +2285,8 @@ top:50%; */
 --------------------------------------------------------------*/
   .footer-sm {
     padding: 30px 0;
-    background: #285097;
+    /* background: #285097; */
+    background: #000;
     /* background: rgba(30, 166, 154, 0.1); */
     /* background: #f6f6fd;
 background: #555da8;
@@ -2218,7 +2380,7 @@ background: #303c42; */
     display: none;
     width: 45px;
     height: 45px;
-    background: #4285f4;
+    background: #00B7A1;
     color: #f2f2f0;
     border-radius: 50%;
     display: table;
@@ -2375,7 +2537,7 @@ background: #303c42; */
 
     .hero {
       /* padding: 125px 0 100px 0; */
-      padding: 164px 0 172px 0;
+      padding: 164px 0 0 0;
     }
 
     .orb-background-center {
@@ -2406,6 +2568,11 @@ background: #303c42; */
     .feature-content-box {
       padding: 70px;
     }
+    .feature-content-box-new {
+      padding: 10vw;
+    }.feature-content-box-new-container {
+      padding: 4vw;
+    }
 
     .oval-moon-background-bottom {
       background-image: url("/assets/images/Oval-moon.png") !important;
@@ -2418,9 +2585,10 @@ background: #303c42; */
       position: relative;
       /* width: 65%; */
       width: 45%;
-      height: 377px;
+      /* height: 377px; */
+      /* height:185px; */
       /* margin-left: 20%; */
-      margin-left: 40%;
+      margin-left: 27%;
     }
 
     .hero-h2-text {
@@ -2507,13 +2675,17 @@ background: #303c42; */
   }
 
   @media only screen and (min-width: 992px) {
+    .hero {
+      /* padding: 125px 0 100px 0; */
+      padding: 164px 0 172px 0;
+    }
     .hero .hero-image-right-div {
       position: relative;
       /* width: 249px; */
-      width: 65%;
+      width: 123%;
       /* height: 270px; */
-      height: 377px;
-      margin-left: 20%;
+      height: 376px;
+      margin-left: 0%;
     }
 
     .feature-list-home-left {
