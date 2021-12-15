@@ -153,16 +153,16 @@
                                 <div class="col-sm-6 vertical-center-align-outer">
                                     <div class="row vertical-center-align-inner">
                                         <div class="feature-content-box">
-                                            <div class="feature-tag">A world of potential</div>
-                                            <div class="feature-heading">$XPRESS</div>
-                                            <div class="feature-text">The XPRESS token is a utility token for the
+                                            <div class="feature-tag px-3 mt-4">A world of potential</div>
+                                            <div class="feature-heading px-2">$XPRESS</div>
+                                            <div class="feature-text px-3">The XPRESS token is a utility token for the
                                                 CryptoXpress platform which will be used to provide discounts, rewards,
                                                 and bonus functionality to investors. Transactions paid for using XPRESS
                                                 tokens will be significantly discounted with the token also being a
                                                 central component of the CryptoXpress retail partnership initiative
                                                 which will promote retail payments through XPRESS tokens in exchange for
                                                 various customer benefits.</div>
-                                            <a class="btn-action" href="http://eepurl.com/hrQXUb">Buy $XPRESS</a>
+                                            <a class="btn-action mx-3" href="http://eepurl.com/hrQXUb">Buy $XPRESS</a>
                                         </div>
                                     </div>
                                 </div>
@@ -189,7 +189,7 @@
 
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row mx-3">
                             $XPRESS is available on PancakeSwap and Gate.io. We are working on expanding our
                             partnerships to bring
                             you more exchanges to buy from.
@@ -236,22 +236,58 @@
                                             <ul>
                                                 <li class="xpress-stats-item">
                                                     <div class="row">
-                                                        <div class="col-sm-8 text-left roboto">CryptoXpress Price</div>
-                                                        <div class="col-sm-4 text-right roboto">$1</div>
+                                                        <div class="col-sm-6 text-left roboto">CryptoXpress Price</div>
+                                                        <div id='xpress-data-price' class="col-sm-6 roboto xpress-stats-value">...</div>
                                                 </li>
                                                 <li class="xpress-stats-item">
                                                     <div class="row">
-                                                        <div class="col-sm-8 text-left roboto">CryptoXpress Price</div>
-                                                        <div class="col-sm-4 text-right roboto">$1</div>
+                                                        <div class="col-sm-6 text-left roboto">Percent Change [24h]</div>
+                                                        <div id='xpress-data-percent-change' class="col-sm-6 xpress-stats-value roboto">...</div>
+                                                </li>
+                                               <!-- <li class="xpress-stats-item">
+                                                    <div class="row">
+                                                        <div class="col-sm-6 text-left roboto">24h Low / 24h High</div>
+                                                        <div id='xpress-data-high-low' class="col-sm-6 xpress-stats-value roboto">...</div>
+                                                </li> -->
+                                                <li class="xpress-stats-item">
+                                                    <div class="row">
+                                                        <div class="col-sm-6 text-left roboto">Trading Volume [24h]</div>
+                                                        <div id='xpress-data-volume' class="col-sm-6 xpress-stats-value roboto">...</div>
                                                 </li>
                                                 <li class="xpress-stats-item">
                                                     <div class="row">
-                                                        <div class="col-sm-8 text-left roboto">CryptoXpress Price</div>
-                                                        <div class="col-sm-4 text-right roboto">$1</div>
+                                                        <div class="col-sm-6 text-left roboto">Market Rank [CMC]</div>
+                                                        <div id='xpress-data-rank' class="col-sm-6 xpress-stats-value roboto">...</div>
                                                 </li>
-
+                                                <li class="xpress-stats-item">
+                                                    <div class="row">
+                                                        <div class="col-sm-6 text-left roboto">Fully Diluted Market Cap</div>
+                                                        <div id='xpress-data-diluted-marketcap' class="col-sm-6 xpress-stats-value roboto">...</div>
+                                                </li>
                                             </ul>
                                         </div>
+                                    </div>
+                                    <div class="xpress-stats-section-head roboto mt-4">
+                                        CryptoXpress Supply
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li class="xpress-stats-item">
+                                                <div class="row">
+                                                    <div class="col-sm-6 text-left roboto">Circulating Supply</div>
+                                                    <div id='xpress-data-circulating-supply' class="col-sm-6 roboto xpress-stats-value">No Data</div>
+                                            </li>
+                                            <li class="xpress-stats-item">
+                                                <div class="row">
+                                                    <div class="col-sm-6 text-left roboto">Total Supply</div>
+                                                    <div id='xpress-data-total-supply' class="col-sm-6 roboto xpress-stats-value">...</div>
+                                            </li>
+                                            <li class="xpress-stats-item">
+                                                <div class="row">
+                                                    <div class="col-sm-6 text-left roboto">Total Supply</div>
+                                                    <div id='xpress-data-max-supply' class="col-sm-6 roboto xpress-stats-value">...</div>
+                                            </li>
+                                        </ul>
                                     </div>
 
                                 </div>
@@ -398,6 +434,8 @@
     <script type="text/javascript" src="assets/custom.js"></script>
     <script type="text/javascript" src="assets/js/tv_chart.js"></script>
     <script type="text/javascript" src="assets/js/charting_lib.js"></script>
+    <script type="text/javascript" src="assets/js/xpressData.js"></script>
+</body>
 </body>
 
 </html>
