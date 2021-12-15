@@ -19,7 +19,15 @@ async function fetchXpressData() {
    if (data?.data?.[CMC_XPRESS_ID]) {
       xpressData = data.data[CMC_XPRESS_ID];
       updateXpressStatisticsTable();
+      updateTopBarXpressPrice();
    }
+}
+
+function updateTopBarXpressPrice() {
+   const usdQuotes = xpressData?.quote?.USD;
+   $('#top_bar_xpress_price').text(
+      `$${numberWithCommas(usdQuotes?.price?.toFixed(2))}`
+   );
 }
 
 function updateXpressStatisticsTable() {
