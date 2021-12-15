@@ -598,12 +598,25 @@ font-family: Knewave,sans-serif;
   font-weight: bolder;
   font-size: 14px;
 }
+.roboto{
+  font-family: Roboto,sans-serif;
+}
 .knewave-title{
   font-family: Knewave,sans-serif;
   font-size: 48px;
 color: #103C4A;
   }
-
+  .xpress-stats-section-head{
+    font-size: 18px;
+padding-bottom: 5px;
+font-weight: bold;
+border-bottom:#eee 1px solid;
+  }
+  .xpress-stats-item{
+    padding-top: 15px;
+    padding-bottom:15px;
+    border-bottom:#eee 1px solid;
+  }
 /*------ Navbar Styling ------*/
 
 .navbar {
