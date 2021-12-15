@@ -1346,6 +1346,32 @@ color:#fff;
     transition: 0.2s;
   }
 
+  .btn-action-new {
+    font-family: "Comfortaa";
+    display: inline-block;
+    /* height: 45px; */
+    padding: 0 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 2px;
+    /* margin: 20px 0; */
+    text-transform: uppercase;
+    text-decoration: none !important;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: #fff;
+    /* background: #00B7A1; */
+    color: #000;
+    border: 1px solid transparent !important;
+    border-radius: 50px;
+    box-sizing: border-box;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    transition: 0.2s;
+  }
+
   .btn-action:hover {
     color: #ffffff;
     box-shadow: 0 5px 25px 0 rgba(0, 0, 100, 0.2);
