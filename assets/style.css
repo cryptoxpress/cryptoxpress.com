@@ -873,17 +873,20 @@ body {
 .lp-features {
    background-image: url('./images/cryptoxpress-liquidity-pool-mining.png') !important;
    background-repeat: no-repeat;
+   background-color: #4f356e;
    /* padding: 350px 0px; */
-   height: 56vw;
-   background-size: 100%;
+   min-height: 50vw;
+   background-size: cover;
+   background-position: 15%;
    color: #ffffff;
 }
 .nft-features {
    background-image: url('./images/cx-nft-hero.png') !important;
    background-repeat: no-repeat;
    /* padding: 350px 0px; */
-   height: 56vw;
-   background-size: 100%;
+   min-height: 50vw;
+   background-size: cover;
+   background-position: 10%;
    color: #ffffff;
 }
 .appshowcase-background {
@@ -958,7 +961,11 @@ body {
    width: 100%;
    margin: 0 auto;
    text-align: center;
-   padding: 30%;
+   padding: 10%;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
    /* transform: translateY(-50%);
 position:absolute;
 top:50%; */
@@ -1056,7 +1063,7 @@ top:50%; */
 }
 
 .feature-text {
-   font-size: 14px;
+   font-size: 16px;
    line-height: 1.5;
 }
 .trade-features {
@@ -3050,11 +3057,12 @@ background: #303c42; */
       text-align: center;
       font-size: 12px;
       font-weight: 600;
-      line-height: 42px;
+      line-height: 45px;
       letter-spacing: 2px;
       margin: 20px 0;
       text-transform: uppercase;
       text-decoration: none !important;
+      vertical-align: middle;
       white-space: nowrap;
       cursor: pointer;
       background-color: #387ed1;
@@ -3111,9 +3119,6 @@ background: #303c42; */
    }
    .features-intro {
       margin-bottom: 50px;
-   }
-   .trade-features-intro {
-      margin-bottom: 0px;
    }
 
    .features-intro h2 {
