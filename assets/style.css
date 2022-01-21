@@ -733,6 +733,34 @@ body {
   margin-top:115px;
 }
 
+.card-img img {
+   vertical-align: middle;
+}
+
+.card-img-left {
+   width: 100%;
+   border-bottom-left-radius: calc(0.25rem - 1px);
+   /* border-top-right-radius: calc(.25rem - 1px); */
+   /* border-bottom-r-radius: calc(.25rem - 1px); */
+   border-top-left-radius: calc(0.25rem - 1px);
+   height: 100%;
+}
+
+.card-text h3 {
+   font-size: 24px;
+   font-weight: 600;
+   color: #222a41;
+   margin-bottom: 15px;
+}
+
+.card-text p {
+   font-size: 15px;
+   font-weight: 500;
+   color: rgb(129, 129, 152);
+   line-height: 1.6;
+   margin: 0 auto;
+}
+
 
  @media screen and (max-width: 768px) {
    .wrapper-push-down {
@@ -754,11 +782,16 @@ body {
     display:none !important;
   }
 }
+
 @media screen and (max-width: 576px) {
    .wrapper-push-down {
      margin-top:78px;
    }
+   .home-orb-background {
+      display: none;
+    }
   }
+
 @media screen and (max-width: 920px) {
   .cx-float-bar-right-block{
     text-align: right;
@@ -1132,15 +1165,6 @@ top:50%; */
         margin-top:35px !important;
     }
 
-  .home-orb-background {
-    position: absolute;
-    z-index: -1;
-    top: 126px;
-    left: -39px;
-    width: 100%;
-    display: none;
-  }
-
   .features-hero-moonboy-background {
     width: 100%;
     position: absolute;
@@ -1156,7 +1180,6 @@ top:50%; */
    flex-direction: column;
    justify-content: center;
    align-items: center;
-    margin: 30px 0px;
     padding: 0px 20px 20px 20px;
     border-radius: 18px;
     background: #ffffff;
@@ -1202,7 +1225,6 @@ top:50%; */
    flex-direction: column;
    justify-content: center;
    align-items: center;
-    margin: 30px 0px;
     padding: 0px 20px 20px 20px;
     border-radius: 18px;
     background: #ffffff;
@@ -2186,12 +2208,8 @@ top:50%; */
     background-position: center;
     background-size: cover;
   }
-
-  #ebanking {
-    background-image: url("./images/eBankingBG.png");
-    background-repeat: no-repeat;
-    background-position: 80%;
-    background-size: cover;
+  #buy-sell-info {
+     padding-bottom: 0px;
   }
 
   .services-section {
@@ -2633,15 +2651,6 @@ background: #303c42; */
         margin-top:42px !important;
     }
 
-   .home-orb-background {
-      position: absolute;
-      z-index: -1;
-      top: 126px;
-      left: -39px;
-      width: 100%;
-      display: none;
-   }
-
    .features-hero-moonboy-background {
       width: 100%;
       position: absolute;
@@ -2657,7 +2666,6 @@ background: #303c42; */
          flex-direction: column;
          justify-content: center;
          align-items: center;
-      margin: 30px 0px;
       padding: 0px 20px 20px 20px;
     border-radius: 18px;
     background: #ffffff;
@@ -2702,7 +2710,6 @@ background: #303c42; */
          flex-direction: column;
          justify-content: center;
          align-items: center;
-      margin: 30px 0px 0px 0px;
       padding: 0px 20px 20px 20px;
       border-radius: 18px;
       background: #ffffff;
@@ -2851,6 +2858,10 @@ background: #303c42; */
 
    .hero-img-box img {
       margin-top: 50px;
+   }
+
+   #buy-sell-info {
+      padding-bottom: 140px;
    }
 
    .form-note p {
@@ -3120,34 +3131,6 @@ background: #303c42; */
       background: #ffffff;
       box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
       overflow: hidden;
-   }
-
-   .card-img img {
-      vertical-align: middle;
-   }
-
-   .card-img-left {
-      width: 100%;
-      border-bottom-left-radius: calc(0.25rem - 1px);
-      /* border-top-right-radius: calc(.25rem - 1px); */
-      /* border-bottom-r-radius: calc(.25rem - 1px); */
-      border-top-left-radius: calc(0.25rem - 1px);
-      height: 100%;
-   }
-
-   .card-text h3 {
-      font-size: 24px;
-      font-weight: 600;
-      color: #222a41;
-      margin-bottom: 15px;
-   }
-
-   .card-text p {
-      font-size: 15px;
-      font-weight: 500;
-      color: rgb(129, 129, 152);
-      line-height: 1.6;
-      margin: 0 auto;
    }
 
    .flex-inner {
@@ -3793,16 +3776,6 @@ background: #303c42; */
          margin-top: 42px !important;
       }
 
-      .home-orb-background {
-         /* background-image:url('/assets/images/orb.png'); */
-         position: absolute;
-         z-index: -1;
-         top: 126px;
-         left: -39px;
-         width: 234%;
-         display: block;
-      }
-
       .features-hero-moonboy-background {
          width: 100%;
          position: absolute;
@@ -3818,7 +3791,6 @@ background: #303c42; */
          flex-direction: column;
          justify-content: center;
          align-items: center;
-         margin: 30px 0px;
          padding: 0px 20px 20px 20px;
          border-radius: 18px;
          background: #ffffff;
@@ -3831,7 +3803,6 @@ background: #303c42; */
          flex-direction: column;
          justify-content: center;
          align-items: center;
-         margin: 30px 0px 0px 0px;
          /* padding: 50px 30px; */
          padding: 0px 20px 20px 20px;
          border-radius: 18px;
@@ -3911,14 +3882,6 @@ background: #303c42; */
       .hero {
          /* padding: 125px 0 100px 0; */
          padding: 164px 0 0 0;
-      }
-
-      .orb-background-center {
-         background-image: url('/assets/images/orb.png') !important;
-         background-position: center !important;
-         background-repeat: no-repeat !important;
-         /* background-size: 800px !important; */
-         background-size: 50vw !important;
       }
 
       .oval-background-right-bottom {
@@ -4067,7 +4030,6 @@ background: #303c42; */
          flex-direction: column;
          justify-content: center;
          align-items: center;
-         margin: 30px 0px;
          padding: 0px 20px 20px 20px;
          border-radius: 18px;
          background: #ffffff;
@@ -4080,7 +4042,6 @@ background: #303c42; */
          flex-direction: column;
          justify-content: center;
          align-items: center;
-         margin: 30px 0px 0px 0px;
          padding: 0px 20px 20px 20px;
          /* padding:10px; */
          border-radius: 18px;

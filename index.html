@@ -336,12 +336,13 @@
                                  /></a>
                               </div>
                            </div>
-                           <!-- <a class="btn-action" href="whitepaper.pdf" style="background-color: #fff; color: #000">Get the
-                  Whitepaper</a> -->
                         </div>
                      </div>
                      <div class="col-md-12 col-lg-6 offset-lg-1">
-                        <div class="hero-image-right-div">
+                        <div
+                           class="hero-image-right-div"
+                           style="line-height: 0"
+                        >
                            <img
                               class="img-fluid"
                               alt="Hero"
@@ -353,26 +354,13 @@
                </div>
             </div>
 
-            <div id="seen-on" class="bg-white">
+            <div id="seen-on" style="background-color: #fff">
                <div
-                  class="
-                     container
-                     pt-4
-                     pb-3
-                     d-flex
-                     flex-column
-                     justify-content-center
-                     align-items-center
-                  "
+                  class="container pt-4 pb-3 d-flex flex-column justify-content-center align-items-center"
                >
                   <div>As Seen On</div>
                   <div
-                     class="
-                        d-flex
-                        flex-wrap
-                        justify-content-center
-                        align-items-center
-                     "
+                     class="d-flex flex-wrap justify-content-center align-items-center"
                   >
                      <img
                         class="img m-3"
@@ -414,7 +402,7 @@
                </div>
             </div>
 
-            <div class="intro">
+            <div class="intro" style="background-color: #f2f2f2">
                <div
                   class="container text-center pt-4 pb-3 cx-text"
                   style="min-height: 300px"
@@ -443,12 +431,7 @@
                      <div class="card mb-3">
                         <div class="row no-gutters">
                            <div
-                              class="
-                                 col-md-3
-                                 d-flex
-                                 justify-content-center
-                                 align-items-center
-                              "
+                              class="col-md-3 d-flex justify-content-center align-items-center"
                               style="background-color: #f2f2f2"
                            >
                               <img
@@ -458,12 +441,7 @@
                               />
                            </div>
                            <div
-                              class="
-                                 col-md-9
-                                 d-flex
-                                 justify-content-center
-                                 align-items-center
-                              "
+                              class="col-md-9 d-flex justify-content-center align-items-center"
                            >
                               <div class="card-body text-dark">
                                  <div class="card-text">
@@ -522,13 +500,14 @@
                <div class="container py-3">
                   <div class="row">
                      <div class="col-md-6">
-                        <div class="row text-center">
-                           <img
-                              src="assets/images/orb-new.png"
-                              class="home-orb-background"
-                              width="100%"
-                              alt="bg"
-                           />
+                        <img
+                           class="home-orb-background"
+                           src="assets/images/orb-new.png"
+                           width="100%"
+                           alt="bg"
+                           style="position: absolute; top: 25%"
+                        />
+                        <div class="row text-center mt-5">
                            <div class="col-sm-6 mb-4">
                               <div class="feature-list-home-left h-100">
                                  <div class="card-icon">
@@ -575,7 +554,7 @@
                            </div>
                         </div>
                         <div class="row text-center">
-                           <div class="col-sm-6">
+                           <div class="col-sm-6 mb-4">
                               <div class="feature-list-home-left h-100">
                                  <div class="card-icon">
                                     <div class="card-img">
@@ -596,7 +575,7 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="col-sm-6 mt-4">
+                           <div class="col-sm-6">
                               <div class="feature-list-home-right h-100">
                                  <div class="card-icon">
                                     <div class="card-img">
@@ -647,12 +626,7 @@
             <div id="global-reach" class="bg-white">
                <div class="container pb-4" style="padding-top: 90px">
                   <div
-                     class="
-                        row
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                     "
+                     class="row d-flex justify-content-center align-items-center"
                   >
                      <div class="col-md-6">
                         <img
@@ -661,7 +635,7 @@
                            alt="Global Reach"
                         />
                      </div>
-                     <div class="col-md-6">
+                     <div class="col-md-6 pt-3">
                         <p class="mb-2">
                            <strong>Operating Markets</strong>
                         </p>
@@ -715,16 +689,15 @@
                </div>
             </div>
 
-            <div class="row text-light" style="background-color: #285097">
+            <div
+               id="buy-sell"
+               class="row text-light"
+               style="background-color: #285097"
+            >
                <div
-                  class="
-                     col-md-6
-                     d-flex
-                     align-items-center
-                     justify-content-center
-                  "
+                  class="col-md-6 d-flex align-items-center justify-content-center"
                >
-                  <div class="container pt-5 px-5">
+                  <div id="buy-sell-info" class="container pt-5 px-5">
                      <p class="mb-2">
                         <strong>More Trades</strong>
                      </p>
@@ -741,13 +714,7 @@
                   </div>
                </div>
                <div
-                  class="
-                     container
-                     col-md-6
-                     d-flex
-                     align-items-end
-                     justify-content-center
-                  "
+                  class="container col-md-6 d-flex align-items-end justify-content-center"
                >
                   <img
                      src="assets/images/CX-02-iPhone-12-Front-Mockup.png"
@@ -757,35 +724,104 @@
                </div>
             </div>
 
+            <div id="liquidity-pool" style="background-color: #f2f2f2">
+               <div class="container">
+                  <div class="row">
+                     <div
+                        class="container col-md-6 d-flex align-items-end justify-content-center"
+                        style="position: relative; top: -150px"
+                     >
+                        <img
+                           src="assets/images/BusinessmanEarn.png"
+                           width="100%"
+                           alt="Liquidity Pool Earn"
+                        />
+                     </div>
+                     <div
+                        class="col-md-6 d-flex align-items-center justify-content-center"
+                     >
+                        <div class="px-5 pb-5">
+                           <p class="mb-2">
+                              <strong>Earn</strong>
+                           </p>
+                           <h2 class="h2 mb-4">Liquidity Pool</h2>
+                           <div class="cx-text">
+                              <p>
+                                 CryptoXpress now offers $XPRESS Token liquidity
+                                 mining pools with an initial APY up to 2000%,
+                                 powered by AllianceBlock's liquidity mining
+                                 solution, LMaaS.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div
+               id="transfers"
+               class="text-light py-5"
+               style="background-color: #2f2f2f"
+            >
+               <div class="container">
+                  <div class="row">
+                     <div
+                        class="col-md-6 d-flex align-items-center justify-content-center"
+                     >
+                        <div class="px-5 pb-3">
+                           <p class="mb-2">
+                              <strong>Fast Transfers</strong>
+                           </p>
+                           <h2 class="h2 mb-4">
+                              Transfers to Family & Friends
+                           </h2>
+                           <div class="cx-text">
+                              <p>
+                                 Using just a mobile number, transfer fiat funds
+                                 or cryptocurrencies to friends and family
+                                 members globally, with just a few clicks.
+                                 Forego the high fees and long transfer times of
+                                 traditional banking remittance products, and in
+                                 a beginner-friendly manner.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div
+                        class="container col-md-6 d-flex align-items-end justify-content-center"
+                     >
+                        <img
+                           src="assets/images/CX-Transfer-Isomatric-iPhone12-Mockup.png"
+                           width="100%"
+                           alt="Transfers iPhone"
+                        />
+                     </div>
+                  </div>
+               </div>
+            </div>
+
             <div
                id="services"
                class="ar-ft-single"
                style="background-color: #fff"
             >
-               <div class="container-m">
-                  <div class="row"></div>
-                  <div class="row">
-                     <div class="features-intro" style="margin: 0 auto">
-                        <img
-                           src="assets/images/polygonxcx.png"
-                           style="width: 50%; display: block; margin: 25px auto"
-                           alt="Polygon X CryptoXpress"
-                        />
-                        <p style="max-width: 100%; text-align: center">
-                           CryptoXpress will be offering cross-chain NFTs
-                           through its partnership with Polygon and will be
-                           compatible with ERC20/BSC/Matic blockchains
-                        </p>
-                     </div>
+               <div class="container">
+                  <div class="features-intro" style="margin: 0 auto">
+                     <img
+                        src="assets/images/polygonxcx.png"
+                        style="width: 60%; display: block; margin: 25px auto"
+                        alt="Polygon X CryptoXpress"
+                     />
+                     <p style="text-align: center">
+                        CryptoXpress will be offering cross-chain NFTs through
+                        its partnership with Polygon and will be compatible with
+                        ERC20/BSC/Matic blockchains
+                     </p>
                   </div>
                   <div class="row">
                      <div
-                        class="
-                           col-md-6
-                           d-flex
-                           justify-content-center
-                           align-items-center
-                        "
+                        class="col-md-6 d-flex justify-content-center align-items-center"
                      >
                         <img
                            src="assets/images/CX-Marketplace-Feature-iPhone-12-Mockup.png"
@@ -795,7 +831,7 @@
                      </div>
                      <div class="col-md-6">
                         <div class="card-text" style="padding: 11%">
-                           <p><b>Exclusive Buys</b></p>
+                           <p><strong>Exclusive Buys</strong></p>
                            <h3>Art & Media NTF Marketplace</h3>
                            <p>
                               List digital art and media for auction on the
@@ -811,12 +847,23 @@
                </div>
             </div>
 
-            <div id="ebanking">
+            <div id="ebanking" style="position: relative">
+               <img
+                  class="img-fluid"
+                  src="assets/images/eBankingBG.png"
+                  alt=""
+                  width="100%"
+                  style="
+                     min-height: 769px;
+                     object-fit: cover;
+                     object-position: 80% 100%;
+                  "
+               />
                <div
-                  class="container pt-2 d-flex align-items-end"
-                  style="min-height: 769px"
+                  class="container"
+                  style="position: absolute; bottom: 100px; left: 0px"
                >
-                  <div class="col-md-6 h-100" style="margin-bottom: 100px">
+                  <div class="col-md-6">
                      <div class="feature-list">
                         <div class="card-text">
                            <p>We ❤️ this feature</p>
@@ -835,7 +882,74 @@
                </div>
             </div>
 
-            <div id="buy" class="cta-sm">
+            <div id="payments" class="row py-5" style="background-color: #fff">
+               <div
+                  class="container col-md-4 d-flex align-items-end justify-content-center"
+               >
+                  <img
+                     src="assets/images/CX-Payments-Feature-iPhone-12-Mockup.png"
+                     width="100%"
+                     alt="Payments iPhone"
+                  />
+               </div>
+               <div
+                  class="col-md-8 d-flex align-items-center justify-content-center"
+               >
+                  <div class="container pt-5 px-5">
+                     <p class="mb-2">
+                        <strong>Easy Payments</strong>
+                     </p>
+                     <h2 class="h2 mb-4">Direct Debit & Payments</h2>
+                     <div class="cx-text">
+                        <p>
+                           Pay for bills like, electricity, gas, water, mobile
+                           top ups, broadband, loan instalments, insurance
+                           premiums etc, directly through CryptoXpress from
+                           cryptocurrency holdings. Set up direct-debit payments
+                           and easily maintain savings in cryptocurrency.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div
+               id="travel-retail"
+               class="row text-light"
+               style="background-color: #285097"
+            >
+               <div
+                  class="col-md-8 d-flex align-items-center justify-content-center"
+               >
+                  <div class="container py-5 px-5">
+                     <p class="mb-2">
+                        <strong>Exclusive Buys</strong>
+                     </p>
+                     <h2 class="h2 mb-4">Travel Packages & Retail</h2>
+                     <div class="cx-text">
+                        <p>
+                           Book flights, accommodation, tours, rental cars and
+                           much more directly from CryptoXpress. We connect you
+                           with most trusted booking partners for best in class
+                           experience. Also take advantage of bespoke packages
+                           and products offered exclusively to CryptoXpress
+                           platform members.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div
+                  class="container col-md-4 d-flex align-items-end justify-content-center"
+               >
+                  <img
+                     src="assets/images/CX Booking iPhone 12 Mockup.png"
+                     width="100%"
+                     alt="Booking iPhone"
+                  />
+               </div>
+            </div>
+
+            <div id="partners" class="cta-sm" style="background-color: #fff">
                <div class="container-m text-center">
                   <div class="cta-content">
                      <h1 style="font-weight: lighter" class="mb-4">
@@ -849,6 +963,284 @@
                </div>
             </div>
 
+            <div
+               id="advisors"
+               class="team-container"
+               style="background: #f2f2f2"
+            >
+               <h3 class="h3 text-center">Advisors</h3>
+               <div class="row text-center">
+                  <!-- Team member card -->
+                  <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                     <div class="team-member-card">
+                        <div class="card-icon">
+                           <div class="card-img">
+                              <img
+                                 src="assets/images/team/cryptoxpress-team-min.png"
+                                 alt="Feature"
+                                 height="120px"
+                              />
+                           </div>
+                        </div>
+                        <div class="card-text">
+                           <h3>Min</h3>
+                           <div class="team-member-position">
+                              Venture Capital Advisor
+                           </div>
+                           <div class="team-member-social-link">
+                              <a href="https://www.linkedin.com/in/minkimd14/"
+                                 ><img
+                                    src="assets/images/linkedin-icon.png"
+                                    width="30px"
+                                    alt="LinkedIn Min"
+                              /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Team member card end -->
+
+                  <!-- Team member card -->
+                  <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                     <div class="team-member-card">
+                        <div class="card-icon">
+                           <div class="card-img">
+                              <img
+                                 src="assets/images/team/cryptoxpress-team-mardo.png"
+                                 alt="Feature"
+                                 height="120px"
+                              />
+                           </div>
+                        </div>
+                        <div class="card-text">
+                           <h3>Mardo</h3>
+                           <div class="team-member-position">
+                              Industry Advisor
+                           </div>
+                           <div class="team-member-social-link">
+                              <a
+                                 href="https://ee.linkedin.com/in/mardo-soo-00a05ab0"
+                                 ><img
+                                    src="assets/images/linkedin-icon.png"
+                                    width="30px"
+                                    alt="LinkedIn Mardo"
+                              /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Team member card end -->
+
+                  <!-- Team member card -->
+                  <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                     <div class="team-member-card">
+                        <div class="card-icon">
+                           <div class="card-img">
+                              <img
+                                 src="assets/images/team/cryptoxpress-team-randal.png"
+                                 alt="Feature"
+                                 height="120px"
+                              />
+                           </div>
+                        </div>
+                        <div class="card-text">
+                           <h3>Randall</h3>
+                           <div class="team-member-position">Legal Advisor</div>
+                           <div class="team-member-social-link">
+                              <a
+                                 href="https://www.linkedin.com/in/randallwjohnsonus"
+                                 ><img
+                                    src="assets/images/linkedin-icon.png"
+                                    width="30px"
+                                    alt="LinkedIn Randall"
+                              /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Team member card end -->
+
+                  <!-- Team member card -->
+                  <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                     <div class="team-member-card">
+                        <div class="card-icon">
+                           <div class="card-img">
+                              <img
+                                 src="assets/images/team/cryptoxpress-team-eric.png"
+                                 alt="Feature"
+                                 height="120px"
+                              />
+                           </div>
+                        </div>
+                        <div class="card-text">
+                           <h3>Eric</h3>
+                           <div class="team-member-position">
+                              Security Advisor
+                           </div>
+                           <div class="team-member-social-link">
+                              <a
+                                 href="https://www.linkedin.com/in/eric-anderson-b407387"
+                                 ><img
+                                    src="assets/images/linkedin-icon.png"
+                                    width="30px"
+                                    alt="LinkedIn Eric"
+                              /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Team member card end -->
+
+                  <!-- Team member card -->
+                  <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                     <div class="team-member-card">
+                        <div class="card-icon">
+                           <div class="card-img">
+                              <img
+                                 src="assets/images/team/cryptoxpress-team-will.png"
+                                 alt="Feature"
+                                 height="120px"
+                              />
+                           </div>
+                        </div>
+                        <div class="card-text">
+                           <h3>Will</h3>
+                           <div class="team-member-position">IDO Advisor</div>
+                           <div class="team-member-social-link">
+                              <a href="https://tokenova.io/"
+                                 ><img
+                                    src="assets/images/cx-tokenova-icon.jpg"
+                                    width="30px"
+                                    alt="Tokenova Will"
+                              /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Team member card end -->
+
+                  <!-- Team member card -->
+                  <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                     <div class="team-member-card">
+                        <div class="card-icon">
+                           <div class="card-img">
+                              <img
+                                 src="assets/images/team/cryptoxpress-team-nathan.png"
+                                 alt="Feature"
+                                 height="120px"
+                              />
+                           </div>
+                        </div>
+                        <div class="card-text">
+                           <h3>Nathan</h3>
+                           <div class="team-member-position">
+                              Blockchain Advisor
+                           </div>
+                           <div class="team-member-social-link">
+                              <a href="https://www.linkedin.com/in/nathan-kkk"
+                                 ><img
+                                    src="assets/images/linkedin-icon.png"
+                                    width="30px"
+                                    alt="LinkedIn Nathan"
+                              /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Team member card end -->
+
+                  <!-- Team member card -->
+                  <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                     <div class="team-member-card">
+                        <div class="card-icon">
+                           <div class="card-img">
+                              <img
+                                 src="assets/images/team/cryptoxpress-team-mark.png"
+                                 alt="Feature"
+                                 height="120px"
+                              />
+                           </div>
+                        </div>
+                        <div class="card-text">
+                           <h3>Mark</h3>
+                           <div class="team-member-position">
+                              Business Advisor
+                           </div>
+                           <div class="team-member-social-link">
+                              <a href="https://www.linkedin.com/in/"
+                                 ><img
+                                    src="assets/images/linkedin-icon.png"
+                                    width="30px"
+                                    alt="LinkedIn Mark"
+                              /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Team member card end -->
+
+                  <!-- Team member card -->
+                  <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                     <div class="team-member-card">
+                        <div class="card-icon">
+                           <div class="card-img">
+                              <img
+                                 src="assets/images/team/cryptoxpress-team-ross.png"
+                                 alt="Feature"
+                                 height="120px"
+                              />
+                           </div>
+                        </div>
+                        <div class="card-text">
+                           <h3>Ross</h3>
+                           <div class="team-member-position">
+                              Tokenomics Advisor
+                           </div>
+                           <div class="team-member-social-link">
+                              <a href="https://www.linkedin.com/in/"
+                                 ><img
+                                    src="assets/images/linkedin-icon.png"
+                                    width="30px"
+                                    alt="LinkedIn Ross"
+                              /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Team member card end -->
+
+                  <!-- Team member card -->
+                  <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                     <div class="team-member-card">
+                        <div class="card-icon">
+                           <div class="card-img">
+                              <img
+                                 src="assets/images/team/cryptoxpress-team-chris.png"
+                                 alt="Feature"
+                                 height="120px"
+                              />
+                           </div>
+                        </div>
+                        <div class="card-text">
+                           <h3>Chris</h3>
+                           <div class="team-member-position">
+                              Community Growth Advisor
+                           </div>
+                           <div class="team-member-social-link">
+                              <a href="https://www.linkedin.com/in/"
+                                 ><img
+                                    src="assets/images/linkedin-icon.png"
+                                    width="30px"
+                                    alt="LinkedIn Chris"
+                              /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Team member card end -->
+               </div>
+            </div>
+
             <div class="container-fluid">
                <div class="row">
                   <div class="col-md-8 appshowcase-background"></div>
@@ -859,6 +1251,7 @@
                               class="image-width-100-cent"
                               src="./assets/images/CX-Mascot-Helment.png"
                               style="width: 40%"
+                              alt="mascot"
                            />
                         </div>
                         <h2>
