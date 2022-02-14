@@ -904,7 +904,7 @@ body {
    color: #ffffff;
 }
 .lp-features {
-   background-image: url('./images/cryptoxpress-liquidity-pool-mining.png') !important;
+   background-image: url('./images/cryptoxpress-staking.png') !important;
    background-repeat: no-repeat;
    background-color: #4f356e;
    /* padding: 350px 0px; */
@@ -2202,7 +2202,7 @@ top:50%; */
     background-position: center;
     background-size: cover;
   }
-  #alliance-mining-pools {
+  #alliance-staking-pools {
     background-image: url("./images/alliance-block-bg.png");
     background-repeat: no-repeat;
     background-position: center;
