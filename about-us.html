@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>CryptoXpress - Cryptocurrency Made Easy</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description"
+        content="CryptoXpress helps simpify crypto and provides you the best tools to tackle the cryptocurrency ecosystem" />
+    <meta name="keywords" content="Bitcoin, ethereum, dogecoin, crypto exchange" />
+
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@100,200,300,400,500,600,700,800&display=swap" rel="stylesheet">  -->
+    <link href="assets/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+    <!-- <link href="assets" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="assets/animate.css" />
+    <!-- Resource style -->
+    <link rel="stylesheet" href="assets/owl.css" />
+    <link rel="stylesheet" href="assets/owl_002.css" />
+    <link rel="stylesheet" href="assets/ionicons.css" />
+    <!-- Resource style -->
+    <meta property="og:title" content="CryptoXpress - Making Crypto Easy" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="CryptoXpress helps simpify crypto and provides you the best tools to tackle the cryptocurrency ecosystem" />
+    <meta property="og:url" content="https://CryptoXpress.com" />
+    <meta property="og:image" content="https://cryptoxpress.com/assets/images/logo-social-share.png" />
+    <meta property="og:image:type" content="image/png" />
+
+    <link href="assets/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        #mc_embed_signup {
+            background: #fff;
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
+        }
+
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js',
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NL3TVLP');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body onload="populate()">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NL3TVLP" height="0" width="0"
+            style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper">
+        <!-- Navbar Section -->
+        <nav style="flex-flow: column !important; padding: 0px !important"
+            class="navbar fixed-top navbar-expand-md effect-main">
+            <div style="
+                  background: #2d2f32;
+                  display: flex;
+                  justify-content: space-between;
+               " class="d-none d-sm-block w-100">
+                <div class="container-m">
+                    <div class="row" style="color: #fff; margin-bottom: 8px; margin-top: 8px">
+                        <div class="col-sm-0 col-md-3 cx-float-bar-left-block">
+                            <img src="assets/images/right-element.png" style="width: 24px" />
+                            <a style="font-weight: lighter; margin-left: 12px">Xpress:
+                            </a>
+                            <a id="top_bar_xpress_price" style="margin-left: 4px; font-weight: bold">...</a>
+                        </div>
+                        <div class="col-sm-12 col-md-9 cx-float-bar-right-block">
+                            <a style="
+                              font-weight: lighter;
+                              margin-left: 12px;
+                              color: #fff;
+                              font-size: 12px;
+                           ">Buy Xpress:
+                            </a>
+                            <img src="assets/images/cake-token-1.png" style="width: 24px; margin-left: 16px" /><a
+                                href="https://pancakeswap.finance/swap?outputCurrency=0xaa9826732f3a4973ff8b384b3f4e3c70c2984651"
+                                target="_blank" style="
+                              margin-left: 4px;
+                              font-weight: bold;
+                              color: #fff;
+                              font-size: 12px;
+                           ">PancakeSwap</a>
+                            <img src="assets/images/frame-446.png" style="width: 24px; margin-left: 12px" /><a
+                                href=" https://www.gate.io/trade/XPRESS_USDT" target="_blank" style="
+                              margin-left: 4px;
+                              font-weight: bold;
+                              color: #fff;
+                              font-size: 12px;
+                           ">Gate.io</a>
+                            <a style="
+                              margin-left: 24px;
+                              font-weight: bold;
+                              color: #fff;
+                              font-size: 12px;
+                           ">Staking:
+                            </a>
+                            <a class="btn-action-new" href="https://xpress.cryptoxpress.com/staking/active/"
+                                style="margin-left: 8px">Stake
+                                Xpress</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-m container" style="padding: 20px 0px">
+                <a class="navbar-brand" href="/"><img src="assets/images/CX-Logo.png" style="width: 50px"
+                        class="ml-3" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-right">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="/trade.html">Trade</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="/staking.html">Earn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="https://nft.cryptoxpress.com">NFT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" style="display: flex; justify-content: center"
+                                href="#">Payments
+                                <img style="width: 65px; margin-left: 5px" src="./assets/images/coming-soon.png" /></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="/all-new-xpress.html">Xpress Token</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="/contact-cryptoxpress-team.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="/about-us.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <div id="main" class="main">
+            <div class="hero" style="padding-bottom: 120px;">
+                <div class="container-m">
+                    <div class="innerCont">
+                        <div>
+                            <img src="assets/images/CX-Logo-New.png" style="width: 180px; margin-bottom: 10px" />
+                        </div>
+                        <ul class="hero-arrows">
+                            <li>
+                                <div class="nav-item">
+                                    <h2 class="hero-h2-text">
+                                        Founders
+                                    </h2>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="arrows">
+                                    <div class="left-scroll-founders">
+                                        <img style="margin-top: -25px;" class="left-ar" onclick="prev()" src="assets/images/left-chevron.png" />
+                                    </div>
+                                    <div class="left-scroll-founders">
+                                        <img style="margin-top: -25px;" class="right-ar" onclick="next()" src="assets/images/right-chevron.png" />
+                                    </div>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="list">
+                        <div id="slider" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <ol id="founder-indicator" class="carousel-indicators">
+                            </ol>
+                            <div id="founder-population-point" class="carousel-inner">
+                            </div>
+                            <a class="carousel-control-prev" style="width: 0px;height:0px" id="left" href="#slider"
+                                role="button" data-slide="prev">
+                            </a>
+                            <a class="carousel-control-next" style="width: 0px;height:0px" href="#slider" role="button"
+                                id="right" data-slide="next">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="roadmap">
+            <div class="container-m">
+                <div class="innerCont">
+                    <ul class="hero-arrows">
+                        <li>
+                            <div class="nav-item">
+                                <h2 class="hero-h2-text">
+                                    Roadmap
+                                </h2>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="arrows">
+                                <div class="left-scroll-founders">
+                                    <img class="left-ar" onclick="prevRoadmap()" src="assets/images/left-chevron.png" />
+                                </div>
+                                <div class="left-scroll-founders">
+                                    <img class="right-ar" onclick="nextRoadmap()"
+                                        src="assets/images/right-chevron.png" />
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="list">
+                    <div id="sliderRoadmap" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <ol id="roadmap-indicator" class="carousel-indicators">
+                        </ol>
+                        <div id="roadmap-population-point" class="carousel-inner">
+                        </div>
+                        <a class="carousel-control-prev" id="leftRoadmap" href="#sliderRoadmap" role="button"
+                            style="width: 0px;height:0px" data-slide="prev">
+                        </a>
+                        <a class="carousel-control-next" href="#sliderRoadmap" role="button" id="nextRoadmap"
+                            style="width: 0px;height:0px" data-slide="next">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advisory">
+            <div class="container-m">
+                <div class="innerCont">
+                    <ul class="hero-arrows">
+                        <li>
+                            <div class="nav-item">
+                                <h2 class="hero-h2-text">
+                                    Advisors
+                                </h2>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="arrows">
+                                <div class="left-scroll-founders">
+                                    <img class="left-ar" onclick="prevAdvisory()"
+                                        src="assets/images/left-chevron.png" />
+                                </div>
+                                <div class="left-scroll-founders">
+                                    <img class="right-ar" onclick="nextAdvisory()"
+                                        src="assets/images/right-chevron.png" />
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="list">
+                    <div id="sliderAdvisory" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <ol id="advisory-indicator" class="carousel-indicators">
+                        </ol>
+                        <div id="advisory-population-point" class="carousel-inner">
+
+                        </div>
+                        <a class="carousel-control-prev" id="leftAdvisory" href="#sliderAdvisory" role="button"
+                            style="width: 0px;height:0px" data-slide="prev">
+                        </a>
+                        <a class="carousel-control-next" href="#sliderAdvisory" role="button" id="nextAdvisory"
+                            style="width: 0px;height:0px" data-slide="next">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="partners" class="cta-sm" style="background-color: #fff">
+            <div class="container-m text-center">
+                <div class="cta-content">
+                    <h1 style="font-weight: lighter" class="mb-4">
+                        Our Strategic Partners
+                    </h1>
+                    <img src="assets/images/CX-strategic-partners.png" width="100%" />
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 appshowcase-background"></div>
+                <div class="col-md-4 background-alien-blue">
+                    <div class="rocket-science h-100">
+                        <div>
+                            <img class="image-width-100-cent" src="./assets/images/CX-Mascot-Helment.png"
+                                style="width: 40%" alt="mascot" />
+                        </div>
+                        <h2>
+                            Join our mail newsletter to get notified about
+                            updates.<br />It's not rocket science
+                        </h2>
+                        <a class="btn-action" href="http://eepurl.com/hrQXUb">Subscribe to updates</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid py-4" style="background-color: #2c2d32">
+            <div class="container row align-items-center pt-2">
+                <div class="col-md-4">
+                    <img class="image-width-100-cent" src="./assets/images/CX-Logo-New.png" style="width: 80%" />
+                </div>
+                <div class="col-md-8">
+                    <a href="https://apps.apple.com/us/app/cryptoxpress/id1591792414" target="_blank">
+                        <img src="./assets/images/appstore-download.png" style="max-height: 50px; margin-right: 8px"
+                            class="my-3" />
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.cryptoxpressmobile" target="_blank">
+                        <img src="./assets/images/googlestore.png" style="max-height: 50px" class="my-3" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pelican Footer Section -->
+        <div class="footer-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h6>© CryptoXpress 2022 Rights Reserved<br />Seebi 1-1508
+                            Harju Maakond, Tallinn
+                            11316, Estonia</h6>
+                    </div>
+                    <div class="col-md-8">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/iamCryptoXpress/" target="_blank">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/crypto_xpress?lang=en" target="_blank">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/crypto.xpress?r=nametag" target="_blank">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="https://t.me/cryptoxpress_chat" target="_blank">Telegram</a>
+                            </li>
+                            <li>
+                                <a href="https://medium.com/@crypto_xpress" target="_blank">News</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll To Top -->
+        <div id="back-top" class="bk-top" style="display: none">
+            <div class="bk-top-txt">
+                <a class="back-to-top js-scroll-trigger" href="#main">Up</a>
+            </div>
+        </div>
+        <!-- Scroll To Top Ends-->
+    </div>
+    <!-- Main -->
+    </div>
+    <!-- Wrapper -->
+
+    <!-- Jquery and Js Plugins -->
+    <script type="text/javascript" src="assets/jquery-2.js"></script>
+    <script type="text/javascript" src="assets/popper.js"></script>
+    <script type="text/javascript" src="assets/bootstrap.js"></script>
+    <script type="module" src="assets/bootstrap.js"></script>
+    <!-- Remember to include jQuery :) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script type="text/javascript" src="assets/plugins.js"></script>
+    <script type="text/javascript" src="assets/custom.js"></script>
+    <script type="text/javascript" src="assets/js/xpressData.js"></script>
+    <script type="text/javascript" src="assets/js/ui_functions.js"></script>
+    <!-- <script type="text/javascript" src="assets/livereload.js"></script> -->
+</body>
+
+</html>

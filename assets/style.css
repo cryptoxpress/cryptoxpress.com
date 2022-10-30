@@ -1257,6 +1257,232 @@ top:50%; */
       font-size: 40px;
    }
 
+   .hero-content-about {
+      width: 100%;
+   }
+
+   .hero-arrows li {
+      display: inline-flex;
+      height: 50px;
+   }
+
+   .member {
+      margin-left: 10px;
+      display: table;
+      width: 230px;
+      height: 400px;
+      table-layout: fixed;
+      background-color: white;
+      border-radius: 20px;
+   }
+
+   .advisory-slide {
+      display: flex;
+   }
+
+   .memberRole {
+      font-size: 15px;
+      margin-top: 10px;
+   }
+
+   .memberName {
+      text-align: center;
+      display: table-row;
+   }
+
+   .member-img {
+      display: table-row;
+      height: 140px;
+      width: 130px;
+      display: block;
+      margin: auto;
+      margin-top: 50px;
+      margin-bottom: 25px;
+   }
+
+   .member-img-large {
+      display: table-row;
+      height: 160px;
+      width: 160px;
+      display: block;
+      margin: auto;
+      margin-top: 50px;
+      margin-bottom: 5px;
+   }
+
+   .linkedinLogo {
+      display: table-row;
+      width: 30px;
+      height: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 35px;
+      margin-bottom: 45px;
+   }
+
+   .list{
+      overflow:unset;
+   }
+
+   .advisory {
+      padding-bottom: 100px;
+      background-color: #E0E0E0;
+      padding-top: 50px;
+      overflow: hidden;
+   }
+
+   .arrows {
+      display: inline-flex;
+   }
+
+   .left-scroll-founders {
+      text-align: center;
+      width: 100%;
+      margin-top: -25px;
+      display: block;
+      margin: auto;
+   }
+
+   .left-ar {
+      margin-top: -25px;
+      border-radius: 3px;
+      min-width: 30px;
+      min-height: 30px;
+      background-color: #00B7A1;
+      margin-right: 10px;
+   }
+
+   .founder {
+      padding: 15px;
+      padding-bottom: 30px;
+      padding-top: 50px;
+      height: 100%;
+      min-height: 304px;
+      background-color: #0056B0;
+      margin-left: 10px;
+      padding-left: 20px;
+      width: 230px;
+      min-width: 230px;
+      background-image: url("./images/founder-bg.png");
+      border-radius: 20px;
+   }
+
+   .founder-pillar{
+      text-align: center;
+      color: white;
+      font-size: 15px;
+      margin-bottom: 20px;
+   }
+
+   .founder-part {
+      position: relative;
+      top: 20%;
+   }
+
+   .founder-name {
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-top: 50px;
+      font-size: 24px;
+   }
+
+   .founders-slide {
+      display: flex;
+      width: 100%;
+   }
+
+   .roadmap-slide {
+      display: flex;
+      width: 100%;
+   }
+
+   .designation {
+      color: white;
+      text-align: center;
+      font-size: 15px;
+      margin-bottom: 10px;
+   }
+
+   .founder-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+      width: 100px;
+      height: 100px;
+   }
+
+
+   .innerCont {
+      margin-bottom: 30px;
+      overflow: hidden;
+   }
+
+   .roadmap {
+      margin-top: 50px;
+      margin-bottom: 120px;
+   }
+
+   .milestones {
+      padding: 10px;
+      padding-top: 30px;
+      width: 230px;
+      height: 310px;
+      display: table;
+      table-layout: fixed;
+      background-color: #0A306A;
+      border-radius: 20px;
+      margin-left: 10px;
+      border-color: white;
+   }
+
+   .roadmap-text {
+      display: table-row;
+      font-size: 14px;
+      color: white;
+      text-align: center;
+      line-height: 150%;
+   }
+
+   .roadmap-foot {
+      display: table-row;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+   }
+
+   .carousel-indicators li {
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      background-color: #8D918D;
+   }
+
+   .carousel-indicators {
+      bottom: -50px;
+   }
+
+   .carousel-indicators .active {
+      width: 50px;
+      height: 12px;
+      border-radius: 20px;
+      background-color: #1967B8;
+   }
+
+   .right-ar {
+      border-radius: 3px;
+      background-color: #00B7A1;
+      margin-top: -25px;
+      min-width: 30px;
+      min-height: 30px;
+   }
+
+   .hero-arrows li:last-child {
+      float: right;
+   }
+
    .hero .hero-image-right-div {
       position: relative;
       /* width: 249px; */
@@ -1644,6 +1870,10 @@ top:50%; */
       /* max-height: 350px; */
       height: 350px;
       /* max-width: 230px; */
+   }
+
+   .member-name{
+      font-size: 24px;
    }
 
    .team-member-card {
@@ -2554,6 +2784,21 @@ background: #303c42; */
       background: #00B7A1;
       color: #f2f2f0;
       border-radius: 50%;
+      display: table;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   }
+
+   .bk-top-bar {
+      position: fixed;
+      bottom: 60px;
+      right: 30px;
+      z-index: 90;
+      display: none;
+      width: 130px;
+      height: 30px;
+      border-radius: 20px;
+      background: #00B7A1;
+      color: #f2f2f0;
       display: table;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
    }
