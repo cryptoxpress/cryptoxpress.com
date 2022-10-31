@@ -61,6 +61,11 @@ const RoadmapData = [
         header: 'E-BANKING SERVICES (EU)',
         body: "Launch of CryptoXpress E-banking services, offering e-banking solutions such as customer fiat IBAN accounts and cryptocurrency debit cards.",
         footer: 'H2 2023'
+    },
+    {
+        header: 'Gaming NFTs',
+        body: "Launch of CryptoXpress Gaming NFT marketplace, offering tradeable in-game items for AAA Windows games via NFTs.",
+        footer: 'H2 2023'
     }
 ];
 const AdvisoryData = [
