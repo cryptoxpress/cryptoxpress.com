@@ -1311,7 +1311,7 @@ top:50%; */
    }
 
    .linkedinLogo {
-      display: table-row;
+      display: block;
       text-align: center;
       width: 30px;
       height: 30px;
