@@ -3,31 +3,37 @@ const foundersData = [
         img: "cryptoxpress-team-yogesh.png",
         name: "Yogesh",
         designation: "Founder",
-        pillar: 'Vision'
+        pillar: 'Vision',
+        url: 'https://www.linkedin.com/in/yogesh-panjabi'
     },
     {
         img: "cryptoxpress-team-adarsh.png",
         name: "Adarsh",
         designation: "Founder",
-        pillar: 'Operations'
+        pillar: 'Operations',
+        url: 'http://linkedin.com/in/adarsh-singh-a12a3612a'
     },
     {
         img: "cryptoxpress-team-sherwin.png",
         name: "Sherwin",
         designation: "Founder",
-        pillar: 'Product'
+        pillar: 'Product',
+        url: 'https://www.linkedin.com/in/sherwintorres/'
+
     },
     {
         img: "cryptoxpress-team-zeeshan.png",
         name: "Zeeshan",
         designation: "Founder",
-        pillar: 'Technology'
+        pillar: 'Technology',
+        url: 'https://www.linkedin.com/in/zeeshan-mohamed-365244120'
     },
     {
         img: "cryptoxpress-team-nilz.png",
         name: "Nilesh",
         designation: "Founder",
-        pillar: 'Growth'
+        pillar: 'Growth',
+        url: 'https://www.linkedin.com/in/nileshgpatel'
     },
     // {
     //     img: "eddie.png",
@@ -38,7 +44,8 @@ const foundersData = [
         img: "cryptoxpress-team-avinash.png",
         name: "Avinash",
         designation: "Founder",
-        pillar: 'Finance'
+        pillar: 'Finance',
+        url: 'https://www.linkedin.com/in/avinash-rajendra-766257125'
     }
 ];
 const RoadmapData = [
@@ -143,6 +150,7 @@ const nextAdvisory = function () {
 
 const populateFounder = () => {
     let set = 0;
+    const nodes = [];
     for (let i = 0; i < foundersData.length; i++) {
         let listItem = document.createElement('li');
         listItem.setAttribute("data-target", '#slider');
@@ -190,7 +198,7 @@ const populateFounder = () => {
                 founder.style.marginLeft = "0px";
             }
             founders.append(founder);
-
+            nodes.push({ card: founder, url: item.url });
         }
 
         const d_block = document.createElement('div');
@@ -214,6 +222,29 @@ const populateFounder = () => {
     console.log($("#slider").carousel({
         interval: false
     }));
+    nodes.forEach(({ card, url }) => {
+        function fun() {
+            window.open(url, '_blank');
+        };
+        card.addEventListener('click', fun, false);
+    });
+    $("#slider").on('touchstart', function (event) {
+        const xClick = event.originalEvent.touches[0].pageX;
+        $(this).one('touchmove', function (event) {
+            const xMove = event.originalEvent.touches[0].pageX;
+            const sensitivityInPx = 5;
+
+            if (Math.floor(xClick - xMove) > sensitivityInPx) {
+                $(this).carousel('next');
+            }
+            else if (Math.floor(xClick - xMove) < -sensitivityInPx) {
+                $(this).carousel('prev');
+            }
+        });
+        $(this).on('touchend', function () {
+            $(this).off('touchmove');
+        });
+    });
 }
 
 const populateRoadmap = () => {
@@ -276,6 +307,23 @@ const populateRoadmap = () => {
     console.log($("#sliderRoadmap").carousel({
         interval: false
     }));
+    $("#sliderRoadmap").on('touchstart', function (event) {
+        const xClick = event.originalEvent.touches[0].pageX;
+        $(this).one('touchmove', function (event) {
+            const xMove = event.originalEvent.touches[0].pageX;
+            const sensitivityInPx = 5;
+
+            if (Math.floor(xClick - xMove) > sensitivityInPx) {
+                $(this).carousel('next');
+            }
+            else if (Math.floor(xClick - xMove) < -sensitivityInPx) {
+                $(this).carousel('prev');
+            }
+        });
+        $(this).on('touchend', function () {
+            $(this).off('touchmove');
+        });
+    });
 }
 
 const populateAdvisory = () => {
@@ -359,5 +407,22 @@ const populateAdvisory = () => {
             window.open(val.url, '_blank');
         };
         val.node.addEventListener('click', fun, false);
+    });
+    $("#sliderAdvisory").on('touchstart', function (event) {
+        const xClick = event.originalEvent.touches[0].pageX;
+        $(this).one('touchmove', function (event) {
+            const xMove = event.originalEvent.touches[0].pageX;
+            const sensitivityInPx = 5;
+
+            if (Math.floor(xClick - xMove) > sensitivityInPx) {
+                $(this).carousel('next');
+            }
+            else if (Math.floor(xClick - xMove) < -sensitivityInPx) {
+                $(this).carousel('prev');
+            }
+        });
+        $(this).on('touchend', function () {
+            $(this).off('touchmove');
+        });
     });
 }
