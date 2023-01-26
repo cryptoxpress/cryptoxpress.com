@@ -4,42 +4,49 @@ const foundersData = [
     name: "Yogesh",
     designation: "Founder",
     pillar: "Vision",
+    url: 'https://www.linkedin.com/in/yogesh-panjabi'
   },
   {
     img: "cryptoxpress-team-adarsh.png",
     name: "Adarsh",
     designation: "Founder",
     pillar: "Operations",
+    url: 'http://linkedin.com/in/adarsh-singh-a12a3612a'
   },
   {
     img: "cryptoxpress-team-sherwin.png",
     name: "Sherwin",
     designation: "Founder",
     pillar: "Product",
+    url: 'https://www.linkedin.com/in/sherwintorres/'
   },
   {
     img: "cryptoxpress-team-zeeshan.png",
     name: "Zeeshan",
     designation: "Founder",
     pillar: "Technology",
+    url: 'https://www.linkedin.com/in/zeeshan-mohamed-365244120'
   },
   {
     img: "cryptoxpress-team-nilz.png",
     name: "Nilesh",
     designation: "Founder",
     pillar: "Growth",
+    url: 'https://www.linkedin.com/in/nileshgpatel'
   },
   {
     img: "cryptoxpress-team-eddie.png",
     name: "Edmund Kim",
     designation: "Founder",
     pillar: "Marketing",
+    url: 'https://www.linkedin.com/in/edmundhkim/'
   },
   {
     img: "cryptoxpress-team-avinash.png",
     name: "Avinash",
     designation: "Founder",
     pillar: "Finance",
+    url: 'https://www.linkedin.com/in/avinash-rajendra-766257125'
   },
 ];
 const RoadmapData = [
@@ -142,6 +149,7 @@ const nextAdvisory = function () {
 
 const populateFounder = () => {
   let set = 0;
+  const nodes = [];
   for (let i = 0; i < foundersData.length; i++) {
     let listItem = document.createElement("li");
     listItem.setAttribute("data-target", "#slider");
@@ -191,6 +199,7 @@ const populateFounder = () => {
         founder.style.marginLeft = "0px";
       }
       founders.append(founder);
+      nodes.push({ card: founder, url: item.url });
     }
 
     const d_block = document.createElement("div");
@@ -216,6 +225,12 @@ const populateFounder = () => {
       interval: false,
     })
   );
+  nodes.forEach(({ card, url }) => {
+    function fun() {
+      window.open(url, '_blank');
+    };
+    card.addEventListener('click', fun, false);
+  });
 };
 
 const populateRoadmap = () => {
