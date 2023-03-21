@@ -263,7 +263,7 @@ style="width:100%;padding:25px;margin:50px 0px 96px 0"
 
                 let xhr = new XMLHttpRequest();
 
-                xhr.open("GET", `https://c97b-115-99-116-158.ngrok.io/auth/email-confirmation?confirmation-token=${params.code}`);
+                xhr.open("GET", `https://c97b-115-99-116-158.ngrok.io/auth/email-confirmation?confirmationToken=${params.code}`);
 
                 xhr.onload = () => {
                 if (xhr.status != 200) { 
