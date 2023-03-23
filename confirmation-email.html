@@ -126,7 +126,7 @@
                 </p>
                 <div class="row" style="margin-top: 10px">
                     <div class="col-12 col-md-6 col-lg-6 ">
-                    <a class="btn-action"href="https://cryptoxpress.com" style="margin-right:20px; margin-top: 5px;padding: 0 60px">Login</a>
+                    <div id="app-link" class="btn-action" style="margin-right:20px; margin-top: 5px;padding: 0 60px"></div>
                 </div>
                   <div class="col-6 col-md-6 col-lg-3 col-sm-6" style="padding:0">
                     <a href="https://apps.apple.com/us/app/cryptoxpress/id1591792414"><img class="apple-badge"
@@ -282,7 +282,25 @@ style="width:100%;padding:25px;margin:50px 0px 96px 0"
     })
 
   </script>
+<script>
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const isAndroid = /Android/.test(navigator.userAgent);
 
+    let appLink = '';
+    if (isIOS) {
+      appLink = 'https://apps.apple.com/us/app/cryptoxpress/id1591792414';
+    } else if (isAndroid) {
+      appLink = 'https://play.google.com/store/apps/details?id=com.cryptoxpressmobile';
+    }
+
+    const link = document.createElement('a');
+    link.href = appLink;
+    link.innerText = 'Open App';
+    link.color = 'white'
+
+    const appLinkDiv = document.getElementById('app-link');
+    appLinkDiv.appendChild(link);
+  </script>
 </body>
 
 </html>
