@@ -898,7 +898,13 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
 }
-
+.cx-crew-footer-confirmation-background {
+   background-image: url('./images/cryptoxpress-trading1-desk.png') !important;
+   min-height: 600px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
 .payment-desk-background {
    background-image: url('./images/CX-Bil-Payment-Desk1x.png') !important;
    min-height: 400px;
