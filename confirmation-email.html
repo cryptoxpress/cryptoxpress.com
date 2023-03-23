@@ -236,7 +236,7 @@ style="width:100%;padding:25px;margin:50px 0px 96px 0"
     window.addEventListener('load', function () {
       const urlSearchParams = new URLSearchParams(window.location.search);
       const params = Object.fromEntries(urlSearchParams.entries());
-      document.getElementById('passwordResetSubmitButton').addEventListener('click', function () {
+      const sendRequest = ()=> {
         try {
           if (params.code != "undefined" && params.code != null && params.code.length > 0) {
             // document.getElementById('passwordConfirmationCode').value = params.code;
@@ -269,8 +269,8 @@ style="width:100%;padding:25px;margin:50px 0px 96px 0"
           console.log(e)
           alert('something went wrong, please write us at support@cryptoxpress.com')
         }
-      }, false);
-
+      }
+        sendRequest();
     })
 
   </script>
