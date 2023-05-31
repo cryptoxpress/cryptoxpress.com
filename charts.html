@@ -27,9 +27,15 @@
 					datafeedUrl = customDataUrl.startsWith('https://') ? customDataUrl : `https://${customDataUrl}`;
 				}
 
+				var symbol = 'BINANCE:ETHUSDT';
+				var urlParams = new URLSearchParams(window.location.search);
+				if (urlParams.has('symbol')) {
+					symbol = urlParams.get('symbol');
+				}
+
 				var widget = new TradingView.widget({
 					autosize: true,
-					symbol: 'BINANCE:ETHUSDT',
+					symbol: symbol,
 					interval: '1D',
 					container: "tv_chart_container",
 					//	BEWARE: no trailing slash is expected in feed URL
