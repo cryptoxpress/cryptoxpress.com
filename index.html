@@ -667,11 +667,11 @@
     const closeButton = document.getElementById('close-btn');
 
     if (isMobileDevice) {
-      
             // Show the banner
-            if (/android/i.test(userAgent)) {
-              banner.style.display = 'block';
-            }
+            // if (/android/i.test(userAgent)) {
+            //   console.log("Android Device Detected !");
+              
+            // }
             closeButton.addEventListener('click',()=>{
               banner.style.display = 'none';
             })
@@ -680,6 +680,9 @@
             installButton.addEventListener('click', () => {
                 // You can customize this part to redirect the user to the app store
                 // For example, for iOS:
+
+                banner.style.display = 'block';
+
                 if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
                   console.log("IOS Device Detected !");
                     window.location.href = 'https://apps.apple.com/us/app/cryptoxpress/id1591792414';
@@ -690,7 +693,6 @@
                   console.log("Android Device Detected !");
                     window.location.href = 'https://play.google.com/store/apps/details?id=com.cryptoxpressmobile';
                 }
-
             });
       }
       else{
