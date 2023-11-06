@@ -1063,6 +1063,14 @@ top:50%; */
    background: linear-gradient(to right, #000920, #0c1b40, #0a183b);
 }
 
+.show-eye {
+   display: block;
+}
+
+.hide-eye {
+   display: none;
+}
+
 @media only screen and (max-width: 768px) {
    .cx-float-right {
       display: flex;
