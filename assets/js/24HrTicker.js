@@ -428,24 +428,27 @@ const renderMarketTable = (priceTickers = null) => {
       }
     });
 
-  const output = `
-	<table>
-		<thead>
-			<tr>
-			<th>NO.</th>
-			<th>NAME</th>
-			<th>LAST PRICE</th>
-			<th>CHANGE</th>
-			<th>MARKET STATS</th>
-			<th>TRADE</th>
-			</tr>
-		</thead>
+  if (table_body.length > 0) {
+    const output = `
+      <table>
+        <thead>
+          <tr>
+          <th>NO.</th>
+          <th>NAME</th>
+          <th>LAST PRICE</th>
+          <th>CHANGE</th>
+          <th>MARKET STATS</th>
+          <th>TRADE</th>
+          </tr>
+        </thead>
 
-		${table_body}
-	</table>`;
+        ${table_body}
+      </table>
+    `;
 
-  market_table_container.html(output);
-  marketsDataRendered = true;
+    market_table_container.html(output);
+    marketsDataRendered = true;
+  }
 };
 
 const renderMarketTrend = (priceTickers = null) => {
@@ -486,7 +489,9 @@ const renderMarketTrend = (priceTickers = null) => {
 			<span class="border market-card-rule w-100 h-1"></span>
 			<div class="market-card-content">
 			<div class="w-100">
-				<h2 class="market-value" id="${coin?.name}_value">${priceTickerObj?.last} ${
+				<h2 class="market-value" id="${
+          coin?.name
+        }_value">${priceTickerObj?.last?.toFixed(2)} ${
         coin?.coin?.toLowerCase() === quoteAsset?.toLowerCase()
           ? "IDRT"
           : quoteAsset
@@ -508,6 +513,10 @@ const renderMarketTrend = (priceTickers = null) => {
 };
 
 const updateMarketTableAndTrend = (priceTickers = null) => {
+  if (homeDisplayCoins.length !== priceTickers.length) {
+    renderMarketTable(priceTickers);
+    renderMarketTrend(priceTickers);
+  }
   homeDisplayCoins.forEach((coin) => {
     let priceTickerObj =
       priceTickers[`${coin?.coin?.toLowerCase()}${quoteAsset?.toLowerCase()}`];
@@ -517,7 +526,7 @@ const updateMarketTableAndTrend = (priceTickers = null) => {
     const graph = $(`#${coin?.coin}_graph`);
 
     if (priceTickerObj && lastPrice && change && stats && graph) {
-      lastPrice.html(`${priceTickerObj?.last} ${quoteAsset}`);
+      lastPrice.html(`${priceTickerObj?.last?.toFixed(2)} ${quoteAsset}`);
       change.html(`${priceTickerObj?.percentage}%`);
       stats.html(
         `${parseFloat(priceTickerObj?.percentage) < 0 ? "Down" : "Up"}`
@@ -531,7 +540,7 @@ const updateMarketTableAndTrend = (priceTickers = null) => {
 
     if (priceTickerObj && value && percent && arrow) {
       value.html(
-        `${priceTickerObj?.last} ${
+        `${priceTickerObj?.last?.toFixed(2)} ${
           coin?.coin?.toLowerCase() === quoteAsset?.toLowerCase()
             ? "IDRT"
             : quoteAsset

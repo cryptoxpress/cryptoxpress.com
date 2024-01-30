@@ -1783,7 +1783,7 @@ top:50%; */
   }
 
   .news-card img {
-    width: 377.5px;
+    width: 100%;
     height: 200px;
     border-radius: 16px 16px 0 0;
   }
@@ -1820,9 +1820,8 @@ top:50%; */
   }
 
   .news-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: minmax(200px, auto);
+    display: flex;
+    flex-direction: column;
     gap: 20px;
   }
 
@@ -3760,6 +3759,13 @@ background: #303c42; */
       font-size: 20px;
     }
 
+    .news-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: minmax(200px, auto);
+      gap: 20px;
+    }
+
     .gift-cards-container {
       flex-direction: row;
       gap: 20px;
@@ -3772,6 +3778,13 @@ background: #303c42; */
 
     .gift-card div p {
       font-size: 20px;
+    }
+
+    .market-tends-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: minmax(200px, auto);
+      gap: 20px;
     }
 
     #buy-sell-info {
