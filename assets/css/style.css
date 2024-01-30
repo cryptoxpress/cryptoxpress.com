@@ -1703,7 +1703,7 @@ top:50%; */
   }
 
   .market-card {
-    width: 379px;
+    flex: 1;
     height: 188px;
     display: flex;
     padding: 18px 20px;
