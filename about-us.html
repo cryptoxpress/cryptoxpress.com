@@ -59,6 +59,9 @@
     <link rel="stylesheet" href="assets/owl_002.css" />
     <link rel="stylesheet" href="assets/ionicons.css" />
 
+    <!-- custom footer css -->
+    <link rel="stylesheet" href="assets/css/custom-footer.css" />
+
     <!-- import bai jamjuree -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -84,13 +87,6 @@
     />
     <meta property="og:image:type" content="image/png" />
     <meta name="apple-itunes-app" content="app-id=1591792414" />
-
-    <link
-      href="assets/css/about.css"
-      rel="stylesheet"
-      type="text/css"
-      media="all"
-    />
     <link
       href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css"
       rel="stylesheet"
@@ -167,7 +163,7 @@
 
       <!-- hero -->
       <section
-        class="relative bg-[url(assets/images/about-hero.webp)] bg-cover bg-center bg-no-repeat"
+        class="relative bg-[url(assets/images/about-hero.gif)] bg-cover bg-center bg-no-repeat"
       >
         <div
           class="w-full h-full flex flex-col justify-center items-center px-12 py-32 lg:gap-20 xs:gap-10 sm:gap16"
@@ -189,21 +185,23 @@
           >
             <div class="flex flex-col justify-center items-center">
               <h1 class="lg:text-5xl font-extrabold sm:text-3xl text-white">
-                900+
+                <span class="count">900</span>+
               </h1>
               <p class="lg:text-2xl font-bold text-white">CRYPTO PAIRS</p>
             </div>
 
             <div class="flex flex-col justify-center items-center">
-              <h1 class="lg:text-5xl font-extrabold sm:text-3xl text-white">
-                27+
+              <h1
+                class="lg:text-5xl font-extrabold sm:text-3xl text-white count"
+              >
+                <span class="count">27</span>+
               </h1>
               <p class="lg:text-2xl font-bold text-white">TEAM MEMERS</p>
             </div>
 
             <div class="flex flex-col justify-center items-center">
               <h1 class="lg:text-5xl font-extrabold sm:text-3xl text-white">
-                $1.85M
+                $<span class="count">1.85</span>M
               </h1>
               <p class="lg:text-2xl font-bold text-white">USD CAPITAL RAISED</p>
             </div>
@@ -311,7 +309,9 @@
       </section>
 
       <section class="w-full lg:pt-32 sm:pt-28 xs:pt-10">
-        <div class="flex justify-center items-center bg-[#F5F4F6] lg:px-10 xs:px-5 py-20">
+        <div
+          class="flex justify-center items-center bg-[#F5F4F6] lg:px-10 xs:px-5 py-20"
+        >
           <div class="flex-1 xs:hidden sm:block">
             <img
               src="assets/images/about_down.png"
@@ -319,20 +319,119 @@
               class="object-cover h-full w-full"
             />
           </div>
-          <div class="flex-1 flex flex-col justify-center sm:items-start xs:items-center gap-4">
-            <h2 class="text-lg font-bold text-[#f29557] xs:text-center sm:text-left">TOKEN STAKING</h2>
-            <h1 class="text-6xl font-extrabold xs:text-center sm:text-left">EARN PASSIVE INCOME</h1>
+          <div
+            class="flex-1 flex flex-col justify-center sm:items-start xs:items-center gap-4"
+          >
+            <h2
+              class="text-lg font-bold text-[#f29557] xs:text-center sm:text-left"
+            >
+              TOKEN STAKING
+            </h2>
+            <h1 class="text-6xl font-extrabold xs:text-center sm:text-left">
+              EARN PASSIVE INCOME
+            </h1>
             <p class="text-lg text-[#2C2D32] xs:text-center sm:text-left">
               CryptoXpress offers $XPRESS Token staking pools with an initial
               APY up to 2000%, powered by AllianceBlock's staking solution,
               LMaaS.
             </p>
-            <button class="w-48 bg-[#18448D] text-white font-bold py-3 px-6 rounded">
+            <button
+              class="w-48 bg-[#18448D] text-white font-bold py-3 px-6 rounded"
+            >
               Stake XPRESS
             </button>
           </div>
         </div>
       </section>
+
+      <!-- custom footer -->
+      <div class="custom-footer">
+        <div class="top">
+          <div class="left">
+            <img
+              src="assets/images/svgs/CX-Logo-New.svg"
+              class="left-icon"
+              alt=""
+            />
+            <p class="cp-text">
+              © CryptoXpress Ltd. 2023 Rights Reserved UIC 207142997, Krasno
+              Selo District, 2V Topli Dol Str., Ap.16, Sofia, Republic of
+              Bulgaria 1680
+            </p>
+
+            <div class="buttons-container">
+              <a
+                href="https://apps.apple.com/us/app/cryptoxpress/id1591792414"
+                class="button"
+              >
+                <img src="assets/images/apple-badge-white.svg" alt="" />
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.cryptoxpressmobile"
+                class="button"
+              >
+                <img src="assets/images/google-play-badge.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="mid">
+            <div class="mid-section">
+              <h1 class="footer-text title">About</h1>
+              <a class="footer-text footer-links" href="/about-us">About Us</a>
+              <a class="footer-text footer-links" href="#">XPRESS Token</a>
+              <a class="footer-text footer-links" href="#">My Account</a>
+              <a class="footer-text footer-links" href="#">Help Center</a>
+              <a class="footer-text footer-links" href="#">Privacy Policy</a>
+              <a class="footer-text footer-links" href="#"
+                >Terms & Conditions</a
+              >
+            </div>
+            <div class="mid-section">
+              <h1 class="footer-text title">Quick Links</h1>
+              <a class="footer-text footer-links" href="#">Trade</a>
+              <a class="footer-text footer-links" href="#">Earn</a>
+              <a class="footer-text footer-links" href="#">Gift Cards</a>
+              <a class="footer-text footer-links" href="#">Flights</a>
+              <a class="footer-text footer-links" href="#">Hotels</a>
+              <a class="footer-text footer-links" href="#">NFTs</a>
+            </div>
+          </div>
+          <div class="right">
+            <button class="scroll-top" id="scroll_top">
+              <i class="material-icons" style="color: #fff">straight</i>
+            </button>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="left">
+            <p class="copyright-txt">© CryptoXpress 2021 Rights Reserved</p>
+          </div>
+          <div class="right">
+            <div class="socials">
+              <a
+                href="https://www.facebook.com/iamCryptoxpress"
+                class="social-link"
+                >Facebook</a
+              >
+              <a href="https://twitter.com/crypto_xpress" class="social-link"
+                >Twitter</a
+              >
+              <a
+                href="https://www.instagram.com/crypto.xpress/"
+                class="social-link"
+                >Instagram</a
+              >
+              <a href="#" class="social-link">News</a>
+              <a
+                href="https://web.telegram.org/a/#-1001640911762"
+                class="social-link"
+                >Telegram</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- end of main -->
     </div>
     <!-- end of wrapper -->
@@ -363,5 +462,31 @@
     <script type="text/javascript" src="assets/js/xpiressData.js"></script>
     <script type="text/javascript" src="assets/js/ui_functions.js"></script>
     <!-- <script type="text/javascript" src="assets/livereload.js"></script> -->
+
+    <!-- counting effect script -->
+    <!-- <script>
+      $(".count").each(function () {
+        $(this)
+          .prop("Counter", 0)
+          .animate(
+            {
+              Counter: $(this).text(),
+            },
+            {
+              duration: Number($(this).text()),
+              easing: "swing",
+              step: function (now) {
+                console.log("now: ", now);
+                now = Number(Math.ceil(now)).toLocaleString("en");
+
+                $(this).text(now);
+              },
+            }
+          );
+      });
+    </script> -->
+
+    <!-- custom footer script -->
+    <script type="text/javascript" src="assets/js/custom-footer.js"></script>
   </body>
 </html>

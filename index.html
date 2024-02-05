@@ -49,6 +49,15 @@
 
   <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
   <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css" />
+  <link
+    rel="stylesheet"
+    href="assets/css/newsletter_footer.css"
+    type="text/css"
+    media="all"
+  />
+
+  <!-- custom footer css -->
+  <link rel="stylesheet" href="assets/css/custom-footer.css" />
   <style type="text/css">
     #mc_embed_signup {
       background: #fff;
@@ -480,6 +489,114 @@
         </div>
       </div>
 
+      <!-- newsletter footer -->
+      <div class="vector-parent">
+        <div class="title-container">
+          <div class="styled-title">
+            Join our mail newsletter to get notified about updates
+          </div>
+        </div>
+        <div class="input-container">
+          <input
+            class="group-child"
+            type="email"
+            placeholder="Enter your email to subscribe"
+            id="subscribe_email"
+          />
+          <button class="input-submission" onclick="submitEmail()">
+            SUBSCRIBE
+          </button>
+        </div>
+      </div>
+
+      <!-- custom footer -->
+      <div class="custom-footer">
+        <div class="top">
+          <div class="left">
+            <img
+              src="assets/images/svgs/CX-Logo-New.svg"
+              class="left-icon"
+              alt=""
+            />
+            <p class="cp-text">
+              © CryptoXpress Ltd. 2023 Rights Reserved UIC 207142997, Krasno
+              Selo District, 2V Topli Dol Str., Ap.16, Sofia, Republic of
+              Bulgaria 1680
+            </p>
+
+            <div class="buttons-container">
+              <a
+                href="https://apps.apple.com/us/app/cryptoxpress/id1591792414"
+                class="button"
+              >
+                <img src="assets/images/apple-badge-white.svg" alt="" />
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.cryptoxpressmobile"
+                class="button"
+              >
+                <img src="assets/images/google-play-badge.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="mid">
+            <div class="mid-section">
+              <h1 class="footer-text title">About</h1>
+              <a class="footer-text footer-links" href="/about-us">About Us</a>
+              <a class="footer-text footer-links" href="#">XPRESS Token</a>
+              <a class="footer-text footer-links" href="#">My Account</a>
+              <a class="footer-text footer-links" href="#">Help Center</a>
+              <a class="footer-text footer-links" href="#">Privacy Policy</a>
+              <a class="footer-text footer-links" href="#"
+                >Terms & Conditions</a
+              >
+            </div>
+            <div class="mid-section">
+              <h1 class="footer-text title">Quick Links</h1>
+              <a class="footer-text footer-links" href="#">Trade</a>
+              <a class="footer-text footer-links" href="#">Earn</a>
+              <a class="footer-text footer-links" href="#">Gift Cards</a>
+              <a class="footer-text footer-links" href="#">Flights</a>
+              <a class="footer-text footer-links" href="#">Hotels</a>
+              <a class="footer-text footer-links" href="#">NFTs</a>
+            </div>
+          </div>
+          <div class="right">
+            <button class="scroll-top" id="scroll_top">
+              <i class="material-icons" style="color: #fff">straight</i>
+            </button>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="left">
+            <p class="copyright-txt">© CryptoXpress 2021 Rights Reserved</p>
+          </div>
+          <div class="right">
+            <div class="socials">
+              <a
+                href="https://www.facebook.com/iamCryptoxpress"
+                class="social-link"
+                >Facebook</a
+              >
+              <a href="https://twitter.com/crypto_xpress" class="social-link"
+                >Twitter</a
+              >
+              <a
+                href="https://www.instagram.com/crypto.xpress/"
+                class="social-link"
+                >Instagram</a
+              >
+              <a href="#" class="social-link">News</a>
+              <a
+                href="https://web.telegram.org/a/#-1001640911762"
+                class="social-link"
+                >Telegram</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Scroll To Top -->
       <div id="back-top" class="bk-top" style="display: none">
         <div class="bk-top-txt">
@@ -593,6 +710,11 @@
   <!-- script for news api -->
   <script src="assets/js/news.js"></script>
 
+  <!-- newsletter footer script -->
+  <script src="assets/js/ui/newsletter_footer.js"></script>
+
+  <!-- custom footer script -->
+  <script type="text/javascript" src="assets/js/custom-footer.js"></script>
 </body>
 
 </html>

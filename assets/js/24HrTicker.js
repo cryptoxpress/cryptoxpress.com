@@ -129,7 +129,7 @@ const fetchandSanitizeCapitalConfigs = async () => {
     marketTrendCoins = TREND_COINS.map((item) => {
       return _coinInfoSanitized.find((coin) => coin.coin === item);
     }).filter((item) => typeof item !== "undefined");
-    console.log("Home coin info: ", homeDisplayCoins);
+    // console.log("Home coin info: ", homeDisplayCoins);
   } catch (e) {
     console.log("Capital Configs Error", e);
     alert("Capital Configs Error");
@@ -206,7 +206,7 @@ const fetch24HrTickerRest = async () => {
         }
       }
 
-      console.log("Price Ticker from Rest: ", _priceTickers);
+      // console.log("Price Ticker from Rest: ", _priceTickers);
     }
   } catch (e) {
     console.log("24hr Ticker Error", e);
@@ -271,7 +271,7 @@ const open24HrTickerWs = (interval = 5000) => {
         });
       }
 
-      console.log("Price Ticker from WS: ", priceTickers.getObject());
+      // console.log("Price Ticker from WS: ", priceTickers.getObject());
     }
   };
 };
@@ -383,7 +383,7 @@ const renderMarketTable = (priceTickers = null) => {
 
   let table_body = ``;
 
-  console.log("Home coins: ", homeDisplayCoins, priceTickers);
+  // console.log("Home coins: ", homeDisplayCoins, priceTickers);
   homeDisplayCoins
     .filter((item) => item !== null && typeof item !== "undefined")
     .forEach((coin, index) => {
@@ -391,13 +391,13 @@ const renderMarketTable = (priceTickers = null) => {
         priceTickers[
           `${getCoinPair(coin.coin.toLowerCase(), quoteAsset.toLowerCase())}`
         ];
-      console.log(
-        "Price tick: ",
-        priceTickers[
-          `${getCoinPair(coin.coin.toLowerCase(), quoteAsset.toLowerCase())}`
-        ],
-        getCoinPair(coin.coin.toLowerCase(), quoteAsset.toLowerCase())
-      );
+      // console.log(
+      //   "Price tick: ",
+      //   priceTickers[
+      //     `${getCoinPair(coin.coin.toLowerCase(), quoteAsset.toLowerCase())}`
+      //   ],
+      //   getCoinPair(coin.coin.toLowerCase(), quoteAsset.toLowerCase())
+      // );
       if (priceTickerObj) {
         table_body += `
 		<tr id="${coin?.name}">

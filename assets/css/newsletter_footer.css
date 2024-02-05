@@ -1,0 +1,94 @@
+.vector-parent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 24.13rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background: linear-gradient(
+    210deg,
+    #84dcb6 -12.08%,
+    #0ebfa8 7.56%,
+    #008590 32.83%,
+    #0c5e7c 73.7%
+  );
+}
+
+.input-container {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.styled-title {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.group-child {
+  border: none;
+  display: block;
+  font-family: Inter;
+  font-size: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px 0 0 8px;
+  width: 60%;
+  height: 5rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  overflow: hidden;
+  color: #000;
+}
+
+.group-child:focus {
+  outline: none;
+}
+
+.input-submission {
+  width: 12rem;
+  height: 5rem;
+  background-color: #f29557;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1369px) {
+  .group-child {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .styled-title {
+    font-size: 20px !important;
+  }
+  .input-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .group-child {
+    width: 90%;
+    height: 3rem;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+
+  .input-submission {
+    border-radius: 8px;
+    height: 3rem;
+  }
+}
