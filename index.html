@@ -38,6 +38,8 @@
   <link rel="stylesheet" href="assets/owl_002.css" />
   <link rel="stylesheet" href="assets/ionicons.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- import bai jamjuree -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <!-- Resource style -->
   <meta property="og:title" content="CryptoXpress - Making Crypto Easy" />
   <meta property="og:type" content="website" />
@@ -165,6 +167,21 @@
       margin-right: 1.2em;
       letter-spacing: 1.3px;
     }
+
+    .nav-animation {
+      position: fixed;
+      animation: reelIn 0.5s ease-in-out;
+      z-index: 100;
+    }
+
+    @keyframes reelIn {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
  
 
     /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
@@ -189,6 +206,27 @@
     
   </script>
   <!-- End Google Tag Manager -->
+  <!-- tailwind play cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            "bai-jamjuree": ["Bai Jamjuree", "sans-serif"],
+          },
+        },
+        screens: {
+          xs: "200px", // added to tailwind
+          sm: "640px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1280px",
+          "2xl": "1536px",
+        },
+      },
+    };
+  </script>
   <!-- d3 js included -->
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 </head>
@@ -203,106 +241,190 @@
   <!-- End Google Tag Manager (noscript) -->
   <div class="wrapper">
     </div>
-    <!-- Navbar Section -->
-    <nav style="flex-flow: column !important; padding: 0px !important"
-      class="navbar fixed-top navbar-expand-md effect-main">
-
-      <div id="smart-app-banner">
-        <a id="close-btn" href="#close" class="close">&times;</a>
-        <img src="assets/cryptoxpress.png" class="icon">
-        <div class="meta">
-          <span class="name">CryptoXpress: Crypto made Easy</span>
-          <small class="author">CryptoXpress</small>
-        </div>
-        <button class="btn" id="install-button">GET</button>
-        </div>
-
-      <div style="
-            background: #2d2f32;
-            display: flex;
-            justify-content: space-between;
-          " class="d-none d-sm-block w-100">
-        <div class="container-m">
-          <div class="row" style="color: #fff; margin-bottom: 8px; margin-top: 8px">
-            <div class="col-sm-0 col-md-3 cx-float-bar-left-block">
-              <img src="assets/images/right-element.png" style="width: 24px" />
-              <a style="font-weight: lighter; margin-left: 12px">Xpress: </a>
-              <a id="top_bar_xpress_price" style="margin-left: 4px; font-weight: bold">...</a>
-            </div>
-            <div class="col-sm-12 col-md-9 cx-float-bar-right-block">
-              <a style="
-                    font-weight: lighter;
-                    margin-left: 12px;
-                    color: #fff;
-                    font-size: 12px;
-                  ">Buy Xpress:
-              </a>
-              <img src="assets/images/cake-token-1.png" style="width: 24px; margin-left: 16px" /><a
-                href="https://pancakeswap.finance/swap?outputCurrency=0xaa9826732f3a4973ff8b384b3f4e3c70c2984651"
-                target="_blank" style="
-                    margin-left: 4px;
-                    font-weight: bold;
-                    color: #fff;
-                    font-size: 12px;
-                  ">PancakeSwap</a>
-              <img src="assets/images/frame-446.png" style="width: 24px; margin-left: 12px" /><a
-                href=" https://www.gate.io/trade/XPRESS_USDT" target="_blank" style="
-                    margin-left: 4px;
-                    font-weight: bold;
-                    color: #fff;
-                    font-size: 12px;
-                  ">Gate.io</a>
-              <a style="
-                    margin-left: 24px;
-                    font-weight: bold;
-                    color: #fff;
-                    font-size: 12px;
-                  ">Staking:
-              </a>
-              <a class="btn-action-new" href="https://xpress.cryptoxpress.com/staking/active/"
-                style="margin-left: 8px">Stake Xpress</a>
-            </div>
-          </div>
-        </div>
+    <!-- navbar -->
+    <nav
+      class="w-full h-16 bg-gradient-to-r from-[#000920] via-[#0a183b] to-[#0b193c] flex justify-around items-center"
+      id="navbar"
+    >
+      <div
+        class="w-1/5 h-full lg:flex xs:hidden justify-center items-center cursor-pointer"
+      >
+        <a href="/">
+          <img
+            src="assets/images/cryptoxpress.png"
+            alt=""
+            class="w-[73.22px] h-[32.7px]"
+          />
+        </a>
       </div>
-      <div class="container-m container" style="padding: 20px 0px; position: relative;">
-        <a class="navbar-brand" href="/"><img src="assets/images/CX-Logo.png" style="width: 50px" class="ml-3" /></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto navbar-right">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/trade.html">Trade</a>
+
+      <div
+        class="lg:flex xs:hidden justify-center items-center w-3/5 h-full gap-10"
+      >
+        <!-- triggers -->
+        <div
+          class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
+        >
+          <span class="mr-1">Shop</span>
+          <i class="material-icons" style="color: #fff"
+            >keyboard_arrow_down</i
+          >
+
+          <!-- list -->
+          <ul class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1">
+            <li>
+              <a
+                class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                href="#"
+                >Option 1</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/staking.html">Earn</a>
+            <li>
+              <a
+                class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                href="#"
+                >Option 2</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="https://nft.cryptoxpress.com">NFT</a>
+            <li>
+              <a
+                class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                href="#"
+                >Option 3</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" style="display: flex; justify-content: center" href="#">Payments
-                <img style="width: 65px; margin-left: 5px" src="./assets/images/coming-soon.png" /></a>
+          </ul>
+        </div>
+
+        <div
+          class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
+        >
+          <span class="mr-1">Trade</span>
+          <i class="material-icons" style="color: #fff"
+            >keyboard_arrow_down</i
+          >
+
+          <!-- list -->
+          <ul class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1">
+            <li>
+              <a
+                class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                href="#"
+                >Option 1</a
+              >
             </li>
-            <!-- <li class="nav-item">
-                     <a class="nav-link js-scroll-trigger" href="/whitepaper.pdf">Whitepaper</a>
-                  </li> -->
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/all-new-xpress.html">Xpress Token</a>
+            <li>
+              <a
+                class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                href="#"
+                >Option 2</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/about-us.html">About</a>
+            <li>
+              <a
+                class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                href="#"
+                >Option 3</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/contact-cryptoxpress-team.html">Contact</a>
+          </ul>
+        </div>
+
+        <div
+          class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
+        >
+          <a href="/all-new-xpress">
+            <span class="mr-1">XPRESS Token</span>
+          </a>
+        </div>
+
+        <div
+          class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
+        >
+          <span class="mr-1">My Account</span>
+          <i class="material-icons" style="color: #fff"
+            >keyboard_arrow_down</i
+          >
+
+          <!-- list -->
+          <ul class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1">
+            <li>
+              <a
+                class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                href="#"
+                >Option 1</a
+              >
+            </li>
+            <li>
+              <a
+                class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                href="#"
+                >Option 2</a
+              >
+            </li>
+            <li>
+              <a
+                class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                href="#"
+                >Option 3</a
+              >
             </li>
           </ul>
         </div>
       </div>
+
+      <!-- mobile views -->
+      <div class="w-1/5 xs:flex lg:hidden justify-center items-center" onclick="slideMenu()">
+        <i class="material-icons" style="color: #fff; width: inherit"
+          >menu_outlined</i
+        >
+      </div>
+
+      <div class="w-3/5 xs:flex lg:hidden justify-center items-center">
+        <a href="/">
+          <img src="assets/images/CX-Logo-New.png" alt="" class="object-contain w-full h-full">
+        </a>
+      </div>
+      <!-- end of mobile views -->
+
+      <div
+        class="w-1/5 h-full flex justify-center items-center cursor-pointer"
+      >
+        <i class="material-icons" style="color: #fff; width: inherit;"
+          >shopping_cart_outlined</i
+        >
+      </div>
+
+      <!-- mobile menu -->
+      <div class="nav-menu absolute w-full h-auto top-16 z-10 hidden">
+        <div
+          class="flex flex-col justify-center items-center w-full h-auto bg-[#18448D] text-white"
+        >
+          <div
+            class="flex flex-col justify-center items-center w-full h-auto gap-5"
+          >
+            <div class="flex justify-center items-center w-full h-16">
+              <a href="#" class="text-white text-sm font-bold">Shop</a>
+            </div>
+
+            <div class="flex justify-center items-center w-full h-16">
+              <a href="#" class="text-white text-sm font-bold">Trade</a>
+            </div>
+
+            <div class="flex justify-center items-center w-full h-16">
+              <a href="/all-new-xpress" class="text-white text-sm font-bold"
+                >XPRESS Token</a
+              >
+            </div>
+
+            <div class="flex justify-center items-center w-full h-16">
+              <a href="#" class="text-white text-sm font-bold">My Account</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
-    <!-- Navbar End -->
+  <!-- end of navbar -->
 
     <div id="main" class="main">
       <div class="hero">
@@ -543,9 +665,9 @@
             <div class="mid-section">
               <h1 class="footer-text title">About</h1>
               <a class="footer-text footer-links" href="/about-us">About Us</a>
-              <a class="footer-text footer-links" href="#">XPRESS Token</a>
+              <a class="footer-text footer-links" href="/all-new-xpress">XPRESS Token</a>
               <a class="footer-text footer-links" href="#">My Account</a>
-              <a class="footer-text footer-links" href="#">Help Center</a>
+              <a class="footer-text footer-links" href="/contact-cryptoxpress-team">Help Center</a>
               <a class="footer-text footer-links" href="#">Privacy Policy</a>
               <a class="footer-text footer-links" href="#"
                 >Terms & Conditions</a
@@ -712,6 +834,58 @@
 
   <!-- newsletter footer script -->
   <script src="assets/js/ui/newsletter_footer.js"></script>
+
+  <!-- script for navbar -->
+  <script type="text/javascript">
+    // scroll animation
+    const navbar = $("#navbar");
+    const minScrollValue = 100;
+
+    window.addEventListener("scroll", function () {
+      let scrollTop = window.pageYOffset;
+
+      // Hide the navbar when scrolling down, show when scrolling up
+      if (scrollTop > minScrollValue) {
+        navbar.addClass("nav-animation");
+      } else {
+        navbar.removeClass("nav-animation");
+      }
+    });
+
+    // dropdown
+    // $(".dropdown-menu").hover(
+    //   function () {
+    //     $(this).removeClass("hidden");
+    //   },
+    //   function () {
+    //     $(this).addClass("hidden");
+    //   }
+    // );
+
+    $(".drop-btn").hover(
+      function () {
+        const menu = $(this).find(".dropdown-menu")
+        menu.removeClass("hidden");
+        menu.addClass("block");
+        menu.css("inset", "2.5rem auto auto");
+        menu.addClass("fade-in");
+      },
+      function () {
+        $(this).find(".dropdown-menu").addClass("hidden");
+        $(this).find(".dropdown-menu").removeClass("block");
+      }
+    );
+
+    // mobile menu
+    function slideMenu() {
+      const menu = $(".nav-menu");
+      if (menu.is(":hidden")) {
+        menu.slideDown("fast");
+      } else {
+        menu.slideUp("fast");
+      }
+    }
+  </script>
 
   <!-- custom footer script -->
   <script type="text/javascript" src="assets/js/custom-footer.js"></script>

@@ -197,7 +197,15 @@
     gap: 20px;
   }
 
+  .custom-footer .top .left, .custom-footer .top .mid, .custom-footer .top .right {
+    width: 80%;
+  }
+
   .custom-footer .bottom .right .socials {
     gap: 20px;
+  }
+
+  .custom-footer .top .mid {
+    justify-content: space-between;
   }
 }

@@ -99,6 +99,21 @@
         font: 14px Helvetica, Arial, sans-serif;
       }
 
+      .nav-animation {
+        position: fixed;
+        animation: reelIn 0.5s ease-in-out;
+        z-index: 100;
+      }
+
+      @keyframes reelIn {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
       /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
     </style>
@@ -157,14 +172,210 @@
     <!-- wrapper -->
     <div class="wrapper">
       <!-- main -->
-      <!-- navbar -->
-      <nav></nav>
-      <!-- end of navbar -->
 
       <!-- hero -->
       <section
         class="relative bg-[url(assets/images/about-hero.gif)] bg-cover bg-center bg-no-repeat"
       >
+        <!-- navbar -->
+        <nav
+          class="fixed w-full h-16 bg-transparent flex justify-around items-center"
+          id="navbar"
+        >
+          <div
+            class="w-1/5 h-full lg:flex xs:hidden justify-center items-center cursor-pointer"
+          >
+            <a href="/">
+              <img
+                src="assets/images/cryptoxpress.png"
+                alt=""
+                class="w-[73.22px] h-[32.7px]"
+              />
+            </a>
+          </div>
+
+          <div
+            class="lg:flex xs:hidden justify-center items-center w-3/5 h-full gap-10"
+          >
+            <!-- triggers -->
+            <div
+              class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
+            >
+              <span class="mr-1">Shop</span>
+              <i class="material-icons" style="color: #fff"
+                >keyboard_arrow_down</i
+              >
+
+              <!-- list -->
+              <ul
+                class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1"
+              >
+                <li>
+                  <a
+                    class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Option 1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Option 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Option 3</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
+            >
+              <span class="mr-1">Trade</span>
+              <i class="material-icons" style="color: #fff"
+                >keyboard_arrow_down</i
+              >
+
+              <!-- list -->
+              <ul
+                class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1"
+              >
+                <li>
+                  <a
+                    class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Option 1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Option 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Option 3</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
+            >
+              <a href="">
+                <span class="mr-1">XPRESS Token</span>
+              </a>
+            </div>
+
+            <div
+              class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
+            >
+              <span class="mr-1">My Account</span>
+              <i class="material-icons" style="color: #fff"
+                >keyboard_arrow_down</i
+              >
+
+              <!-- list -->
+              <ul
+                class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1"
+              >
+                <li>
+                  <a
+                    class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Option 1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Option 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Option 3</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- mobile views -->
+          <div
+            class="w-1/5 xs:flex lg:hidden justify-center items-center"
+            onclick="slideMenu()"
+          >
+            <i class="material-icons" style="color: #fff; width: inherit"
+              >menu_outlined</i
+            >
+          </div>
+
+          <div class="w-3/5 xs:flex lg:hidden justify-center items-center">
+            <a href="/">
+              <img
+                src="assets/images/CX-Logo-New.png"
+                alt=""
+                class="object-contain w-full h-full"
+              />
+            </a>
+          </div>
+          <!-- end of mobile views -->
+
+          <div
+            class="w-1/5 h-full flex justify-center items-center cursor-pointer"
+          >
+            <i class="material-icons" style="color: #fff; width: inherit"
+              >shopping_cart_outlined</i
+            >
+          </div>
+
+          <!-- mobile menu -->
+          <div class="nav-menu absolute w-full h-auto top-16 z-10 hidden">
+            <div
+              class="flex flex-col justify-center items-center w-full h-auto bg-[#18448D] text-white"
+            >
+              <div
+                class="flex flex-col justify-center items-center w-full h-auto gap-5"
+              >
+                <div class="flex justify-center items-center w-full h-16">
+                  <a href="#" class="text-white text-sm font-bold">Shop</a>
+                </div>
+
+                <div class="flex justify-center items-center w-full h-16">
+                  <a href="#" class="text-white text-sm font-bold">Trade</a>
+                </div>
+
+                <div class="flex justify-center items-center w-full h-16">
+                  <a href="/all-new-xpress" class="text-white text-sm font-bold"
+                    >XPRESS Token</a
+                  >
+                </div>
+
+                <div class="flex justify-center items-center w-full h-16">
+                  <a href="#" class="text-white text-sm font-bold"
+                    >My Account</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- end of navbar -->
         <div
           class="w-full h-full flex flex-col justify-center items-center px-12 py-32 lg:gap-20 xs:gap-10 sm:gap16"
         >
@@ -378,9 +589,13 @@
             <div class="mid-section">
               <h1 class="footer-text title">About</h1>
               <a class="footer-text footer-links" href="/about-us">About Us</a>
-              <a class="footer-text footer-links" href="#">XPRESS Token</a>
+              <a class="footer-text footer-links" href="/all-new-xpress">XPRESS Token</a>
               <a class="footer-text footer-links" href="#">My Account</a>
-              <a class="footer-text footer-links" href="#">Help Center</a>
+              <a
+                class="footer-text footer-links"
+                href="/contact-cryptoxpress-team"
+                >Help Center</a
+              >
               <a class="footer-text footer-links" href="#">Privacy Policy</a>
               <a class="footer-text footer-links" href="#"
                 >Terms & Conditions</a
@@ -485,6 +700,60 @@
           );
       });
     </script> -->
+
+    <!-- script for navbar -->
+    <script type="text/javascript">
+      // scroll animation
+      const navbar = $("#navbar");
+      const minScrollValue = 100;
+
+      window.addEventListener("scroll", function () {
+        let scrollTop = window.pageYOffset;
+
+        // Hide the navbar when scrolling down, show when scrolling up
+        if (scrollTop > minScrollValue) {
+          navbar.addClass("nav-animation");
+          navbar.addClass("!bg-[#18448D]");
+        } else {
+          navbar.removeClass("nav-animation");
+          navbar.removeClass("!bg-[#18448D]");
+        }
+      });
+
+      // dropdown
+      // $(".dropdown-menu").hover(
+      //   function () {
+      //     $(this).removeClass("hidden");
+      //   },
+      //   function () {
+      //     $(this).addClass("hidden");
+      //   }
+      // );
+
+      $(".drop-btn").hover(
+        function () {
+          const menu = $(this).find(".dropdown-menu");
+          menu.removeClass("hidden");
+          menu.addClass("block");
+          menu.css("inset", "2.5rem auto auto");
+          menu.addClass("fade-in");
+        },
+        function () {
+          $(this).find(".dropdown-menu").addClass("hidden");
+          $(this).find(".dropdown-menu").removeClass("block");
+        }
+      );
+
+      // mobile menu
+      function slideMenu() {
+        const menu = $(".nav-menu");
+        if (menu.is(":hidden")) {
+          menu.slideDown("fast");
+        } else {
+          menu.slideUp("fast");
+        }
+      }
+    </script>
 
     <!-- custom footer script -->
     <script type="text/javascript" src="assets/js/custom-footer.js"></script>

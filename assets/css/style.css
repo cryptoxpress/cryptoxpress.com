@@ -4845,7 +4845,7 @@ background: #303c42; */
 
       .hero {
         /* padding: 125px 0 100px 0; */
-        padding: 164px 0 0 0;
+        padding: 120px 0 0 0;
       }
 
       .oval-background-right-bottom {
@@ -4982,7 +4982,7 @@ background: #303c42; */
     @media only screen and (min-width: 992px) {
       .hero {
         /* padding: 125px 0 100px 0; */
-        padding: 164px 0 50px 0;
+        padding: 120px 0 50px 0;
       }
 
       .hero .hero-image-right-div {

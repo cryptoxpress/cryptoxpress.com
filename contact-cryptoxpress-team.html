@@ -58,6 +58,7 @@
     <link rel="stylesheet" href="assets/owl.css" />
     <link rel="stylesheet" href="assets/owl_002.css" />
     <link rel="stylesheet" href="assets/ionicons.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- import bai jamjuree -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -84,13 +85,6 @@
     />
     <meta property="og:image:type" content="image/png" />
     <meta name="apple-itunes-app" content="app-id=1591792414" />
-    <!-- newsleter footer css -->
-    <link
-      rel="stylesheet"
-      href="assets/css/newsletter_footer.css"
-      type="text/css"
-      media="all"
-    />
     <link
       href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css"
       rel="stylesheet"
@@ -179,11 +173,207 @@
     <!-- wrapper -->
     <div class="wrapper">
       <!-- main -->
-      <!-- navbar -->
-      <nav class="w-full h-16 bg-red-700" id="navbar"></nav>
-      <!-- end of navbar -->
 
       <div class="w-full h-full flex flex-col">
+        <!-- navbar -->
+        <nav
+          class="w-full h-16 bg-[#18448D] flex justify-around items-center"
+          id="navbar"
+        >
+          <div
+            class="w-1/5 h-full lg:flex xs:hidden justify-center items-center cursor-pointer"
+          >
+            <a href="/">
+              <img
+                src="assets/images/cryptoxpress.png"
+                alt=""
+                class="w-[72.22px] h-[32.7px]"
+              />
+            </a>
+          </div>
+
+          <div
+            class="lg:flex xs:hidden justify-center items-center w-3/5 h-full gap-10"
+          >
+            <!-- triggers -->
+            <div
+              class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
+            >
+              <span class="mr-1">Shop</span>
+              <i class="material-icons" style="color: #fff"
+                >keyboard_arrow_down</i
+              >
+
+              <!-- list -->
+              <ul
+                class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1"
+              >
+                <li>
+                  <a
+                    class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Option 1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Option 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Option 3</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
+            >
+              <span class="mr-1">Trade</span>
+              <i class="material-icons" style="color: #fff"
+                >keyboard_arrow_down</i
+              >
+
+              <!-- list -->
+              <ul
+                class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1"
+              >
+                <li>
+                  <a
+                    class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Option 1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Option 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Option 3</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
+            >
+              <a href="/all-new-xpress">
+                <span class="mr-1">XPRESS Token</span>
+              </a>
+            </div>
+
+            <div
+              class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
+            >
+              <span class="mr-1">My Account</span>
+              <i class="material-icons" style="color: #fff"
+                >keyboard_arrow_down</i
+              >
+
+              <!-- list -->
+              <ul
+                class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1"
+              >
+                <li>
+                  <a
+                    class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Option 1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Option 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Option 3</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- mobile views -->
+          <div
+            class="w-1/5 xs:flex lg:hidden justify-center items-center"
+            onclick="slideMenu()"
+          >
+            <i class="material-icons" style="color: #fff; width: inherit"
+              >menu_outlined</i
+            >
+          </div>
+
+          <div class="w-3/5 xs:flex lg:hidden justify-center items-center">
+            <a href="/">
+              <img
+                src="assets/images/CX-Logo-New.png"
+                alt=""
+                class="object-contain w-full h-full"
+              />
+            </a>
+          </div>
+          <!-- end of mobile views -->
+
+          <div
+            class="w-1/5 h-full flex justify-center items-center cursor-pointer"
+          >
+            <i class="material-icons" style="color: #fff; width: inherit"
+              >shopping_cart_outlined</i
+            >
+          </div>
+
+          <!-- mobile menu -->
+          <div class="nav-menu absolute w-full h-auto top-16 z-10 hidden">
+            <div
+              class="flex flex-col justify-center items-center w-full h-auto bg-[#18448D] text-white"
+            >
+              <div
+                class="flex flex-col justify-center items-center w-full h-auto gap-5"
+              >
+                <div class="flex justify-center items-center w-full h-16">
+                  <a href="#" class="text-white text-sm font-bold">Shop</a>
+                </div>
+
+                <div class="flex justify-center items-center w-full h-16">
+                  <a href="#" class="text-white text-sm font-bold">Trade</a>
+                </div>
+
+                <div class="flex justify-center items-center w-full h-16">
+                  <a href="/all-new-xpress" class="text-white text-sm font-bold"
+                    >XPRESS Token</a
+                  >
+                </div>
+
+                <div class="flex justify-center items-center w-full h-16">
+                  <a href="#" class="text-white text-sm font-bold"
+                    >My Account</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- end of navbar -->
         <section class="flex lg:px-36 md:px-20 xs:px-10 py-8">
           <div class="flex gap-3">
             <img src="assets/images/svgs/home.svg" alt="" />
@@ -202,7 +392,11 @@
             class="flex justify-center items-center lg:px-28 md:px-20 xs:px-8"
           >
             <div class="flex-1 md:flex flex-col gap-10 xs:w-full">
-              <h1 class="text-7xl font-extrabold uppercase">Contact Us</h1>
+              <h1
+                class="lg:text-7xl md:text-5xl xs:text-3xl font-extrabold uppercase"
+              >
+                Contact Us
+              </h1>
 
               <form
                 action=""
@@ -322,9 +516,13 @@
                 <a class="footer-text footer-links" href="/about-us"
                   >About Us</a
                 >
-                <a class="footer-text footer-links" href="#">XPRESS Token</a>
+                <a class="footer-text footer-links" href="/all-new-xpress">XPRESS Token</a>
                 <a class="footer-text footer-links" href="#">My Account</a>
-                <a class="footer-text footer-links" href="#">Help Center</a>
+                <a
+                  class="footer-text footer-links"
+                  href="/contact-cryptoxpress-team"
+                  >Help Center</a
+                >
                 <a class="footer-text footer-links" href="#">Privacy Policy</a>
                 <a class="footer-text footer-links" href="#"
                   >Terms & Conditions</a
@@ -407,7 +605,9 @@
     <script type="text/javascript" src="assets/js/ui_functions.js"></script>
     <!-- <script type="text/javascript" src="assets/livereload.js"></script> -->
     <!-- script for navbar -->
+    <!-- script for navbar -->
     <script type="text/javascript">
+      // scroll animation
       const navbar = $("#navbar");
       const minScrollValue = 100;
 
@@ -421,6 +621,40 @@
           navbar.removeClass("nav-animation");
         }
       });
+
+      // dropdown
+      // $(".dropdown-menu").hover(
+      //   function () {
+      //     $(this).removeClass("hidden");
+      //   },
+      //   function () {
+      //     $(this).addClass("hidden");
+      //   }
+      // );
+
+      $(".drop-btn").hover(
+        function () {
+          const menu = $(this).find(".dropdown-menu");
+          menu.removeClass("hidden");
+          menu.addClass("block");
+          menu.css("inset", "2.5rem auto auto");
+          menu.addClass("fade-in");
+        },
+        function () {
+          $(this).find(".dropdown-menu").addClass("hidden");
+          $(this).find(".dropdown-menu").removeClass("block");
+        }
+      );
+
+      // mobile menu
+      function slideMenu() {
+        const menu = $(".nav-menu");
+        if (menu.is(":hidden")) {
+          menu.slideDown("fast");
+        } else {
+          menu.slideUp("fast");
+        }
+      }
     </script>
 
     <!-- custom footer script -->
