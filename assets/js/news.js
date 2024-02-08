@@ -1,18 +1,29 @@
 // logic
 
 const getNewsList = async () => {
-  const url = `https://cryptonews-api.com/api/v1?tickers=btc&items=10&token=jenkblftud4ceyamhv7imsovxffsctjjjak9yniq`;
-  const res = await fetch(url);
-  const data = await res.json();
+  const coins = ["btc", "eth", "ltc", "xrp", "doge"];
+  const newsFetchList = [];
 
-  return data;
+  for (const coin of coins) {
+    newsFetchList.push(
+      (
+        await fetch(
+          `https://cryptonews-api.com/api/v1?tickers=${coin}&items=3&token=jenkblftud4ceyamhv7imsovxffsctjjjak9yniq`
+        )
+      ).json()
+    );
+  }
+
+  const resp = await Promise.all(newsFetchList);
+
+  return resp.map((item) => item?.data).flat();
 };
 
 // caller
 
 getNewsList()
   .then((res) => {
-    renderNewsList(res.data);
+    renderNewsList(res);
   })
   .catch((err) => {
     alert("Error fetching news: ", err);

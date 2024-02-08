@@ -29,6 +29,17 @@ const HIGHLIGHT_COINS = [
   "FIL",
 ];
 
+const XPRESS_INFO = {
+  coin: "XPRESS",
+  name: "XPRESS",
+  contract: "0xaA9826732f3A4973FF8B384B3f4e3c70c2984651",
+  isLegalMoney: false,
+  isDexCoin: true,
+};
+
+// custom tokens to add to markets/trade screen
+const DEX_COINS = [XPRESS_INFO];
+
 const TREND_COINS = ["BTC", "ETH", "BNB", "USDT"];
 
 /**
@@ -48,6 +59,7 @@ let homeDisplayCoins = [];
 let marketTrendCoins = [];
 let marketsDataRendered = false;
 let quoteAsset = "USDT";
+let dexTokenPrices = {};
 
 // logic helpers
 
@@ -65,6 +77,36 @@ const isCoinFiat = (coin) => {
 };
 
 // logic functions
+
+// for xpress price
+const fetchPancakeSwapPrice = async () => {
+  // fetch XPRESS Price from PancakeSwap
+  for (const coin of DEX_COINS) {
+    try {
+      const url = `https://deep-index.moralis.io/api/v2/erc20/${coin?.contract}/price?chain=bsc&exchange=pancakeswapv2`;
+      const res = await (
+        await fetch(url, {
+          method: "GET",
+          headers: {
+            Accept: "application/json",
+            "X-API-Key":
+              "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6ImRkMzk2Y2RhLTUyYzktNGRmMi1iZTM1LTlhOGI0MzNlNDY2OCIsIm9yZ0lkIjoiMzQ3ODg2IiwidXNlcklkIjoiMzU3NTkzIiwidHlwZUlkIjoiNzYxOTNmYjgtYjg1YS00MWNkLTk1NjUtZTg0NGY4MTUxNzZiIiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE2ODkxNTU3ODMsImV4cCI6NDg0NDkxNTc4M30.a-LTMXOVgYOhZsrrfUzcFKsR37KbLdbe9tg_gCalxdY",
+          },
+        })
+      ).json();
+      if (res) {
+        dexTokenPrices[coin?.name?.toUpperCase()] = {
+          price: res.usdPrice,
+          price_BNB:
+            res.nativePrice?.value / 10 ** (res.nativePrice?.decimals ?? 0),
+        };
+        console.log("pancake swap: ", dexTokenPrices);
+      }
+    } catch (err) {
+      console.log("pancake swap error: ", err, coin?.contract);
+    }
+  }
+};
 
 const fetchandSanitizeCapitalConfigs = async () => {
   const capitalConfigsUrl =
@@ -363,6 +405,10 @@ const getCoinPair = (coin = "", quote = "usdt") => {
   return `${coin.toLowerCase()}${quote.toLowerCase()}`;
 };
 
+const handleTradeClick = (coin) => {
+  console.log("Trade Clicked: ", coin);
+};
+
 // binding logic functions with ui functions
 
 // fetch 24hr ticker and update
@@ -370,9 +416,11 @@ open24HrTickerWs();
 
 // fetch initial coins
 fetchFiatsAndBlockedCoins().then(() => {
-  fetchandSanitizeCapitalConfigs().then(() => {
-    renderMarketTable(priceTickers.getObject());
-    renderMarketTrend(priceTickers.getObject());
+  fetchPancakeSwapPrice().then(() => {
+    fetchandSanitizeCapitalConfigs().then(() => {
+      renderMarketTable(priceTickers.getObject());
+      renderMarketTrend(priceTickers.getObject());
+    });
   });
 });
 
@@ -383,6 +431,40 @@ const renderMarketTable = (priceTickers = null) => {
 
   let table_body = ``;
 
+  // for custom tokens
+  DEX_COINS.forEach((coin, index) => {
+    const currentCoinData = dexTokenPrices[coin?.name?.toUpperCase()];
+    table_body += `
+    <tr class="bg-white even:bg-gray-100">
+      <td class="px-6 py-4 whitespace-no-wrap">${index + 1}</td>
+      <td class="px-6 py-4 whitespace-no-wrap">
+        <div class="flex flex-row justify-between items-center flex-wrap">
+          <img class="icon" src="https://cdn.jsdelivr.net/gh/cryptoxpress/crypto-icons/iconspng/${coin?.coin?.toLowerCase()}.png" alt="">
+          <span>${coin?.name}</span>
+          <span>${coin?.coin}</span>
+        </div>
+      </td>
+      <td class="px-6 py-4 whitespace-no-wrap" id="${coin?.coin}_last">${
+      currentCoinData?.price
+    } USD</td>
+      <td class="px-6 py-4 whitespace-no-wrap" id="${coin?.coin}_change">
+        N/A
+      </td>
+      <td class="px-6 py-4 whitespace-no-wrap">
+        Market Cap: N/A
+      </td>
+      <td class="px-6 py-4 whitespace-no-wrap">
+        <button
+          class="bg-teal-500 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded"
+          onclick={handleTradeClick("${coin?.coin}")}
+        >
+          Trade
+        </button>
+      </td>
+    </tr>
+    `;
+  });
+
   // console.log("Home coins: ", homeDisplayCoins, priceTickers);
   homeDisplayCoins
     .filter((item) => item !== null && typeof item !== "undefined")
@@ -391,58 +473,89 @@ const renderMarketTable = (priceTickers = null) => {
         priceTickers[
           `${getCoinPair(coin.coin.toLowerCase(), quoteAsset.toLowerCase())}`
         ];
-      // console.log(
-      //   "Price tick: ",
-      //   priceTickers[
-      //     `${getCoinPair(coin.coin.toLowerCase(), quoteAsset.toLowerCase())}`
-      //   ],
-      //   getCoinPair(coin.coin.toLowerCase(), quoteAsset.toLowerCase())
-      // );
       if (priceTickerObj) {
         table_body += `
-		<tr id="${coin?.name}">
-			<td data-label="NO.">${index + 1}</td>
-			<td data-label="NAME">
-				<div class="d-flex justify-content-between align-center px-3">
-				<img class="icon" src="https://cdn.jsdelivr.net/gh/cryptoxpress/crypto-icons/iconspng/${coin?.coin?.toLowerCase()}.png" alt="">
-				<span>${coin?.name}</span>
-				<span>${coin?.coin}</span>
-				</div>
-			</td>
-			<td data-label="LAST PRICE" id="${coin?.coin}_last">${
+          <tr class="bg-white even:bg-gray-100">
+            <td class="px-6 py-4 whitespace-no-wrap">${
+              index + 1 + DEX_COINS.length
+            }</td>
+            <td class="px-6 py-4 whitespace-no-wrap">
+              <div class="flex flex-row justify-between items-center flex-wrap">
+                <img class="icon" src="https://cdn.jsdelivr.net/gh/cryptoxpress/crypto-icons/iconspng/${coin?.coin?.toLowerCase()}.png" alt="">
+                <span>${coin?.name}</span>
+                <span>${coin?.coin}</span>
+              </div>
+            </td>
+            <td class="px-6 py-4 whitespace-no-wrap" id="${coin?.coin}_last">${
           priceTickerObj?.last
         } ${quoteAsset}</td>
-			<td data-label="CHANGE" id="${coin?.coin}_change">${
-          priceTickerObj?.percentage
-        }%</td>
-			<td id="${coin?.coin}_stats">${
-          parseFloat(priceTickerObj?.percentage) < 0 ? "Down" : "Up"
-        }</td>
-			<td>
-				<div class="d-flex justify-content-center align-center">
-				<button class="trade-btn">Trade</button>
-				</div>
-			</td>
-		</tr>
-	`;
+            <td class="px-6 py-4 whitespace-no-wrap ${
+              Number(priceTickerObj?.percentage) < 0
+                ? "text-red-500"
+                : "text-green-500"
+            }" id="${coin?.coin}_change">
+              ${priceTickerObj?.percentage}%
+            </td>
+            <td class="px-6 py-4 whitespace-no-wrap">
+              Market Cap: ${
+                Number(priceTickerObj?.percentage) < 0
+                  ? '<span style="color: #AE0000;">Down <i class="material-icons">arrow_drop_down</i></span>'
+                  : '<span style="color: #0FAE96;">Up <i class="material-icons">arrow_drop_up</i></span>'
+              }
+            </td>
+            <td class="px-6 py-4 whitespace-no-wrap">
+              <button
+                class="bg-teal-500 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded"
+                onclick={handleTradeClick("${coin?.coin}")}
+              >
+                Trade
+              </button>
+            </td>
+          </tr>
+        `;
       }
     });
 
   if (table_body.length > 0) {
     const output = `
-      <table>
+      <table class="table-auto min-w-full divide-y divide-gray-200">
         <thead>
           <tr>
-          <th>NO.</th>
-          <th>NAME</th>
-          <th>LAST PRICE</th>
-          <th>CHANGE</th>
-          <th>MARKET STATS</th>
-          <th>TRADE</th>
+            <th
+              class="px-6 py-3 bg-gray-50 text-left text-xs text-center leading-4 font-medium text-gray-500 uppercase tracking-wider"
+            >
+              NO
+            </th>
+            <th
+              class="px-6 py-3 bg-gray-50 text-left text-xs text-center leading-4 font-medium text-gray-500 uppercase tracking-wider"
+            >
+              NAME
+            </th>
+            <th
+              class="px-6 py-3 bg-gray-50 text-left text-xs text-center leading-4 font-medium text-gray-500 uppercase tracking-wider"
+            >
+              PRICE
+            </th>
+            <th
+              class="px-6 py-3 bg-gray-50 text-left text-xs text-center leading-4 font-medium text-gray-500 uppercase tracking-wider"
+            >
+              CHANGE
+            </th>
+            <th
+              class="px-6 py-3 bg-gray-50 text-left text-xs text-center leading-4 font-medium text-gray-500 uppercase tracking-wider"
+            >
+              STATS
+            </th>
+            <th
+              class="px-6 py-3 bg-gray-50 text-left text-xs text-center leading-4 font-medium text-gray-500 uppercase tracking-wider"
+            >
+              TRADE
+            </th>
           </tr>
         </thead>
-
-        ${table_body}
+        <tbody>
+          ${table_body}
+        </tbody>
       </table>
     `;
 
@@ -523,13 +636,16 @@ const updateMarketTableAndTrend = (priceTickers = null) => {
     const lastPrice = $(`#${coin?.coin}_last`);
     const change = $(`#${coin?.coin}_change`);
     const stats = $(`#${coin?.coin}_stats`);
-    const graph = $(`#${coin?.coin}_graph`);
 
-    if (priceTickerObj && lastPrice && change && stats && graph) {
+    if (priceTickerObj && lastPrice && change && stats) {
       lastPrice.html(`${priceTickerObj?.last?.toFixed(2)} ${quoteAsset}`);
       change.html(`${priceTickerObj?.percentage}%`);
       stats.html(
-        `${parseFloat(priceTickerObj?.percentage) < 0 ? "Down" : "Up"}`
+        `${
+          parseFloat(priceTickerObj?.percentage) < 0
+            ? 'Market Cap: <span style="color: #AE0000;">Down <i class="material-icons">arrow_drop_down</i></span>'
+            : 'Market Cap: <span style="color: #0FAE96;">Up <i class="material-icons">arrow_drop_up</i></span>'
+        }`
       );
     }
 

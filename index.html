@@ -1,894 +1,1167 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>CryptoXpress - Cryptocurrency Made Easy</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="assets/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="CryptoXpress helps simpify crypto and provides you the best tools to tackle the cryptocurrency ecosystem"
+    />
+    <meta
+      name="keywords"
+      content="Bitcoin, ethereum, dogecoin, crypto exchange"
+    />
+    <meta name="apple-itunes-app" content="app-id=1591792414" />
 
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <meta charset="utf-8" />
-  <title>CryptoXpress - Cryptocurrency Made Easy</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="assets/favicon/site.webmanifest" />
-  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
-  <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet" />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="msapplication-config" content="assets/favicon/browserconfig.xml" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description"
-    content="CryptoXpress helps simpify crypto and provides you the best tools to tackle the cryptocurrency ecosystem" />
-  <meta name="keywords" content="Bitcoin, ethereum, dogecoin, crypto exchange" />
-  <meta name="apple-itunes-app" content="app-id=1591792414">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@100,200,300,400,500,600,700,800&display=swap" rel="stylesheet">  -->
+    <link
+      href="assets/bootstrap.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+    <!-- <link href="assets" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="assets/animate.css" />
+    <!-- Resource style -->
+    <link rel="stylesheet" href="assets/owl.css" />
+    <link rel="stylesheet" href="assets/owl_002.css" />
+    <link rel="stylesheet" href="assets/ionicons.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- import bai jamjuree -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Resource style -->
+    <meta property="og:title" content="CryptoXpress - Making Crypto Easy" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="CryptoXpress helps simpify crypto and provides you the best tools to tackle the cryptocurrency ecosystem"
+    />
+    <meta property="og:url" content="https://CryptoXpress.com" />
+    <meta
+      property="og:image"
+      content="https://cryptoxpress.com/assets/images/cryptoxpress.png"
+    />
+    <meta property="og:image:type" content="image/png" />
 
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@100,200,300,400,500,600,700,800&display=swap" rel="stylesheet">  -->
-  <link href="assets/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
-  <!-- <link href="assets" rel="stylesheet" /> -->
-  <link rel="stylesheet" href="assets/animate.css" />
-  <!-- Resource style -->
-  <link rel="stylesheet" href="assets/owl.css" />
-  <link rel="stylesheet" href="assets/owl_002.css" />
-  <link rel="stylesheet" href="assets/ionicons.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <!-- import bai jamjuree -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <!-- Resource style -->
-  <meta property="og:title" content="CryptoXpress - Making Crypto Easy" />
-  <meta property="og:type" content="website" />
-  <meta property="og:description"
-    content="CryptoXpress helps simpify crypto and provides you the best tools to tackle the cryptocurrency ecosystem" />
-  <meta property="og:url" content="https://CryptoXpress.com" />
-  <meta property="og:image" content="https://cryptoxpress.com/assets/images/cryptoxpress.png" />
-  <meta property="og:image:type" content="image/png" />
+    <link
+      href="assets/css/style.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/newsletter_footer.css"
+      type="text/css"
+      media="all"
+    />
 
-  <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css" />
-  <link
-    rel="stylesheet"
-    href="assets/css/newsletter_footer.css"
-    type="text/css"
-    media="all"
-  />
-
-  <!-- custom footer css -->
-  <link rel="stylesheet" href="assets/css/custom-footer.css" />
-  <style type="text/css">
-    #mc_embed_signup {
-      background: #fff;
-      clear: left;
-      font: 14px Helvetica, Arial, sans-serif;
-    }
-
-    .clearfix {
-      zoom: 1;
-    }
-    .clearfix:before, .clearfix:after {
-      content: " ";
-      display: table;
-    }
-    .clearfix:after {
-      clear: both;
-    }
-
-    #smart-app-banner {
-      zoom: 1;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -ms-box-sizing: border-box;
-      -o-box-sizing: border-box;
-      box-sizing: border-box;
-      background: #d1d1d1;
-      background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#d1d1d1),color-stop(1,#f8f8f8));
-      background: -ms-linear-gradient(bottom,#d1d1d1,#f8f8f8);
-      background: -moz-linear-gradient(center bottom,#d1d1d1 0%,#f8f8f8 100%);
-      padding: 10px 10px 10px 31px;
-      -webkit-transition: margin-top .3s linear;
-      display: none;
-      width: 100vw;
-    }
-    #smart-app-banner:before, .smart-banner:after {
-      content: " ";
-      display: table;
-    }
-    #smart-app-banner:after {
-      clear: both;
-    }
-    #smart-app-banner.closed {
-      margin-top: -100%;
-    }
-    #smart-app-banner .meta {
-      float: left;
-      padding-top: 9px;
-      padding-right: 1em;
-      
-    }
-    #smart-app-banner .name {
-      font-size: 12px;
-      width: 163px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: block;
-      white-space: nowrap;
-      font-weight: 600;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    #smart-app-banner .author {
-      display: block;
-      font-size: 11px;
-      color: #888;
-      padding-top: 2px;
-      font-weight: 500;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    #smart-app-banner .icon {
-      height: 50px;
-      width: 50px;
-      border-radius: 20px;
-      vertical-align: top;
-      box-shadow: 0 1px 3px black;
-      float: left;
-      margin: 0 10px;
-    }
-    #smart-app-banner .close {
-      position: absolute;
-      width: 30px;
-      padding: 25px 0;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      vertical-align: middle;
-      text-align: center;
-      text-decoration: none;
-      color: rgba(0,0,0,0.3);
-    }
-    #smart-app-banner .btn {
-      text-decoration: none;
-      margin-top: 10px;
-      float: right;
-      color: white;
-      padding: 2px 19px 2px 19px;
-      font-family: 'Poppins', sans-serif;
-      font-weight: normal;
-      font-size: 13px;
-      -webkit-border-radius: 4px;
-      border-radius: 14px;
-      background: #175cc3;
-      background: -ms-linear-gradient(bottom,#303030,#838383);
-      background: -moz-linear-gradient(center bottom,#303030 0%,#838383 100%);
-      border: solid 1px rgba(79,79,79,0.75);
-      margin-right: 1.2em;
-      letter-spacing: 1.3px;
-    }
-
-    .nav-animation {
-      position: fixed;
-      animation: reelIn 0.5s ease-in-out;
-      z-index: 100;
-    }
-
-    @keyframes reelIn {
-      0% {
-        transform: translateY(-100%);
+    <!-- custom footer css -->
+    <link rel="stylesheet" href="assets/css/custom-footer.css" />
+    <style type="text/css">
+      #mc_embed_signup {
+        background: #fff;
+        clear: left;
+        font: 14px Helvetica, Arial, sans-serif;
       }
-      100% {
-        transform: translateY(0);
-      }
-    }
- 
 
-    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+      .clearfix {
+        zoom: 1;
+      }
+      .clearfix:before,
+      .clearfix:after {
+        content: " ";
+        display: table;
+      }
+      .clearfix:after {
+        clear: both;
+      }
+
+      #smart-app-banner {
+        zoom: 1;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+        background: #d1d1d1;
+        background: -webkit-gradient(
+          linear,
+          left bottom,
+          left top,
+          color-stop(0, #d1d1d1),
+          color-stop(1, #f8f8f8)
+        );
+        background: -ms-linear-gradient(bottom, #d1d1d1, #f8f8f8);
+        background: -moz-linear-gradient(
+          center bottom,
+          #d1d1d1 0%,
+          #f8f8f8 100%
+        );
+        padding: 10px 10px 10px 31px;
+        -webkit-transition: margin-top 0.3s linear;
+        display: none;
+        width: 100vw;
+      }
+      #smart-app-banner:before,
+      .smart-banner:after {
+        content: " ";
+        display: table;
+      }
+      #smart-app-banner:after {
+        clear: both;
+      }
+      #smart-app-banner.closed {
+        margin-top: -100%;
+      }
+      #smart-app-banner .meta {
+        float: left;
+        padding-top: 9px;
+        padding-right: 1em;
+      }
+      #smart-app-banner .name {
+        font-size: 12px;
+        width: 163px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        white-space: nowrap;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #smart-app-banner .author {
+        display: block;
+        font-size: 11px;
+        color: #888;
+        padding-top: 2px;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #smart-app-banner .icon {
+        height: 50px;
+        width: 50px;
+        border-radius: 20px;
+        vertical-align: top;
+        box-shadow: 0 1px 3px black;
+        float: left;
+        margin: 0 10px;
+      }
+      #smart-app-banner .close {
+        position: absolute;
+        width: 30px;
+        padding: 25px 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        vertical-align: middle;
+        text-align: center;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.3);
+      }
+      #smart-app-banner .btn {
+        text-decoration: none;
+        margin-top: 10px;
+        float: right;
+        color: white;
+        padding: 2px 19px 2px 19px;
+        font-family: "Poppins", sans-serif;
+        font-weight: normal;
+        font-size: 13px;
+        -webkit-border-radius: 4px;
+        border-radius: 14px;
+        background: #175cc3;
+        background: -ms-linear-gradient(bottom, #303030, #838383);
+        background: -moz-linear-gradient(
+          center bottom,
+          #303030 0%,
+          #838383 100%
+        );
+        border: solid 1px rgba(79, 79, 79, 0.75);
+        margin-right: 1.2em;
+        letter-spacing: 1.3px;
+      }
+
+      .nav-animation {
+        position: fixed;
+        animation: reelIn 0.5s ease-in-out;
+        z-index: 100;
+      }
+
+      @keyframes reelIn {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-  </style>
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        "gtm.start": new Date().getTime(),
-        event: "gtm.js",
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-NL3TVLP");
-
-    
-  </script>
-  <!-- End Google Tag Manager -->
-  <!-- tailwind play cdn -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            "bai-jamjuree": ["Bai Jamjuree", "sans-serif"],
+    </style>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NL3TVLP");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- tailwind play cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              "bai-jamjuree": ["Bai Jamjuree", "sans-serif"],
+            },
+          },
+          screens: {
+            xs: "200px", // added to tailwind
+            sm: "640px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+            "2xl": "1536px",
           },
         },
-        screens: {
-          xs: "200px", // added to tailwind
-          sm: "640px",
-          md: "768px",
-          lg: "1024px",
-          xl: "1280px",
-          "2xl": "1536px",
-        },
-      },
-    };
-  </script>
-  <!-- d3 js included -->
-  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-</head>
+      };
+    </script>
+    <!-- d3 js included -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NL3TVLP"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
 
-<body>
-  
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NL3TVLP" height="0" width="0"
-      style="display: none; visibility: hidden"></iframe></noscript>
-
-      
-  <!-- End Google Tag Manager (noscript) -->
-  <div class="wrapper">
-    </div>
-    <!-- navbar -->
-    <nav
-      class="w-full h-16 bg-gradient-to-r from-[#000920] via-[#0a183b] to-[#0b193c] flex justify-around items-center"
-      id="navbar"
-    >
-      <div
-        class="w-1/5 h-full lg:flex xs:hidden justify-center items-center cursor-pointer"
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper">
+      <!-- navbar -->
+      <nav
+        class="w-full h-16 bg-gradient-to-r from-[#000920] via-[#0a183b] to-[#0b193c] flex justify-around items-center"
+        id="navbar"
       >
-        <a href="/">
-          <img
-            src="assets/images/cryptoxpress.png"
-            alt=""
-            class="w-[73.22px] h-[32.7px]"
-          />
-        </a>
-      </div>
-
-      <div
-        class="lg:flex xs:hidden justify-center items-center w-3/5 h-full gap-10"
-      >
-        <!-- triggers -->
         <div
-          class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
+          class="w-1/5 h-full lg:flex xs:hidden justify-center items-center cursor-pointer"
         >
-          <span class="mr-1">Shop</span>
-          <i class="material-icons" style="color: #fff"
-            >keyboard_arrow_down</i
-          >
-
-          <!-- list -->
-          <ul class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1">
-            <li>
-              <a
-                class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                href="#"
-                >Option 1</a
-              >
-            </li>
-            <li>
-              <a
-                class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                href="#"
-                >Option 2</a
-              >
-            </li>
-            <li>
-              <a
-                class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                href="#"
-                >Option 3</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div
-          class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
-        >
-          <span class="mr-1">Trade</span>
-          <i class="material-icons" style="color: #fff"
-            >keyboard_arrow_down</i
-          >
-
-          <!-- list -->
-          <ul class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1">
-            <li>
-              <a
-                class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                href="#"
-                >Option 1</a
-              >
-            </li>
-            <li>
-              <a
-                class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                href="#"
-                >Option 2</a
-              >
-            </li>
-            <li>
-              <a
-                class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                href="#"
-                >Option 3</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div
-          class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
-        >
-          <a href="/all-new-xpress">
-            <span class="mr-1">XPRESS Token</span>
+          <a href="/">
+            <img
+              src="assets/images/cryptoxpress.png"
+              alt=""
+              class="w-[73.22px] h-[32.7px]"
+            />
           </a>
         </div>
 
         <div
-          class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
+          class="lg:flex xs:hidden justify-center items-center w-3/5 h-full gap-10"
         >
-          <span class="mr-1">My Account</span>
-          <i class="material-icons" style="color: #fff"
-            >keyboard_arrow_down</i
+          <!-- triggers -->
+          <div
+            class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
           >
+            <span class="mr-1">Shop</span>
+            <i class="material-icons" style="color: #fff"
+              >keyboard_arrow_down</i
+            >
 
-          <!-- list -->
-          <ul class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1">
-            <li>
-              <a
-                class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                href="#"
-                >Option 1</a
-              >
-            </li>
-            <li>
-              <a
-                class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                href="#"
-                >Option 2</a
-              >
-            </li>
-            <li>
-              <a
-                class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                href="#"
-                >Option 3</a
-              >
-            </li>
-          </ul>
+            <!-- list -->
+            <ul class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1">
+              <li>
+                <a
+                  class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Travel</a
+                >
+              </li>
+              <li>
+                <a
+                  class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Gift Cards</a
+                >
+              </li>
+              <li>
+                <a
+                  class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                  href="https://nft.cryptoxpress.com"
+                  >NFT</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
+          >
+            <span class="mr-1">Trade</span>
+            <i class="material-icons" style="color: #fff"
+              >keyboard_arrow_down</i
+            >
+
+            <!-- list -->
+            <ul class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1">
+              <li>
+                <a
+                  class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                  href="/staking"
+                  >Earn</a
+                >
+              </li>
+              <li>
+                <a
+                  class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Payments (coming soon)</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
+          >
+            <a href="/all-new-xpress">
+              <span class="mr-1">XPRESS Token</span>
+            </a>
+          </div>
+
+          <div
+            class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
+          >
+            <span class="mr-1">My Account</span>
+            <i class="material-icons" style="color: #fff"
+              >keyboard_arrow_down</i
+            >
+
+            <!-- list -->
+            <ul class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1">
+              <li>
+                <a
+                  class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                  href="/contact-cryptoxpress-team"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Login</a
+                >
+              </li>
+              <li>
+                <a
+                  class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Register</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <!-- mobile views -->
-      <div class="w-1/5 xs:flex lg:hidden justify-center items-center" onclick="slideMenu()">
-        <i class="material-icons" style="color: #fff; width: inherit"
-          >menu_outlined</i
-        >
-      </div>
-
-      <div class="w-3/5 xs:flex lg:hidden justify-center items-center">
-        <a href="/">
-          <img src="assets/images/CX-Logo-New.png" alt="" class="object-contain w-full h-full">
-        </a>
-      </div>
-      <!-- end of mobile views -->
-
-      <div
-        class="w-1/5 h-full flex justify-center items-center cursor-pointer"
-      >
-        <i class="material-icons" style="color: #fff; width: inherit;"
-          >shopping_cart_outlined</i
-        >
-      </div>
-
-      <!-- mobile menu -->
-      <div class="nav-menu absolute w-full h-auto top-16 z-10 hidden">
+        <!-- mobile views -->
         <div
-          class="flex flex-col justify-center items-center w-full h-auto bg-[#18448D] text-white"
+          class="w-1/5 xs:flex lg:hidden justify-center items-center"
+          onclick="slideMenu()"
+        >
+          <i class="material-icons" style="color: #fff; width: inherit"
+            >menu_outlined</i
+          >
+        </div>
+
+        <div class="w-3/5 xs:flex lg:hidden justify-center items-center">
+          <a href="/">
+            <img
+              src="assets/images/CX-Logo-New.png"
+              alt=""
+              class="object-contain w-full h-full"
+            />
+          </a>
+        </div>
+        <!-- end of mobile views -->
+
+        <div
+          class="w-1/5 h-full flex justify-center items-center cursor-pointer"
+        >
+          <i class="material-icons" style="color: #fff; width: inherit"
+            >shopping_cart_outlined</i
+          >
+        </div>
+
+        <!-- mobile menu -->
+        <div class="nav-menu absolute w-full h-auto top-16 z-10 hidden">
+          <div
+            class="flex flex-col justify-center items-center w-full h-auto bg-[#18448D] text-white"
+          >
+            <div
+              class="flex flex-col justify-center items-center w-full h-auto gap-5"
+            >
+              <div
+                class="slide-parent flex flex-col justify-center items-center w-full py-4 gap-5"
+              >
+                <a
+                  href="#"
+                  class="text-white text-sm font-bold flex justify-center items-center gap-1"
+                  >Shop
+                  <span class="slide-arrow"
+                    ><i class="material-icons" style="color: #fff"
+                      >arrow_drop_down</i
+                    ></span
+                  >
+                </a>
+                <div
+                  class="slider w-full h-auto flex flex-col justify-around items-center gap-5 hidden"
+                >
+                  <a href="#" class="text-white text-sm font-bold">Travel</a>
+                  <a href="#" class="text-white text-sm font-bold">Gift Card</a>
+                  <a
+                    href="https://nft.cryptoxpress.com"
+                    class="text-white text-sm font-bold"
+                    >NFT</a
+                  >
+                </div>
+              </div>
+
+              <div
+                class="slide-parent flex flex-col justify-center items-center w-full py-4 gap-5"
+              >
+                <a
+                  href="#"
+                  class="text-white text-sm font-bold flex justify-center items-center gap-1"
+                  >Trade
+                  <span class="slide-arrow"
+                    ><i class="material-icons" style="color: #fff"
+                      >arrow_drop_down</i
+                    ></span
+                  ></a
+                >
+                <div
+                  class="slider w-full h-auto flex flex-col justify-around items-center gap-5 hidden"
+                >
+                  <a href="/staking" class="text-white text-sm font-bold"
+                    >Earn</a
+                  >
+                  <a href="#" class="text-white text-sm font-bold"
+                    >Payments (coming soon)</a
+                  >
+                </div>
+              </div>
+
+              <div class="flex justify-center items-center w-full h-16">
+                <a href="/all-new-xpress" class="text-white text-sm font-bold"
+                  >XPRESS Token</a
+                >
+              </div>
+
+              <div
+                class="slide-parent flex flex-col justify-center items-center w-full py-4 gap-5"
+              >
+                <a
+                  href="#"
+                  class="text-white text-sm font-bold flex justify-center items-center gap-1"
+                  >My Account
+                  <span class="slide-arrow"
+                    ><i class="material-icons" style="color: #fff"
+                      >arrow_drop_down</i
+                    ></span
+                  ></a
+                >
+                <div
+                  class="slider w-full h-auto flex flex-col justify-around items-center gap-5 hidden"
+                >
+                  <a
+                    href="/contact-cryptoxpress-team"
+                    class="text-white text-sm font-bold"
+                    >Contact</a
+                  >
+                  <a href="#" class="text-white text-sm font-bold">Login</a>
+                  <a href="#" class="text-white text-sm font-bold">Logout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- end of navbar -->
+
+      <div id="main" class="main">
+        <div class="hero">
+          <div class="container-l">
+            <div class="w-100">
+              <div class="w-100 hero-content">
+                <div class="cx-float-center">
+                  <img
+                    class="fade-in"
+                    src="assets/images/svgs/CX-Logo-New.svg"
+                    style="width: 180px; margin-bottom: 10px"
+                  />
+                </div>
+
+                <h2 class="hero-h2-text fade-in">Crypto Made Easy</h2>
+
+                <img
+                  class="img-fluid fade-in-rotate"
+                  alt="Hero"
+                  src="assets/images/cx_Hero_image.png"
+                />
+
+                <p class="fade-in">
+                  We are the bridge between your crypto world and everyday life;
+                  NFTs, cryptocurrencies, payments, transfers, and more. All in
+                  one best-in-class digital experience.
+                </p>
+
+                <div
+                  class="row justify-content-center align-center fade-in"
+                  style="margin-top: 10px"
+                >
+                  <div class="col-3 col-md-3 col-lg-3">
+                    <a
+                      href="https://apps.apple.com/us/app/cryptoxpress/id1591792414"
+                      ><img
+                        class="apple-badge"
+                        src="assets/images/apple-badge-white.svg"
+                        width="100%"
+                    /></a>
+                  </div>
+                  <div class="col-3 col-md-3 col-lg-3">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.cryptoxpressmobile"
+                      ><img
+                        src="assets/images/google-play-badge.png"
+                        width="100%"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="seen-on" style="background-color: #fff">
+          <div
+            class="my-5 d-flex flex-column justify-content-center align-items-center"
+          >
+            <div
+              class="d-flex justify-content-around align-items-center w-100 flex-wrap"
+            >
+              <img
+                class="img m-3"
+                alt="Forbes"
+                src="assets/images/forbes-logo.png"
+                height="22px"
+              />
+              <img
+                class="img m-3"
+                alt="Yahoo Finance"
+                src="assets/images/YahooFinanceLogo.png"
+                height="30px"
+              />
+              <img
+                class="img m-3"
+                alt="Altcoin Buzz"
+                src="assets/images/Altcoin-BuzzLogo.png"
+                height="30px"
+              />
+              <img
+                class="img m-3"
+                alt="Gate.io"
+                src="assets/images/GateIoLogo.png"
+                height="30px"
+              />
+              <img
+                class="img m-3"
+                alt="Pancake Swap"
+                src="assets/images/PancakeSwapLogo.png"
+                height="30px"
+              />
+              <img
+                class="img m-3"
+                alt="Coin Marketcap"
+                src="assets/images/cmc.png"
+                height="30px"
+              />
+              <img
+                class="img m-3"
+                alt="Coin Gecko"
+                src="assets/images/coin-gecko-logo.png"
+                height="30px"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="w-100 d-flex flex-column justify-content-around align-center holiday-book py-5"
         >
           <div
-            class="flex flex-col justify-center items-center w-full h-auto gap-5"
+            class="w-100 d-flex flex-column justify-content-center align-center"
           >
-            <div class="flex justify-center items-center w-full h-16">
-              <a href="#" class="text-white text-sm font-bold">Shop</a>
-            </div>
-
-            <div class="flex justify-center items-center w-full h-16">
-              <a href="#" class="text-white text-sm font-bold">Trade</a>
-            </div>
-
-            <div class="flex justify-center items-center w-full h-16">
-              <a href="/all-new-xpress" class="text-white text-sm font-bold"
-                >XPRESS Token</a
-              >
-            </div>
-
-            <div class="flex justify-center items-center w-full h-16">
-              <a href="#" class="text-white text-sm font-bold">My Account</a>
-            </div>
+            <p class="holiday-heading-1">USE CRYPTO TO</p>
+            <p class="holiday-heading-2">Book Holidays</p>
+            <p class="holiday-heading-3">
+              Crypto ecosystem access, banking features, retail, travel and
+              more, at your fingertips on your phone.
+            </p>
           </div>
-        </div>
-      </div>
-    </nav>
-  <!-- end of navbar -->
 
-    <div id="main" class="main">
-      <div class="hero">
-        <div class="container-l">
-          <div class="w-100">
-            <div class="w-100 hero-content">
-              <div class="cx-float-center">
-                <img class="fade-in" src="assets/images/svgs/CX-Logo-New.svg" style="width: 180px; margin-bottom: 10px" />
+          <div class="mt-5 w-100 booking-cards-container">
+            <div
+              class="booking-card"
+              style="
+                background: transparent url('assets/images/flight_card.png')
+                  no-repeat center center;
+              "
+            >
+              <div class="booking-contents">
+                <h2>Flights</h2>
+                <p>Search flights across the globe.</p>
+                <button>Book Flights</button>
               </div>
-
-              <h2 class="hero-h2-text fade-in">Crypto Made Easy</h2>
-
-              <img class="img-fluid fade-in-rotate" alt="Hero" src="assets/images/cx_Hero_image.png" />
-
-              <p class="fade-in">
-                We are the bridge between your crypto world and everyday
-                life; NFTs, cryptocurrencies, payments, transfers, and more.
-                All in one best-in-class digital experience.
-              </p>
-
-              <div class="row justify-content-center align-center fade-in" style="margin-top: 10px">
-                <div class="col-3 col-md-3 col-lg-3">
-                  <a href="https://apps.apple.com/us/app/cryptoxpress/id1591792414"><img class="apple-badge"
-                      src="assets/images/apple-badge-white.svg" width="100%" /></a>
-                </div>
-                <div class="col-3 col-md-3 col-lg-3">
-                  <a href="https://play.google.com/store/apps/details?id=com.cryptoxpressmobile"><img
-                      src="assets/images/google-play-badge.png" width="100%" /></a>
-                </div>
+            </div>
+            <div
+              class="booking-card"
+              style="
+                background: transparent url('assets/images/hotel_card.png')
+                  no-repeat center center;
+              "
+            >
+              <div class="booking-contents">
+                <h2>Hotels</h2>
+                <p>Search popular hotels & accommodation</p>
+                <button>Book Hotels</button>
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div id="seen-on" style="background-color: #fff">
-        <div class="my-5 d-flex flex-column justify-content-center align-items-center">
-          <div class="d-flex justify-content-around align-items-center w-100 flex-wrap">
-            <img class="img m-3" alt="Forbes" src="assets/images/forbes-logo.png" height="22px" />
-            <img class="img m-3" alt="Yahoo Finance" src="assets/images/YahooFinanceLogo.png" height="30px" />
-            <img class="img m-3" alt="Altcoin Buzz" src="assets/images/Altcoin-BuzzLogo.png" height="30px" />
-            <img class="img m-3" alt="Gate.io" src="assets/images/GateIoLogo.png" height="30px" />
-            <img class="img m-3" alt="Pancake Swap" src="assets/images/PancakeSwapLogo.png" height="30px" />
-            <img class="img m-3" alt="Coin Marketcap" src="assets/images/cmc.png" height="30px" />
-            <img class="img m-3" alt="Coin Gecko" src="assets/images/coin-gecko-logo.png" height="30px" />
-          </div>
-        </div>
-      </div>
-
-      <div class="w-100 d-flex flex-column justify-content-around align-center holiday-book py-5">
-        <div class="w-100 d-flex flex-column justify-content-center align-center">
-          <p class="holiday-heading-1">USE CRYPTO TO</p>
-          <p class="holiday-heading-2">Book Holidays</p>
-          <p class="holiday-heading-3">Crypto ecosystem access, banking features, retail, travel and more, at your fingertips on your phone.</p>
-        </div>
-
-        <div class="mt-5 w-100 booking-cards-container">
-          <div class="booking-card" style="background: transparent url('assets/images/flight_card.png') no-repeat center center;">
-            <div class="booking-contents">
-              <h2>Flights</h2>
-              <p>Search flights across the globe.</p>
-              <button>Book Flights</button>
-            </div>
-          </div>
-          <div class="booking-card" style="background: transparent url('assets/images/hotel_card.png') no-repeat center center;">
-            <div class="booking-contents">
-              <h2>Hotels</h2>
-              <p>Search popular hotels & accommodation</p>
-              <button>Book Hotels</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="booking-card-popular-dest">
-          <h2>Plan Your Perfect Trip</h2>
-          <p>Search flights & accommodation to the worlds most popular destinations.</p>
-
-          <div class="popular-dest-list">
-            <div class="dest-item">
-              <img src="https://s3-alpha-sig.figma.com/img/81ab/010b/be76b5a0f44cb9eeaeadb5f68d795b83?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bhXnUOUcFrvrHqFE6XRcD24OjQXXb5MjAQn0YqhxlBnNZa1hN~C42Gfd3DRj1yFJkjzu37oSZ2-OMM9cGIPsFekidligJscBmXJQYfgUnOPR3hE-Ym3eEdQYRQEL15JgnQg~bI7-S7vZ5TCIPEyl2G1R6LtcHD6mXADYWayoITS7B5Cbf7qwPOJL3wTSAD5cGO1K3qHLY1WrptaRneeHUJJeUaCT4LbYI9VlLb-~mMLPf4esr-MR8aakrqJP7JZA7DNkcIGwsB4Zpj0GG~~390PZATdJVxWWf9GK4QBYVtCNDkaeAQsxYcsI0NiYbp6EmRKr5g05FM0puZVU4v7t0A__" alt="">
-              <div>
-                <h3>Istanbul, Turkey</h3>
-                <p>Flights . Hotels</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="w-100 d-flex flex-column justify-content-around align-center my-5 py-5">
-        <div class="w-100 d-flex flex-column justify-content-center align-center">
-          <p class="holiday-heading-1">CONVERT CRYPTO INTO</p>
-          <p class="holiday-heading-2">Gift Cards</p>
-          <p class="holiday-heading-3">Crypto ecosystem access, banking features, retail, travel and more, at your fingertips on your phone.</p>
-        </div>
-
-        <div class="gift-cards-container">
-          <div class="gift-card">
-            <img src="https://s3-alpha-sig.figma.com/img/f446/60cb/c56b2eb98c3655ccf59631d8afc577c9?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gvM7hhqepjc59aHqZBVVXH3BNqrHvd-xiWyzOSTuwUOAt~MsuS4TZ09ktORn239UDT0g4zH33Co-bJChOSyz24sz5QzxjwZ91PCzOUFBtPFz8vijkgIPgcSNt8Q0LSj68pjhsNEEfxjBLAEXLkI-qRibsAzx-51NUc4H06AMDiEHZT2BNsAxaSbsmgbcdVhUfB9E3iM1iNs4ZYhbpIUTMxf2Hr3ekE3ff67ZgmBIIWD9WVEofAYIaBkEiVEvlijdnMDCHReQIrXK5pLWXjHOsbNUp1XGHv6Kf8EgV578Nkdj7PdBwTIBLjK52ebSIb6MMQHHKMR0qXaklNjwBMLkOQ__" alt="gift card">
-            <div class="gift-footer">
-              <h3>Lorem Ipsum</h3>
-              <p>$xx - $xxx</p>
-            </div>
-          </div>
-
-          <div class="gift-card">
-            <img src="https://s3-alpha-sig.figma.com/img/f446/60cb/c56b2eb98c3655ccf59631d8afc577c9?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gvM7hhqepjc59aHqZBVVXH3BNqrHvd-xiWyzOSTuwUOAt~MsuS4TZ09ktORn239UDT0g4zH33Co-bJChOSyz24sz5QzxjwZ91PCzOUFBtPFz8vijkgIPgcSNt8Q0LSj68pjhsNEEfxjBLAEXLkI-qRibsAzx-51NUc4H06AMDiEHZT2BNsAxaSbsmgbcdVhUfB9E3iM1iNs4ZYhbpIUTMxf2Hr3ekE3ff67ZgmBIIWD9WVEofAYIaBkEiVEvlijdnMDCHReQIrXK5pLWXjHOsbNUp1XGHv6Kf8EgV578Nkdj7PdBwTIBLjK52ebSIb6MMQHHKMR0qXaklNjwBMLkOQ__" alt="gift card">
-            <div class="gift-footer">
-              <h3>Lorem Ipsum</h3>
-              <p>$xx - $xxx</p>
-            </div>
-          </div>
-
-          <div class="gift-card">
-            <img src="https://s3-alpha-sig.figma.com/img/f446/60cb/c56b2eb98c3655ccf59631d8afc577c9?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gvM7hhqepjc59aHqZBVVXH3BNqrHvd-xiWyzOSTuwUOAt~MsuS4TZ09ktORn239UDT0g4zH33Co-bJChOSyz24sz5QzxjwZ91PCzOUFBtPFz8vijkgIPgcSNt8Q0LSj68pjhsNEEfxjBLAEXLkI-qRibsAzx-51NUc4H06AMDiEHZT2BNsAxaSbsmgbcdVhUfB9E3iM1iNs4ZYhbpIUTMxf2Hr3ekE3ff67ZgmBIIWD9WVEofAYIaBkEiVEvlijdnMDCHReQIrXK5pLWXjHOsbNUp1XGHv6Kf8EgV578Nkdj7PdBwTIBLjK52ebSIb6MMQHHKMR0qXaklNjwBMLkOQ__" alt="gift card">
-            <div class="gift-footer">
-              <h3>Lorem Ipsum</h3>
-              <p>$xx - $xxx</p>
-            </div>
-          </div>
-
-          <div class="gift-card">
-            <img src="https://s3-alpha-sig.figma.com/img/f446/60cb/c56b2eb98c3655ccf59631d8afc577c9?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gvM7hhqepjc59aHqZBVVXH3BNqrHvd-xiWyzOSTuwUOAt~MsuS4TZ09ktORn239UDT0g4zH33Co-bJChOSyz24sz5QzxjwZ91PCzOUFBtPFz8vijkgIPgcSNt8Q0LSj68pjhsNEEfxjBLAEXLkI-qRibsAzx-51NUc4H06AMDiEHZT2BNsAxaSbsmgbcdVhUfB9E3iM1iNs4ZYhbpIUTMxf2Hr3ekE3ff67ZgmBIIWD9WVEofAYIaBkEiVEvlijdnMDCHReQIrXK5pLWXjHOsbNUp1XGHv6Kf8EgV578Nkdj7PdBwTIBLjK52ebSIb6MMQHHKMR0qXaklNjwBMLkOQ__" alt="gift card">
-            <div class="gift-footer">
-              <h3>Lorem Ipsum</h3>
-              <p>$xx - $xxx</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="d-flex justify-content-center align-center">
-          <button class="btn btn-link">
-            <p class="explore-gift-txt">Explore more brands →</p>
-          </button>
-        </div>
-      </div>
-
-      <div class="w-100 d-flex flex-column justify-content-around align-center holiday-book mt-5 py-5">
-        <div class="w-100 d-flex flex-column justify-content-center align-center">
-          <p class="holiday-heading-1">TRADE CRYPTO AND</p>
-          <p class="holiday-heading-2">GROW YOUR PORTFOLIO</p>
-          <p class="holiday-heading-3">Crypto ecosystem access, banking features, retail, travel and more, at your fingertips on your phone.</p>
-        </div>
-
-        <div class="booking-card-popular-dest gap-y-18m">
-          <h2>Market Trend</h2>
-
-          <div class="market-tends-list" id="market-trends-list"></div>
-
-          <h2>Market Movers</h2>
-
-          <div class="market-movers w-100">
-            <nav class="nav nav-pills flex-column flex-sm-row gap-12">
-              <a class="flex-sm-fill text-sm-center nav-link active" href="#" onclick="toggleActive(this)">Active</a>
-              <a class="flex-sm-fill text-sm-center nav-link" href="#" onclick="toggleActive(this)">Popular</a>
-              <a class="flex-sm-fill text-sm-center nav-link" href="#" onclick="toggleActive(this)">Metaverse</a>
-              <a class="flex-sm-fill text-sm-center nav-link" href="#" onclick="toggleActive(this)">Entertainment</a>
-              <a class="flex-sm-fill text-sm-center nav-link" href="#" onclick="toggleActive(this)">Energy</a>
-              <a class="flex-sm-fill text-sm-center nav-link" href="#" onclick="toggleActive(this)">Gaming</a>
-              <a class="flex-sm-fill text-sm-center nav-link" href="#" onclick="toggleActive(this)">Music</a>
-              <a class="flex-sm-fill text-sm-center nav-link" href="#" onclick="toggleActive(this)">See all 12+</a>
-            </nav>
-
-            <br><br>
-
-            <div id="market_table_container"></div>
-          </div>
-        </div>
-
-        <div class="d-flex justify-content-center align-center">
-          <button class="btn btn-link">
-            <p class="explore-gift-txt">See all coins →</p>
-          </button>
-        </div>
-      </div>
-
-      <div class="w-100 d-flex flex-column justify-content-around align-center holiday-book py-5">
-        <div class="booking-card-popular-dest gap-y-18m">
-          <h2>Learn About Cryptocurrency</h2>
-          <p>Learn all about cryptocurrency to start investing</p>
-
-          <div class="news-list" id="newsList"></div>
-
-        </div>
-      </div>
-
-      <!-- newsletter footer -->
-      <div class="vector-parent">
-        <div class="title-container">
-          <div class="styled-title">
-            Join our mail newsletter to get notified about updates
-          </div>
-        </div>
-        <div class="input-container">
-          <input
-            class="group-child"
-            type="email"
-            placeholder="Enter your email to subscribe"
-            id="subscribe_email"
-          />
-          <button class="input-submission" onclick="submitEmail()">
-            SUBSCRIBE
-          </button>
-        </div>
-      </div>
-
-      <!-- custom footer -->
-      <div class="custom-footer">
-        <div class="top">
-          <div class="left">
-            <img
-              src="assets/images/svgs/CX-Logo-New.svg"
-              class="left-icon"
-              alt=""
-            />
-            <p class="cp-text">
-              © CryptoXpress Ltd. 2023 Rights Reserved UIC 207142997, Krasno
-              Selo District, 2V Topli Dol Str., Ap.16, Sofia, Republic of
-              Bulgaria 1680
+          <div class="booking-card-popular-dest">
+            <h2>Plan Your Perfect Trip</h2>
+            <p>
+              Search flights & accommodation to the worlds most popular
+              destinations.
             </p>
 
-            <div class="buttons-container">
-              <a
-                href="https://apps.apple.com/us/app/cryptoxpress/id1591792414"
-                class="button"
-              >
-                <img src="assets/images/apple-badge-white.svg" alt="" />
-              </a>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.cryptoxpressmobile"
-                class="button"
-              >
-                <img src="assets/images/google-play-badge.png" alt="" />
-              </a>
+            <div class="popular-dest-list">
+              <div class="dest-item">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/81ab/010b/be76b5a0f44cb9eeaeadb5f68d795b83?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bhXnUOUcFrvrHqFE6XRcD24OjQXXb5MjAQn0YqhxlBnNZa1hN~C42Gfd3DRj1yFJkjzu37oSZ2-OMM9cGIPsFekidligJscBmXJQYfgUnOPR3hE-Ym3eEdQYRQEL15JgnQg~bI7-S7vZ5TCIPEyl2G1R6LtcHD6mXADYWayoITS7B5Cbf7qwPOJL3wTSAD5cGO1K3qHLY1WrptaRneeHUJJeUaCT4LbYI9VlLb-~mMLPf4esr-MR8aakrqJP7JZA7DNkcIGwsB4Zpj0GG~~390PZATdJVxWWf9GK4QBYVtCNDkaeAQsxYcsI0NiYbp6EmRKr5g05FM0puZVU4v7t0A__"
+                  alt=""
+                />
+                <div>
+                  <h3>Istanbul, Turkey</h3>
+                  <p>Flights . Hotels</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="mid">
-            <div class="mid-section">
-              <h1 class="footer-text title">About</h1>
-              <a class="footer-text footer-links" href="/about-us">About Us</a>
-              <a class="footer-text footer-links" href="/all-new-xpress">XPRESS Token</a>
-              <a class="footer-text footer-links" href="#">My Account</a>
-              <a class="footer-text footer-links" href="/contact-cryptoxpress-team">Help Center</a>
-              <a class="footer-text footer-links" href="#">Privacy Policy</a>
-              <a class="footer-text footer-links" href="#"
-                >Terms & Conditions</a
-              >
+        </div>
+
+        <div
+          class="w-100 d-flex flex-column justify-content-around align-center my-5 py-5"
+        >
+          <div
+            class="w-100 d-flex flex-column justify-content-center align-center"
+          >
+            <p class="holiday-heading-1">CONVERT CRYPTO INTO</p>
+            <p class="holiday-heading-2">Gift Cards</p>
+            <p class="holiday-heading-3">
+              Crypto ecosystem access, banking features, retail, travel and
+              more, at your fingertips on your phone.
+            </p>
+          </div>
+
+          <div class="gift-cards-container">
+            <div class="gift-card">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/f446/60cb/c56b2eb98c3655ccf59631d8afc577c9?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gvM7hhqepjc59aHqZBVVXH3BNqrHvd-xiWyzOSTuwUOAt~MsuS4TZ09ktORn239UDT0g4zH33Co-bJChOSyz24sz5QzxjwZ91PCzOUFBtPFz8vijkgIPgcSNt8Q0LSj68pjhsNEEfxjBLAEXLkI-qRibsAzx-51NUc4H06AMDiEHZT2BNsAxaSbsmgbcdVhUfB9E3iM1iNs4ZYhbpIUTMxf2Hr3ekE3ff67ZgmBIIWD9WVEofAYIaBkEiVEvlijdnMDCHReQIrXK5pLWXjHOsbNUp1XGHv6Kf8EgV578Nkdj7PdBwTIBLjK52ebSIb6MMQHHKMR0qXaklNjwBMLkOQ__"
+                alt="gift card"
+              />
+              <div class="gift-footer">
+                <h3>Lorem Ipsum</h3>
+                <p>$xx - $xxx</p>
+              </div>
             </div>
-            <div class="mid-section">
-              <h1 class="footer-text title">Quick Links</h1>
-              <a class="footer-text footer-links" href="#">Trade</a>
-              <a class="footer-text footer-links" href="#">Earn</a>
-              <a class="footer-text footer-links" href="#">Gift Cards</a>
-              <a class="footer-text footer-links" href="#">Flights</a>
-              <a class="footer-text footer-links" href="#">Hotels</a>
-              <a class="footer-text footer-links" href="#">NFTs</a>
+
+            <div class="gift-card">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/f446/60cb/c56b2eb98c3655ccf59631d8afc577c9?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gvM7hhqepjc59aHqZBVVXH3BNqrHvd-xiWyzOSTuwUOAt~MsuS4TZ09ktORn239UDT0g4zH33Co-bJChOSyz24sz5QzxjwZ91PCzOUFBtPFz8vijkgIPgcSNt8Q0LSj68pjhsNEEfxjBLAEXLkI-qRibsAzx-51NUc4H06AMDiEHZT2BNsAxaSbsmgbcdVhUfB9E3iM1iNs4ZYhbpIUTMxf2Hr3ekE3ff67ZgmBIIWD9WVEofAYIaBkEiVEvlijdnMDCHReQIrXK5pLWXjHOsbNUp1XGHv6Kf8EgV578Nkdj7PdBwTIBLjK52ebSIb6MMQHHKMR0qXaklNjwBMLkOQ__"
+                alt="gift card"
+              />
+              <div class="gift-footer">
+                <h3>Lorem Ipsum</h3>
+                <p>$xx - $xxx</p>
+              </div>
+            </div>
+
+            <div class="gift-card">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/f446/60cb/c56b2eb98c3655ccf59631d8afc577c9?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gvM7hhqepjc59aHqZBVVXH3BNqrHvd-xiWyzOSTuwUOAt~MsuS4TZ09ktORn239UDT0g4zH33Co-bJChOSyz24sz5QzxjwZ91PCzOUFBtPFz8vijkgIPgcSNt8Q0LSj68pjhsNEEfxjBLAEXLkI-qRibsAzx-51NUc4H06AMDiEHZT2BNsAxaSbsmgbcdVhUfB9E3iM1iNs4ZYhbpIUTMxf2Hr3ekE3ff67ZgmBIIWD9WVEofAYIaBkEiVEvlijdnMDCHReQIrXK5pLWXjHOsbNUp1XGHv6Kf8EgV578Nkdj7PdBwTIBLjK52ebSIb6MMQHHKMR0qXaklNjwBMLkOQ__"
+                alt="gift card"
+              />
+              <div class="gift-footer">
+                <h3>Lorem Ipsum</h3>
+                <p>$xx - $xxx</p>
+              </div>
+            </div>
+
+            <div class="gift-card">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/f446/60cb/c56b2eb98c3655ccf59631d8afc577c9?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gvM7hhqepjc59aHqZBVVXH3BNqrHvd-xiWyzOSTuwUOAt~MsuS4TZ09ktORn239UDT0g4zH33Co-bJChOSyz24sz5QzxjwZ91PCzOUFBtPFz8vijkgIPgcSNt8Q0LSj68pjhsNEEfxjBLAEXLkI-qRibsAzx-51NUc4H06AMDiEHZT2BNsAxaSbsmgbcdVhUfB9E3iM1iNs4ZYhbpIUTMxf2Hr3ekE3ff67ZgmBIIWD9WVEofAYIaBkEiVEvlijdnMDCHReQIrXK5pLWXjHOsbNUp1XGHv6Kf8EgV578Nkdj7PdBwTIBLjK52ebSIb6MMQHHKMR0qXaklNjwBMLkOQ__"
+                alt="gift card"
+              />
+              <div class="gift-footer">
+                <h3>Lorem Ipsum</h3>
+                <p>$xx - $xxx</p>
+              </div>
             </div>
           </div>
-          <div class="right">
-            <button class="scroll-top" id="scroll_top">
-              <i class="material-icons" style="color: #fff">straight</i>
+
+          <div class="d-flex justify-content-center align-center">
+            <button class="btn btn-link">
+              <p class="explore-gift-txt">Explore more brands →</p>
             </button>
           </div>
         </div>
-        <div class="bottom">
-          <div class="left">
-            <p class="copyright-txt">© CryptoXpress 2021 Rights Reserved</p>
+
+        <div
+          class="w-100 d-flex flex-column justify-content-around align-center holiday-book mt-5 py-5"
+        >
+          <div
+            class="w-100 d-flex flex-column justify-content-center align-center"
+          >
+            <p class="holiday-heading-1">TRADE CRYPTO AND</p>
+            <p class="holiday-heading-2">GROW YOUR PORTFOLIO</p>
+            <p class="holiday-heading-3">
+              Crypto ecosystem access, banking features, retail, travel and
+              more, at your fingertips on your phone.
+            </p>
           </div>
-          <div class="right">
-            <div class="socials">
-              <a
-                href="https://www.facebook.com/iamCryptoxpress"
-                class="social-link"
-                >Facebook</a
-              >
-              <a href="https://twitter.com/crypto_xpress" class="social-link"
-                >Twitter</a
-              >
-              <a
-                href="https://www.instagram.com/crypto.xpress/"
-                class="social-link"
-                >Instagram</a
-              >
-              <a href="#" class="social-link">News</a>
-              <a
-                href="https://web.telegram.org/a/#-1001640911762"
-                class="social-link"
-                >Telegram</a
-              >
+
+          <div class="booking-card-popular-dest gap-y-18m">
+            <h2>Market Trend</h2>
+
+            <div class="market-tends-list" id="market-trends-list"></div>
+
+            <h2>Market Movers</h2>
+
+            <div class="market-movers w-100">
+              <nav class="nav nav-pills flex-column flex-sm-row gap-12">
+                <a
+                  class="flex-sm-fill text-sm-center nav-link active"
+                  href="#"
+                  onclick="toggleActive(this)"
+                  >Active</a
+                >
+                <a
+                  class="flex-sm-fill text-sm-center nav-link"
+                  href="#"
+                  onclick="toggleActive(this)"
+                  >Popular</a
+                >
+                <a
+                  class="flex-sm-fill text-sm-center nav-link"
+                  href="#"
+                  onclick="toggleActive(this)"
+                  >Metaverse</a
+                >
+                <a
+                  class="flex-sm-fill text-sm-center nav-link"
+                  href="#"
+                  onclick="toggleActive(this)"
+                  >Entertainment</a
+                >
+                <a
+                  class="flex-sm-fill text-sm-center nav-link"
+                  href="#"
+                  onclick="toggleActive(this)"
+                  >Energy</a
+                >
+                <a
+                  class="flex-sm-fill text-sm-center nav-link"
+                  href="#"
+                  onclick="toggleActive(this)"
+                  >Gaming</a
+                >
+                <a
+                  class="flex-sm-fill text-sm-center nav-link"
+                  href="#"
+                  onclick="toggleActive(this)"
+                  >Music</a
+                >
+                <a
+                  class="flex-sm-fill text-sm-center nav-link"
+                  href="#"
+                  onclick="toggleActive(this)"
+                  >See all 12+</a
+                >
+              </nav>
+
+              <br /><br />
+
+              <div class="overflow-x-auto" id="market_table_container"></div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center align-center">
+            <button class="btn btn-link">
+              <p class="explore-gift-txt">See all coins →</p>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="w-100 d-flex flex-column justify-content-around align-center holiday-book py-5"
+        >
+          <div class="booking-card-popular-dest gap-y-18m">
+            <h2>Learn About Cryptocurrency</h2>
+            <p>Learn all about cryptocurrency to start investing</p>
+
+            <div class="news-list" id="newsList"></div>
+          </div>
+        </div>
+
+        <!-- newsletter footer -->
+        <div class="vector-parent">
+          <div class="title-container">
+            <div class="styled-title">
+              Join our mail newsletter to get notified about updates
+            </div>
+          </div>
+          <div class="input-container">
+            <input
+              class="group-child"
+              type="email"
+              placeholder="Enter your email to subscribe"
+              id="subscribe_email"
+            />
+            <button class="input-submission" onclick="submitEmail()">
+              SUBSCRIBE
+            </button>
+          </div>
+        </div>
+
+        <!-- custom footer -->
+        <div class="custom-footer">
+          <div class="top">
+            <div class="left">
+              <img
+                src="assets/images/svgs/CX-Logo-New.svg"
+                class="left-icon"
+                alt=""
+              />
+              <p class="cp-text">
+                © CryptoXpress Ltd. 2023 Rights Reserved UIC 207142997, Krasno
+                Selo District, 2V Topli Dol Str., Ap.16, Sofia, Republic of
+                Bulgaria 1680
+              </p>
+
+              <div class="buttons-container">
+                <a
+                  href="https://apps.apple.com/us/app/cryptoxpress/id1591792414"
+                  class="button"
+                >
+                  <img src="assets/images/apple-badge-white.svg" alt="" />
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.cryptoxpressmobile"
+                  class="button"
+                >
+                  <img src="assets/images/google-play-badge.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="mid">
+              <div class="mid-section">
+                <h1 class="footer-text title">About</h1>
+                <a class="footer-text footer-links" href="/about-us"
+                  >About Us</a
+                >
+                <a class="footer-text footer-links" href="/all-new-xpress"
+                  >XPRESS Token</a
+                >
+                <a class="footer-text footer-links" href="#">My Account</a>
+                <a
+                  class="footer-text footer-links"
+                  href="/contact-cryptoxpress-team"
+                  >Help Center</a
+                >
+                <a class="footer-text footer-links" href="#">Privacy Policy</a>
+                <a class="footer-text footer-links" href="#"
+                  >Terms & Conditions</a
+                >
+              </div>
+              <div class="mid-section">
+                <h1 class="footer-text title">Quick Links</h1>
+                <a class="footer-text footer-links" href="#">Trade</a>
+                <a class="footer-text footer-links" href="#">Earn</a>
+                <a class="footer-text footer-links" href="#">Gift Cards</a>
+                <a class="footer-text footer-links" href="#">Flights</a>
+                <a class="footer-text footer-links" href="#">Hotels</a>
+                <a class="footer-text footer-links" href="#">NFTs</a>
+              </div>
+            </div>
+            <div class="right">
+              <button class="scroll-top" id="scroll_top">
+                <i class="material-icons" style="color: #fff">straight</i>
+              </button>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="left">
+              <p class="copyright-txt">© CryptoXpress 2021 Rights Reserved</p>
+            </div>
+            <div class="right">
+              <div class="socials">
+                <a
+                  href="https://www.facebook.com/iamCryptoxpress"
+                  class="social-link"
+                  >Facebook</a
+                >
+                <a href="https://twitter.com/crypto_xpress" class="social-link"
+                  >Twitter</a
+                >
+                <a
+                  href="https://www.instagram.com/crypto.xpress/"
+                  class="social-link"
+                  >Instagram</a
+                >
+                <a href="#" class="social-link">News</a>
+                <a
+                  href="https://web.telegram.org/a/#-1001640911762"
+                  class="social-link"
+                  >Telegram</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Scroll To Top -->
-      <div id="back-top" class="bk-top" style="display: none">
-        <div class="bk-top-txt">
-          <a class="back-to-top js-scroll-trigger" href="#main">Up</a>
-        </div>
-      </div>
-      <!-- Scroll To Top Ends-->
+      <!-- Main -->
     </div>
-    <!-- Main -->
-  </div>
-  <!-- Wrapper -->
+    <!-- Wrapper -->
 
-  <!-- Jquery and Js Plugins -->
-  <script type="text/javascript" src="assets/jquery-2.js"></script>
-  <script type="text/javascript" src="assets/popper.js"></script>
-  <script type="text/javascript" src="assets/bootstrap.js"></script>
-  <!-- Remember to include jQuery :) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-  <!-- jQuery Modal -->
-            </table>
-          </div>
-        </div>
-      </div>
+    <!-- Jquery and Js Plugins -->
+    <script type="text/javascript" src="assets/jquery-2.js"></script>
+    <script type="text/javascript" src="assets/popper.js"></script>
+    <script type="text/javascript" src="assets/bootstrap.js"></script>
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
-      <!-- Scroll To Top -->
-      <div id="back-top" class="bk-top" style="display: none">
-        <div class="bk-top-txt">
-          <a class="back-to-top js-scroll-trigger" href="#main">Up</a>
-        </div>
-      </div>
-      <!-- Scroll To Top Ends-->
-    </div>
-    <!-- Main -->
-  </div>
-  <!-- Wrapper -->
+    <!-- Jquery and Js Plugins -->
+    <script type="text/javascript" src="assets/jquery-2.js"></script>
+    <script type="text/javascript" src="assets/popper.js"></script>
+    <script type="text/javascript" src="assets/bootstrap.js"></script>
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <script type="text/javascript" src="assets/plugins.js"></script>
+    <script type="text/javascript" src="assets/custom.js"></script>
+    <script type="text/javascript" src="assets/js/xpressData.js"></script>
+    <!-- <script type="text/javascript" src="assets/livereload.js"></script> -->
+    <!-- Banner Starts Here -->
+    <script>
+      const banner = document.getElementById("smart-app-banner");
+      const installButton = document.getElementById("install-button");
 
-  <!-- Jquery and Js Plugins -->
-  <script type="text/javascript" src="assets/jquery-2.js"></script>
-  <script type="text/javascript" src="assets/popper.js"></script>
-  <script type="text/javascript" src="assets/bootstrap.js"></script>
-  <!-- Remember to include jQuery :) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-  <!-- jQuery Modal -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-  <script type="text/javascript" src="assets/plugins.js"></script>
-  <script type="text/javascript" src="assets/custom.js"></script>
-  <script type="text/javascript" src="assets/js/xpressData.js"></script>
-  <!-- <script type="text/javascript" src="assets/livereload.js"></script> -->
-  <!-- Banner Starts Here -->
-  <script>
-    const banner = document.getElementById('smart-app-banner');
-    const installButton = document.getElementById('install-button');
+      // const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-    // const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      const isMobileDevice = /Android/i.test(navigator.userAgent);
 
-    const isMobileDevice = /Android/i.test(navigator.userAgent);
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  
-    const closeButton = document.getElementById('close-btn');
+      const closeButton = document.getElementById("close-btn");
 
+      if (isMobileDevice) {
+        // Show the banner
+        banner.style.display = "block";
 
-    if (isMobileDevice) {
-            // Show the banner
-            banner.style.display = 'block';
+        closeButton.addEventListener("click", () => {
+          banner.style.display = "none";
+        });
 
-            closeButton.addEventListener('click',()=>{
-              banner.style.display = 'none';
-            })
-
-            // Add an event listener to the "Install Now" button
-            installButton.addEventListener('click', () => {
-                // You can customize this part to redirect the user to the app store
-                // For example, for iOS:
-                // if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                //   console.log("IOS Device Detected !");
-                //     window.location.href = 'https://apps.apple.com/us/app/cryptoxpress/id1591792414';
-                // }
-                // For Android:
-                // window.location.href = 'https://play.google.com/store/apps/details?id=your.package.name';
-                if (/android/i.test(userAgent)) {
-                  console.log("Android Device Detected !");
-                    window.location.href = 'https://play.google.com/store/apps/details?id=com.cryptoxpressmobile';
-                }
-            });
-      }
-      else{
+        // Add an event listener to the "Install Now" button
+        installButton.addEventListener("click", () => {
+          // You can customize this part to redirect the user to the app store
+          // For example, for iOS:
+          // if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+          //   console.log("IOS Device Detected !");
+          //     window.location.href = 'https://apps.apple.com/us/app/cryptoxpress/id1591792414';
+          // }
+          // For Android:
+          // window.location.href = 'https://play.google.com/store/apps/details?id=your.package.name';
+          if (/android/i.test(userAgent)) {
+            console.log("Android Device Detected !");
+            window.location.href =
+              "https://play.google.com/store/apps/details?id=com.cryptoxpressmobile";
+          }
+        });
+      } else {
         console.log("Windows Device not supported !");
         console.log(isMobileDevice);
       }
-  </script>
+    </script>
 
-  <!-- actions script -->
-  <script>
-    toggleActive = element => {
-      const navLinks = document.querySelectorAll('.nav-link');
-      navLinks.forEach(link => link.classList.remove('active'));
-      element.classList.add('active');
-    
-    }
+    <!-- actions script -->
+    <script>
+      toggleActive = (element) => {
+        const navLinks = document.querySelectorAll(".nav-link");
+        navLinks.forEach((link) => link.classList.remove("active"));
+        element.classList.add("active");
+      };
 
-    function browseUrl(url) {
-      window.open(url);
-    }
-  </script>
-
-  <!-- script for price websockets -->
-  <script src="assets/js/24HrTicker.js"></script>
-
-  <!-- script for news api -->
-  <script src="assets/js/news.js"></script>
-
-  <!-- newsletter footer script -->
-  <script src="assets/js/ui/newsletter_footer.js"></script>
-
-  <!-- script for navbar -->
-  <script type="text/javascript">
-    // scroll animation
-    const navbar = $("#navbar");
-    const minScrollValue = 100;
-
-    window.addEventListener("scroll", function () {
-      let scrollTop = window.pageYOffset;
-
-      // Hide the navbar when scrolling down, show when scrolling up
-      if (scrollTop > minScrollValue) {
-        navbar.addClass("nav-animation");
-      } else {
-        navbar.removeClass("nav-animation");
+      function browseUrl(url) {
+        window.open(url);
       }
-    });
+    </script>
 
-    // dropdown
-    // $(".dropdown-menu").hover(
-    //   function () {
-    //     $(this).removeClass("hidden");
-    //   },
-    //   function () {
-    //     $(this).addClass("hidden");
-    //   }
-    // );
+    <!-- script for price websockets -->
+    <script src="assets/js/24HrTicker.js"></script>
 
-    $(".drop-btn").hover(
-      function () {
-        const menu = $(this).find(".dropdown-menu")
-        menu.removeClass("hidden");
-        menu.addClass("block");
-        menu.css("inset", "2.5rem auto auto");
-        menu.addClass("fade-in");
-      },
-      function () {
-        $(this).find(".dropdown-menu").addClass("hidden");
-        $(this).find(".dropdown-menu").removeClass("block");
+    <!-- script for news api -->
+    <script src="assets/js/news.js"></script>
+
+    <!-- newsletter footer script -->
+    <script src="assets/js/ui/newsletter_footer.js"></script>
+
+    <!-- script for navbar -->
+    <script type="text/javascript">
+      // scroll animation
+      const navbar = $("#navbar");
+      const minScrollValue = 100;
+
+      window.addEventListener("scroll", function () {
+        let scrollTop = window.pageYOffset;
+
+        // Hide the navbar when scrolling down, show when scrolling up
+        if (scrollTop > minScrollValue) {
+          navbar.addClass("nav-animation");
+        } else {
+          navbar.removeClass("nav-animation");
+        }
+      });
+
+      // slider for mobile
+      $(".slide-parent").click(function () {
+        const arrow = $(this).find(".slide-arrow");
+        if ($(this).find(".slider").is(":visible")) {
+          $(this).find(".slider").slideUp("fast");
+          arrow.empty();
+          arrow.html(
+            '<i class="material-icons" style="color: #fff">arrow_drop_down</i>'
+          );
+        } else {
+          $(this).find(".slider").slideDown("fast").css("display", "flex");
+          arrow.empty();
+          arrow.html(
+            '<i class="material-icons" style="color: #fff">arrow_drop_up</i>'
+          );
+        }
+      });
+
+      // dropdown
+      $(".drop-btn").hover(
+        function () {
+          const menu = $(this).find(".dropdown-menu");
+          menu.css("inset", "2.5rem auto auto");
+          menu.fadeIn("fast");
+          menu.show();
+        },
+        function () {
+          $(this).find(".dropdown-menu").hide();
+        }
+      );
+
+      // mobile menu
+      function slideMenu() {
+        const menu = $(".nav-menu");
+        if (menu.is(":hidden")) {
+          menu.slideDown("fast");
+        } else {
+          menu.slideUp("fast");
+        }
       }
-    );
+    </script>
 
-    // mobile menu
-    function slideMenu() {
-      const menu = $(".nav-menu");
-      if (menu.is(":hidden")) {
-        menu.slideDown("fast");
-      } else {
-        menu.slideUp("fast");
-      }
-    }
-  </script>
-
-  <!-- custom footer script -->
-  <script type="text/javascript" src="assets/js/custom-footer.js"></script>
-</body>
-
+    <!-- custom footer script -->
+    <script type="text/javascript" src="assets/js/custom-footer.js"></script>
+  </body>
 </html>

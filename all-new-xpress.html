@@ -122,6 +122,28 @@
         }
       }
 
+      /* chart specific css */
+      .line {
+        fill: none;
+        stroke: #41c3a9; /* blue color */
+        stroke-width: 2px;
+      }
+
+      .area {
+        fill: #c9eee7; /* light gray color */
+      }
+
+      .tooltip {
+        position: absolute;
+        text-align: center;
+        padding: 6px;
+        font: 12px sans-serif;
+        background: lightsteelblue;
+        border: 0.5px solid;
+        border-radius: 5px;
+        pointer-events: none;
+      }
+
       /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
     </style>
@@ -220,21 +242,21 @@
                   <a
                     class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
                     href="#"
-                    >Option 1</a
+                    >Travel</a
                   >
                 </li>
                 <li>
                   <a
                     class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
                     href="#"
-                    >Option 2</a
+                    >Gift Cards</a
                   >
                 </li>
                 <li>
                   <a
-                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                    href="#"
-                    >Option 3</a
+                    class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="https://nft.cryptoxpress.com"
+                    >NFT</a
                   >
                 </li>
               </ul>
@@ -255,22 +277,15 @@
                 <li>
                   <a
                     class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                    href="#"
-                    >Option 1</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                    href="#"
-                    >Option 2</a
+                    href="/staking"
+                    >Earn</a
                   >
                 </li>
                 <li>
                   <a
                     class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
                     href="#"
-                    >Option 3</a
+                    >Payments (coming soon)</a
                   >
                 </li>
               </ul>
@@ -299,22 +314,22 @@
                 <li>
                   <a
                     class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                    href="#"
-                    >Option 1</a
+                    href="/contact-cryptoxpress-team"
+                    >Contact</a
                   >
                 </li>
                 <li>
                   <a
                     class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
                     href="#"
-                    >Option 2</a
+                    >Login</a
                   >
                 </li>
                 <li>
                   <a
                     class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
                     href="#"
-                    >Option 3</a
+                    >Register</a
                   >
                 </li>
               </ul>
@@ -358,12 +373,57 @@
               <div
                 class="flex flex-col justify-center items-center w-full h-auto gap-5"
               >
-                <div class="flex justify-center items-center w-full h-16">
-                  <a href="#" class="text-white text-sm font-bold">Shop</a>
+                <div
+                  class="slide-parent flex flex-col justify-center items-center w-full py-4 gap-5"
+                >
+                  <a
+                    href="#"
+                    class="text-white text-sm font-bold flex justify-center items-center gap-1"
+                    >Shop
+                    <span class="slide-arrow"
+                      ><i class="material-icons" style="color: #fff"
+                        >arrow_drop_down</i
+                      ></span
+                    >
+                  </a>
+                  <div
+                    class="slider w-full h-auto flex flex-col justify-around items-center gap-5 hidden"
+                  >
+                    <a href="#" class="text-white text-sm font-bold">Travel</a>
+                    <a href="#" class="text-white text-sm font-bold"
+                      >Gift Card</a
+                    >
+                    <a
+                      href="https://nft.cryptoxpress.com"
+                      class="text-white text-sm font-bold"
+                      >NFT</a
+                    >
+                  </div>
                 </div>
 
-                <div class="flex justify-center items-center w-full h-16">
-                  <a href="#" class="text-white text-sm font-bold">Trade</a>
+                <div
+                  class="slide-parent flex flex-col justify-center items-center w-full py-4 gap-5"
+                >
+                  <a
+                    href="#"
+                    class="text-white text-sm font-bold flex justify-center items-center gap-1"
+                    >Trade
+                    <span class="slide-arrow"
+                      ><i class="material-icons" style="color: #fff"
+                        >arrow_drop_down</i
+                      ></span
+                    ></a
+                  >
+                  <div
+                    class="slider w-full h-auto flex flex-col justify-around items-center gap-5 hidden"
+                  >
+                    <a href="/staking" class="text-white text-sm font-bold"
+                      >Earn</a
+                    >
+                    <a href="#" class="text-white text-sm font-bold"
+                      >Payments (coming soon)</a
+                    >
+                  </div>
                 </div>
 
                 <div class="flex justify-center items-center w-full h-16">
@@ -372,10 +432,30 @@
                   >
                 </div>
 
-                <div class="flex justify-center items-center w-full h-16">
-                  <a href="#" class="text-white text-sm font-bold"
-                    >My Account</a
+                <div
+                  class="slide-parent flex flex-col justify-center items-center w-full py-4 gap-5"
+                >
+                  <a
+                    href="#"
+                    class="text-white text-sm font-bold flex justify-center items-center gap-1"
+                    >My Account
+                    <span class="slide-arrow"
+                      ><i class="material-icons" style="color: #fff"
+                        >arrow_drop_down</i
+                      ></span
+                    ></a
                   >
+                  <div
+                    class="slider w-full h-auto flex flex-col justify-around items-center gap-5 hidden"
+                  >
+                    <a
+                      href="/contact-cryptoxpress-team"
+                      class="text-white text-sm font-bold"
+                      >Contact</a
+                    >
+                    <a href="#" class="text-white text-sm font-bold">Login</a>
+                    <a href="#" class="text-white text-sm font-bold">Logout</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -417,7 +497,7 @@
                   </p>
                 </div>
 
-                <div class="graph-container"></div>
+                <div class="graph-container" id="graph_container"></div>
               </section>
             </section>
           </section>
@@ -504,6 +584,7 @@
             <p class="font-inter text-base">Earn an initial APY up to 2000%</p>
             <button
               class="w-48 bg-[#18448D] text-white font-bold py-3 px-6 rounded"
+              onclick="location.href='/staking'"
             >
               Stake XPRESS
             </button>
@@ -514,7 +595,9 @@
           class="flex lg:flex-row xs:flex-col w-full justify-center items-center bg-[#18448D] lg:px-32 md:px-16 xs:px-8 py-10"
         >
           <section class="lg:w-3/5 xs:w-full">
-            <h1 class="font-inter font-extrabold text-6xl text-[#86FAF3]">BEP-20 TOKEN</h1>
+            <h1 class="font-inter font-extrabold text-6xl text-[#86FAF3]">
+              BEP-20 TOKEN
+            </h1>
             <p class="font-inter text-xl text-white">
               XPRESS runs on the BEP-20 network and is compiled with the latest
               version of Solidity, in order to avoid compiler bugs, along with a
@@ -657,8 +740,16 @@
     <script type="text/javascript" src="assets/custom.js"></script>
     <script type="text/javascript" src="assets/js/xpiressData.js"></script>
     <script type="text/javascript" src="assets/js/ui_functions.js"></script>
+    <!-- import d3.js -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <!-- import moment js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment-duration-format@2.3.2/lib/moment-duration-format.min.js"></script>
     <!-- <script type="text/javascript" src="assets/livereload.js"></script> -->
-    <!-- script for navbar -->
+
+    <!-- scrip for kline charts -->
+    <script type="text/javascript" src="assets/js/kline_charts.js"></script>
+
     <!-- script for navbar -->
     <script type="text/javascript">
       // scroll animation
@@ -676,27 +767,34 @@
         }
       });
 
-      // dropdown
-      // $(".dropdown-menu").hover(
-      //   function () {
-      //     $(this).removeClass("hidden");
-      //   },
-      //   function () {
-      //     $(this).addClass("hidden");
-      //   }
-      // );
+      // slider for mobile
+      $(".slide-parent").click(function () {
+        const arrow = $(this).find(".slide-arrow");
+        if ($(this).find(".slider").is(":visible")) {
+          $(this).find(".slider").slideUp("fast");
+          arrow.empty();
+          arrow.html(
+            '<i class="material-icons" style="color: #fff">arrow_drop_down</i>'
+          );
+        } else {
+          $(this).find(".slider").slideDown("fast").css("display", "flex");
+          arrow.empty();
+          arrow.html(
+            '<i class="material-icons" style="color: #fff">arrow_drop_up</i>'
+          );
+        }
+      });
 
+      // dropdown
       $(".drop-btn").hover(
         function () {
           const menu = $(this).find(".dropdown-menu");
-          menu.removeClass("hidden");
-          menu.addClass("block");
           menu.css("inset", "2.5rem auto auto");
-          menu.addClass("fade-in");
+          menu.fadeIn("fast");
+          menu.show();
         },
         function () {
-          $(this).find(".dropdown-menu").addClass("hidden");
-          $(this).find(".dropdown-menu").removeClass("block");
+          $(this).find(".dropdown-menu").hide();
         }
       );
 
