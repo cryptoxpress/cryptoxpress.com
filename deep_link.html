@@ -46,10 +46,19 @@
   <meta property="og:image" content="https://cryptoxpress.com/assets/images/cryptoxpress.png" />
   <meta property="og:image:type" content="image/png" />
     <script>
-    var appLink = 'rnapp://collection/darknoon';
+    var appLink = 'whatsapp://collection/darknoon';
             var fallbackLink = '/links.html';
-            var timeout = 1000; // Time in milliseconds
+            var timeout = 7000; // Time in milliseconds
+            document.getElementById('appLink').addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent the default anchor behavior
 
+    // Your logic here, e.g., analytics tracking
+    console.log('Redirecting to app...');
+
+    // Redirect to the app link
+    // Replace 'rnapp://collection/noondark' with your actual app link
+    window.location.href = 'whatsapp://collection/noondark';
+});
             // Attempt to open the app using its deep link
             window.location = appLink;
 
@@ -207,6 +216,8 @@
       
   <!-- End Google Tag Manager (noscript) -->
   <div class="wrapper">
+    <iframe src="whatsapp://collection/noondark" width="600" height="400"></iframe>
+
     </div>
     <!-- Navbar Section -->
     <nav style="flex-flow: column !important; padding: 0px !important"
