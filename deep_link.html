@@ -46,12 +46,22 @@
   <meta property="og:image" content="https://cryptoxpress.com/assets/images/cryptoxpress.png" />
   <meta property="og:image:type" content="image/png" />
     <script>
-        try{
-            setTimeout(function () { window.location = "/links.html"; }, 1000);
-window.location = "rnapp://collection/darknoon";
-    }catch(e){
-console.log(e)
-    }
+    var appLink = 'rnapp://collection/darknoon';
+            var fallbackLink = '/links.html';
+            var timeout = 1000; // Time in milliseconds
+
+            // Attempt to open the app using its deep link
+            window.location = appLink;
+
+            // Use a timeout to redirect to the fallback link
+            // If the app is not installed, the browser will stay on the webpage
+            setTimeout(function() {
+                // Check if the user is still on the same page
+                if (document.visibilityState === 'visible') {
+                    // User is still on the page, redirect to the fallback URL
+                    window.location = fallbackLink;
+                }
+            }, timeout);
     </script>
   <link href="assets/style.css" rel="stylesheet" type="text/css" media="all" />
   <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css" />
