@@ -48,6 +48,7 @@ const TREND_COINS = ["BTC", "ETH", "BNB", "USDT"];
  */
 const _priceTickers = {}; // for rest reques
 const priceTickers = VariableObserver({}); // for web socket
+const loadingTickers = VariableObserver(false); // for loading state
 let wsConnectionRetries = 0;
 let ws = null;
 let fetchingRest = false;
@@ -179,6 +180,7 @@ const fetchandSanitizeCapitalConfigs = async () => {
 };
 
 const fetchFiatsAndBlockedCoins = async () => {
+  loadingTickers.setValue(true);
   const blockedCoinUrl =
     "https://s1.backend.cryptoxpress.com/blocked-coins?_limit=-1";
   const _blocked = await (
@@ -418,6 +420,7 @@ open24HrTickerWs();
 fetchFiatsAndBlockedCoins().then(() => {
   fetchPancakeSwapPrice().then(() => {
     fetchandSanitizeCapitalConfigs().then(() => {
+      loadingTickers.setValue(false);
       renderMarketTable(priceTickers.getObject());
       renderMarketTrend(priceTickers.getObject());
     });
@@ -720,4 +723,10 @@ priceTickers.addEventListener("variableChanged", (event) => {
     renderMarketTable(event.detail.newValue);
     renderMarketTrend(event.detail.newValue);
   }
+});
+
+loadingTickers.addEventListener("variableChanged", (event) => {
+  console.log("Loading kline: ", event.detail.newValue);
+  $(".market-loader").toggleClass("hidden", !event.detail.newValue);
+  $(".market-loaded").toggleClass("hidden", event.detail.newValue);
 });

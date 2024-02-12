@@ -135,13 +135,28 @@
 
       .tooltip {
         position: absolute;
-        text-align: center;
-        padding: 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 9.69px;
+        padding: 16.96px 19.39px;
         font: 12px sans-serif;
-        background: lightsteelblue;
-        border: 0.5px solid;
-        border-radius: 5px;
+        background: rgba(122, 122, 122, 0.7);
+        border-radius: 14.54px;
         pointer-events: none;
+      }
+
+      .tooltip .date {
+        font-size: 15px;
+        font-weight: 500;
+        text-align: left;
+      }
+
+      .tooltip .value {
+        font-size: 22px;
+        font-weight: 700;
+        text-align: left;
       }
 
       /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
@@ -463,7 +478,7 @@
         </nav>
         <!-- end of navbar -->
         <div class="flex justify-center items-start xs:flex-col lg:flex-row">
-          <section class="lg:w-3/5 xs:w-full lg:px-32 md:px-16 xs:px-8">
+          <section class="lg:w-3/5 xs:w-full lg:px-10 xs:px-8">
             <section class="flex py-8">
               <div class="flex gap-3 cursor-pointer">
                 <img src="assets/images/svgs/home.svg" alt="" />
@@ -497,7 +512,81 @@
                   </p>
                 </div>
 
-                <div class="graph-container" id="graph_container"></div>
+                <div class="w-full h-auto rounded-lg bg-white my-5">
+                  <div
+                    class="w-full flex md:flex-row xs:flex-col justify-between items-center"
+                  >
+                    <div
+                      class="flex flex-1 justify-center items-center gap-10 py-10 px-8"
+                    >
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/cryptoxpress/crypto-icons/iconspng/xpress.png"
+                        alt=""
+                        class="object-contain w-10 h-10"
+                      />
+                      <p class="text-3xl font-semibold">XPRESS</p>
+                    </div>
+                    <div
+                      class="flex flex-1 flex-row justify-center items-center py-10 px-8"
+                    >
+                      <button
+                        class="kline-time first:rounded-tl first:rounded-bl p-4 bg-[#F4F5F9] font-semibold text-sm active:bg-[#F4E5E9]"
+                      >
+                        1d
+                      </button>
+                      <button
+                        class="kline-time first:rounded-tl first:rounded-bl p-4 bg-[#F4F5F9] font-semibold text-sm active:bg-[#F4E5E9]"
+                      >
+                        1w
+                      </button>
+                      <button
+                        class="kline-time first:rounded-tl first:rounded-bl p-4 bg-[#F4F5F9] font-semibold text-sm active:bg-[#F4E5E9]"
+                      >
+                        1M
+                      </button>
+                      <button
+                        class="kline-time first:rounded-tl first:rounded-bl p-4 bg-[#F4F5F9] font-semibold text-sm active:bg-[#F4E5E9]"
+                      >
+                        6M
+                      </button>
+                      <button
+                        class="kline-time first:rounded-tl first:rounded-bl p-4 bg-[#F4F5F9] font-semibold text-sm active:bg-[#F4E5E9]"
+                      >
+                        1Y
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <div
+                      class="w-full flex justify-center items-center"
+                      id="graph_container"
+                    ></div>
+                    <div
+                      class="w-full flex justify-center items-center hidden"
+                      id="graph_loader"
+                    >
+                      <div role="status">
+                        <svg
+                          aria-hidden="true"
+                          class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+                          viewBox="0 0 100 101"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                            fill="currentColor"
+                          />
+                          <path
+                            d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                            fill="currentFill"
+                          />
+                        </svg>
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </section>
             </section>
           </section>

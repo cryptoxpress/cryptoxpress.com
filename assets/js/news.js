@@ -1,6 +1,11 @@
+// variables
+
+const loading = VariableObserver(false);
+
 // logic
 
 const getNewsList = async () => {
+  loading.setValue(true);
   const coins = ["btc", "eth", "ltc", "xrp", "doge"];
   const newsFetchList = [];
 
@@ -23,6 +28,7 @@ const getNewsList = async () => {
 
 getNewsList()
   .then((res) => {
+    loading.setValue(false);
     renderNewsList(res);
   })
   .catch((err) => {
@@ -54,3 +60,72 @@ const renderNewsList = (news = []) => {
 
   newsListElement.html(output);
 };
+
+// helper
+function VariableObserver(initialValue = null) {
+  let value = initialValue;
+  let isObject = typeof initialValue === "object" && initialValue !== null;
+
+  const event = new CustomEvent("variableChanged", {
+    detail: { newValue: value },
+  });
+
+  const listeners = [];
+
+  function setValue(newValue) {
+    if (!isObject && value !== newValue) {
+      value = newValue;
+      event.detail.newValue = newValue;
+      dispatchEvent(event);
+    }
+  }
+
+  function setObject(newObject) {
+    if (isObject && JSON.stringify(value) !== JSON.stringify(newObject)) {
+      value = newObject;
+      event.detail.newValue = newObject;
+      dispatchEvent(event);
+    }
+  }
+
+  function getValue() {
+    return value;
+  }
+
+  function addEventListener(type, listener) {
+    if (type === "variableChanged") {
+      listeners.push(listener);
+    }
+  }
+
+  function removeEventListener(type, listener) {
+    if (type === "variableChanged") {
+      const index = listeners.indexOf(listener);
+      if (index !== -1) {
+        listeners.splice(index, 1);
+      }
+    }
+  }
+
+  function dispatchEvent(event) {
+    for (const listener of listeners) {
+      listener(event);
+    }
+  }
+
+  return {
+    setValue,
+    getObject: isObject ? () => value : null,
+    setObject: isObject ? setObject : null,
+    getValue: !isObject ? getValue : null,
+    addEventListener,
+    removeEventListener,
+  };
+}
+
+// event listener
+
+loading.addEventListener("variableChanged", function (event) {
+  $("#newsList_loader").toggleClass("hidden", !event.detail.newValue);
+  $("#newsList").toggleClass("hidden", event.detail.newValue);
+});
