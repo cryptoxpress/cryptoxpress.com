@@ -42,16 +42,18 @@ const renderNewsList = (news = []) => {
 
   let output = ``;
 
+  // truncateString from utilities
+
   if (news.length > 0) {
     console.log("News list from render: ", newsListElement, news);
     news.forEach((item) => {
       output += `
-			<div class="d-flex flex-column justify-content-start align-center news-card" onclick="browseUrl('${item?.news_url}')">
+			<div class="flex flex-col justify-start align-center news-card" onclick="browseUrl('${item?.news_url}')">
 				<img src="${item?.image_url}" alt="">
-				<div class="p-4 d-flex flex-column gap-12 align-start w-100">
+				<div class="p-4 flex flex-col gap-3 items-start w-full">
 				<p>${item?.source_name}</p>
 				<h2>${item?.title}</h2>
-				<h3>${item?.text}</h3>
+				<h3>${truncateString(item?.text, 150)}</h3> 
 				</div>
 			</div>
 		`;

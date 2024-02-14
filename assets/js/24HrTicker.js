@@ -441,10 +441,9 @@ const renderMarketTable = (priceTickers = null) => {
     <tr class="bg-white even:bg-gray-100">
       <td class="px-6 py-4 whitespace-no-wrap">${index + 1}</td>
       <td class="px-6 py-4 whitespace-no-wrap">
-        <div class="flex flex-row justify-between items-center flex-wrap">
+        <div class="flex flex-row xl:justify-start justify-center items-center gap-5">
           <img class="icon" src="https://cdn.jsdelivr.net/gh/cryptoxpress/crypto-icons/iconspng/${coin?.coin?.toLowerCase()}.png" alt="">
-          <span>${coin?.name}</span>
-          <span>${coin?.coin}</span>
+          <span>${coin?.name} | ${coin?.coin}</span>
         </div>
       </td>
       <td class="px-6 py-4 whitespace-no-wrap" id="${coin?.coin}_last">${
@@ -483,10 +482,9 @@ const renderMarketTable = (priceTickers = null) => {
               index + 1 + DEX_COINS.length
             }</td>
             <td class="px-6 py-4 whitespace-no-wrap">
-              <div class="flex flex-row justify-between items-center flex-wrap">
+              <div class="flex flex-row xl:justify-start justify-center items-center gap-5">
                 <img class="icon" src="https://cdn.jsdelivr.net/gh/cryptoxpress/crypto-icons/iconspng/${coin?.coin?.toLowerCase()}.png" alt="">
-                <span>${coin?.name}</span>
-                <span>${coin?.coin}</span>
+                <span>${coin?.name} | ${coin?.coin}</span>
               </div>
             </td>
             <td class="px-6 py-4 whitespace-no-wrap" id="${coin?.coin}_last">${
@@ -500,10 +498,10 @@ const renderMarketTable = (priceTickers = null) => {
               ${priceTickerObj?.percentage}%
             </td>
             <td class="px-6 py-4 whitespace-no-wrap">
-              Market Cap: ${
+              ${
                 Number(priceTickerObj?.percentage) < 0
-                  ? '<span style="color: #AE0000;">Down <i class="material-icons">arrow_drop_down</i></span>'
-                  : '<span style="color: #0FAE96;">Up <i class="material-icons">arrow_drop_up</i></span>'
+                  ? '<span style="color: #AE0000;">Market Cap: Down <i class="material-icons">arrow_drop_down</i></span>'
+                  : '<span style="color: #0FAE96;">Market Cap: Up <i class="material-icons">arrow_drop_up</i></span>'
               }
             </td>
             <td class="px-6 py-4 whitespace-no-wrap">
@@ -521,43 +519,32 @@ const renderMarketTable = (priceTickers = null) => {
 
   if (table_body.length > 0) {
     const output = `
-      <table class="table-auto min-w-full divide-y divide-gray-200">
+      <table class="min-w-full divide-y divide-gray-200 shadow-md my-20 xl:my-0">
         <thead>
-          <tr>
-            <th
-              class="px-6 py-3 bg-gray-50 text-left text-xs text-center leading-4 font-medium text-gray-500 uppercase tracking-wider"
-            >
-              NO
-            </th>
-            <th
-              class="px-6 py-3 bg-gray-50 text-left text-xs text-center leading-4 font-medium text-gray-500 uppercase tracking-wider"
-            >
-              NAME
-            </th>
-            <th
-              class="px-6 py-3 bg-gray-50 text-left text-xs text-center leading-4 font-medium text-gray-500 uppercase tracking-wider"
-            >
-              PRICE
-            </th>
-            <th
-              class="px-6 py-3 bg-gray-50 text-left text-xs text-center leading-4 font-medium text-gray-500 uppercase tracking-wider"
-            >
-              CHANGE
-            </th>
-            <th
-              class="px-6 py-3 bg-gray-50 text-left text-xs text-center leading-4 font-medium text-gray-500 uppercase tracking-wider"
-            >
-              STATS
-            </th>
-            <th
-              class="px-6 py-3 bg-gray-50 text-left text-xs text-center leading-4 font-medium text-gray-500 uppercase tracking-wider"
-            >
-              TRADE
-            </th>
-          </tr>
+            <tr>
+                <th class="px-6 py-3 bg-gray-50 text-xs text-center font-medium text-[#808080] uppercase tracking-wider">
+                    NO
+                </th>
+                <th class="px-6 py-3 bg-gray-50 text-xs text-center font-medium text-[#808080] uppercase tracking-wider">
+                    NAME
+                </th>
+                <th class="px-6 py-3 bg-gray-50 text-xs text-center font-medium text-[#808080] uppercase tracking-wider">
+                    PRICE
+                </th>
+                <th class="px-6 py-3 bg-gray-50 text-xs text-center font-medium text-[#808080] uppercase tracking-wider">
+                    CHANGE
+                </th>
+                <th class="px-6 py-3 bg-gray-50 text-xs text-center font-medium text-[#808080] uppercase tracking-wider">
+                    STATS
+                </th>
+                <th class="px-6 py-3 bg-gray-50 text-xs text-center font-medium text-[#808080] uppercase tracking-wider">
+                    TRADE
+                </th>
+            </tr>
         </thead>
         <tbody>
-          ${table_body}
+            <!-- Table rows go here -->
+            ${table_body}
         </tbody>
       </table>
     `;
@@ -602,9 +589,9 @@ const renderMarketTrend = (priceTickers = null) => {
       }
       </span>
 			</div>
-			<span class="border market-card-rule w-100 h-1"></span>
+			<span class="border market-card-rule w-full h-1"></span>
 			<div class="market-card-content">
-			<div class="w-100">
+			
 				<h2 class="market-value" id="${
           coin?.name
         }_value">${priceTickerObj?.last?.toFixed(2)} ${
@@ -612,11 +599,11 @@ const renderMarketTrend = (priceTickers = null) => {
           ? "IDRT"
           : quoteAsset
       }</h2>
-				<div class="gap-y-9m"></div>
-				<p id="${coin?.name}_percent" class="${
-        priceTickerObj?.percentage < 0 ? "text-danger" : ""
+				
+				<p id="${coin?.name}_percent" style="${
+        priceTickerObj?.percentage < 0 ? "color: red;" : ""
       }">${priceTickerObj?.percentage}%</p>
-			</div>
+	
 
       <!-- <svg id="${coin?.name}_graph"></svg> -->
 			</div>
@@ -718,7 +705,7 @@ const updateMarketTableAndTrend = (priceTickers = null) => {
 
 priceTickers.addEventListener("variableChanged", (event) => {
   if (marketsDataRendered) {
-    updateMarketTableAndTrend(event.detail.newValue);
+    // updateMarketTableAndTrend(event.detail.newValue);
   } else {
     renderMarketTable(event.detail.newValue);
     renderMarketTrend(event.detail.newValue);

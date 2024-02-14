@@ -1380,18 +1380,10 @@ top:50%; */
 
   .hero {
     /* padding: 100px 0 100px 0; */
-    padding: 70px 0 0px 0;
+    /* padding: 70px 0 0px 0; */
     /* background: #2f2f2f; */
-    background: radial-gradient(
-      at 200% bottom,
-      #2f9e8a,
-      #257e84,
-      #19645b,
-      #11494d,
-      #0c1b40,
-      #0a183b,
-      #000920
-    );
+    background: linear-gradient(207.59deg, #18448d -10.97%, #1a3658 72.69%);
+    position: relative;
   }
 
   .hero .hero-content {
@@ -1716,7 +1708,6 @@ top:50%; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 17px;
     border-radius: 18px;
     border: 1px solid #eaeaea;
     background: #fff;
@@ -1736,14 +1727,14 @@ top:50%; */
   }
 
   .market-card-content img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 
   .market-card-content h2 {
     color: #11011e;
     font-family: "Inter";
-    font-size: 18px;
+    font-size: 20px !important;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -1848,16 +1839,19 @@ top:50%; */
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    border: 1px solid #ddd;
+    border: 1px solid #eaeaea;
     margin-top: 20px;
   }
 
   .market-movers th,
   td {
-    border: 1px solid #ddd;
     padding: 12px;
     text-align: center;
     vertical-align: middle;
+  }
+
+  .market-movers tbody tr {
+    border-bottom: 1px solid #eaeaea;
   }
 
   .market-movers tbody tr:nth-child(even) {
@@ -1924,16 +1918,12 @@ top:50%; */
 
   .fade-in-rotate {
     transform: translateY(10rem) rotate(5deg);
-    transform-origin: left center; /* Specifies rotation origin at left side */
+    transform-origin: center center; /* Specifies rotation origin at left side */
     animation: fadeInExtreme ease 0.7s forwards, opaque 0.7s forwards;
     -webkit-animation: fadeInExtreme ease 0.7s forwards, opaque 0.7s forwards;
     -moz-animation: fadeInExtreme ease 0.7s forwards, opaque 0.7s forwards;
     -o-animation: fadeInExtreme ease 0.7s forwards, opaque 0.7s forwards;
     -ms-animation: fadeInExtreme ease 0.7s forwards, opaque 0.7s forwards;
-  }
-
-  .gap-12 {
-    gap: 12px;
   }
 
   .gap-y-9m {
@@ -2205,9 +2195,9 @@ top:50%; */
     line-height: 32px; /* 133.333% */
   }
 
-  .hero img {
+  /* .hero img {
     margin-top: 25px;
-  }
+  } */
 
   .hero-img-box img {
     margin-top: 50px;
@@ -3673,18 +3663,10 @@ background: #303c42; */
 
     .hero {
       /* padding: 100px 0 100px 0; */
-      padding: 70px 0 0px 0;
+      /* padding: 70px 0 0px 0; */
       /* background: #2f2f2f; */
-      background: radial-gradient(
-        at 200% bottom,
-        #2f9e8a,
-        #257e84,
-        #19645b,
-        #11494d,
-        #0c1b40,
-        #0a183b,
-        #000920
-      );
+      background: linear-gradient(207.59deg, #18448d -10.97%, #1a3658 72.69%);
+      position: relative;
     }
 
     .hero .hero-content {
@@ -3742,9 +3724,9 @@ background: #303c42; */
       line-height: 32px; /* 133.333% */
     }
 
-    .hero img {
+    /* .hero img {
       margin-top: 25px;
-    }
+    } */
 
     .hero-img-box img {
       margin-top: 50px;
@@ -4845,7 +4827,8 @@ background: #303c42; */
 
       .hero {
         /* padding: 125px 0 100px 0; */
-        padding: 120px 0 0 0;
+        /* padding: 120px 0 0 0; */
+        position: relative;
       }
 
       .oval-background-right-bottom {
@@ -4982,7 +4965,8 @@ background: #303c42; */
     @media only screen and (min-width: 992px) {
       .hero {
         /* padding: 125px 0 100px 0; */
-        padding: 120px 0 50px 0;
+        /* padding: 120px 0 50px 0; */
+        position: relative;
       }
 
       .hero .hero-image-right-div {
@@ -5206,6 +5190,64 @@ background: #303c42; */
     /* padding: 125px 0 100px 0; */
     padding: 450px 0 172px 0;
     margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .market-movers table {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .market-movers table th {
+    display: none !important;
+  }
+
+  .market-movers table td {
+    display: grid;
+    grid-template-columns: 25ch auto;
+    margin-bottom: 20px;
+  }
+
+  .market-movers table td:nth-of-type(1)::before {
+    content: "NO.: ";
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  .market-movers table td:nth-of-type(2)::before {
+    content: "NAME: ";
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .market-movers table td:nth-of-type(3)::before {
+    content: "LAST PRICE: ";
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .market-movers table td:nth-of-type(4)::before {
+    content: "CHANGE: ";
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .market-movers table td:nth-of-type(5)::before {
+    content: "MARKET STATS: ";
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .market-movers table td:nth-of-type(6)::before {
+    content: "TRADE: ";
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
   }
 }
 

@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+  background: #fef4f5;
+}
+
+.resp_table {
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+  margin: 3rem 0;
+  padding: 0;
+}
+
+.resp_table table {
+  background: #fff;
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.resp_table table tr:nth-of-type(2n) {
+  background: #fcfcf5;
+}
+
+.resp_table table th,
+.resp_table table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+  text-align: left;
+}
+
+.resp_table table th {
+  background: #fff;
+  color: #808080;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.resp_table table td:nth-of-type(2) span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.resp_table img {
+  width: 44px;
+  height: 44px;
+}
+
+.resp_table .action-btn {
+  padding: 4px 24px;
+  border-radius: 10px;
+  background-color: #0fae96;
+  color: #fff;
+}
+
+@media all and (max-width: 1024px) {
+  .resp_table table {
+    width: 80%;
+  }
+  .resp_table table th {
+    display: none;
+  }
+
+  .resp_table table td {
+    display: grid;
+    grid-template-columns: 15ch auto;
+    margin-bottom: 20px;
+  }
+
+  .resp_table table td:nth-of-type(2) span {
+    justify-content: flex-start;
+  }
+
+  .resp_table table td:nth-of-type(1)::before {
+    content: "NO.: ";
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .resp_table table td:nth-of-type(2)::before {
+    content: "NAME: ";
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .resp_table table td:nth-of-type(3)::before {
+    content: "LAST PRICE: ";
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .resp_table table td:nth-of-type(4)::before {
+    content: "CHANGE: ";
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .resp_table table td:nth-of-type(5)::before {
+    content: "MARKET STATS: ";
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .resp_table table td:nth-of-type(6)::before {
+    content: "TRADE: ";
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

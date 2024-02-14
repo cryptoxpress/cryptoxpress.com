@@ -60,12 +60,12 @@
 
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@100,200,300,400,500,600,700,800&display=swap" rel="stylesheet">  -->
-    <link
+    <!-- <link
       href="assets/bootstrap.css"
       rel="stylesheet"
       type="text/css"
       media="all"
-    />
+    /> -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
     <!-- <link href="assets" rel="stylesheet" /> -->
     <link rel="stylesheet" href="assets/animate.css" />
@@ -99,6 +99,12 @@
       type="text/css"
       media="all"
     />
+    <!-- <link
+      href="assets/css/responsive_table.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    /> -->
     <link
       href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css"
       rel="stylesheet"
@@ -237,7 +243,7 @@
       }
 
       .nav-animation {
-        position: fixed;
+        position: fixed !important;
         animation: reelIn 0.5s ease-in-out;
         z-index: 100;
       }
@@ -308,357 +314,366 @@
 
     <!-- End Google Tag Manager (noscript) -->
     <div class="wrapper">
-      <!-- navbar -->
-      <nav
-        class="w-full h-16 bg-gradient-to-r from-[#000920] via-[#0a183b] to-[#0b193c] flex justify-around items-center"
-        id="navbar"
-      >
-        <div
-          class="w-1/5 h-full lg:flex xs:hidden justify-center items-center cursor-pointer"
-        >
-          <a href="/">
-            <img
-              src="assets/images/cryptoxpress.png"
-              alt=""
-              class="w-[73.22px] h-[32.7px]"
-            />
-          </a>
-        </div>
-
-        <div
-          class="lg:flex xs:hidden justify-center items-center w-3/5 h-full gap-10"
-        >
-          <!-- triggers -->
-          <div
-            class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
-          >
-            <span class="mr-1">Shop</span>
-            <i class="material-icons" style="color: #fff"
-              >keyboard_arrow_down</i
-            >
-
-            <!-- list -->
-            <ul class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1">
-              <li>
-                <a
-                  class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                  href="#"
-                  >Travel</a
-                >
-              </li>
-              <li>
-                <a
-                  class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                  href="#"
-                  >Gift Cards</a
-                >
-              </li>
-              <li>
-                <a
-                  class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                  href="https://nft.cryptoxpress.com"
-                  >NFT</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div
-            class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
-          >
-            <span class="mr-1">Trade</span>
-            <i class="material-icons" style="color: #fff"
-              >keyboard_arrow_down</i
-            >
-
-            <!-- list -->
-            <ul class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1">
-              <li>
-                <a
-                  class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                  href="/staking"
-                  >Earn</a
-                >
-              </li>
-              <li>
-                <a
-                  class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                  href="#"
-                  >Payments (coming soon)</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div
-            class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
-          >
-            <a href="/all-new-xpress">
-              <span class="mr-1">XPRESS Token</span>
-            </a>
-          </div>
-
-          <div
-            class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
-          >
-            <span class="mr-1">My Account</span>
-            <i class="material-icons" style="color: #fff"
-              >keyboard_arrow_down</i
-            >
-
-            <!-- list -->
-            <ul class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1">
-              <li>
-                <a
-                  class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                  href="/contact-cryptoxpress-team"
-                  >Contact</a
-                >
-              </li>
-              <li>
-                <a
-                  class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                  href="#"
-                  >Login</a
-                >
-              </li>
-              <li>
-                <a
-                  class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                  href="#"
-                  >Register</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- mobile views -->
-        <div
-          class="w-1/5 xs:flex lg:hidden justify-center items-center"
-          onclick="slideMenu()"
-        >
-          <i class="material-icons" style="color: #fff; width: inherit"
-            >menu_outlined</i
-          >
-        </div>
-
-        <div class="w-3/5 xs:flex lg:hidden justify-center items-center">
-          <a href="/">
-            <img
-              src="assets/images/CX-Logo-New.png"
-              alt=""
-              class="object-contain w-full h-full"
-            />
-          </a>
-        </div>
-        <!-- end of mobile views -->
-
-        <div
-          class="w-1/5 h-full flex justify-center items-center cursor-pointer"
-        >
-          <i class="material-icons" style="color: #fff; width: inherit"
-            >shopping_cart_outlined</i
-          >
-        </div>
-
-        <!-- mobile menu -->
-        <div class="nav-menu absolute w-full h-auto top-16 z-10 hidden">
-          <div
-            class="flex flex-col justify-center items-center w-full h-auto bg-[#18448D] text-white"
+      <div id="main" class="main">
+        <div class="hero">
+          <!-- navbar -->
+          <nav
+            class="absolute top-0 z-10 w-full h-16 bg-transparent flex justify-around items-center"
+            id="navbar"
           >
             <div
-              class="flex flex-col justify-center items-center w-full h-auto gap-5"
+              class="w-1/5 h-full lg:flex xs:hidden justify-center items-center cursor-pointer"
             >
+              <a href="/">
+                <img
+                  src="assets/images/cryptoxpress.png"
+                  alt=""
+                  class="w-[73.22px] h-[32.7px]"
+                />
+              </a>
+            </div>
+
+            <div
+              class="lg:flex xs:hidden justify-center items-center w-3/5 h-full gap-10"
+            >
+              <!-- triggers -->
               <div
-                class="slide-parent flex flex-col justify-center items-center w-full py-4 gap-5"
+                class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
               >
-                <a
-                  href="#"
-                  class="text-white text-sm font-bold flex justify-center items-center gap-1"
-                  >Shop
-                  <span class="slide-arrow"
-                    ><i class="material-icons" style="color: #fff"
-                      >arrow_drop_down</i
-                    ></span
-                  >
+                <span class="mr-1">Shop</span>
+                <i class="material-icons" style="color: #fff"
+                  >keyboard_arrow_down</i
+                >
+
+                <!-- list -->
+                <ul
+                  class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1"
+                >
+                  <li>
+                    <a
+                      class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >Travel</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >Gift Cards</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      href="https://nft.cryptoxpress.com"
+                      >NFT</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
+              >
+                <span class="mr-1">Trade</span>
+                <i class="material-icons" style="color: #fff"
+                  >keyboard_arrow_down</i
+                >
+
+                <!-- list -->
+                <ul
+                  class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1"
+                >
+                  <li>
+                    <a
+                      class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      href="/staking"
+                      >Earn</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >Payments (coming soon)</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
+              >
+                <a href="/all-new-xpress">
+                  <span class="mr-1">XPRESS Token</span>
                 </a>
-                <div
-                  class="slider w-full h-auto flex flex-col justify-around items-center gap-5 hidden"
-                >
-                  <a href="#" class="text-white text-sm font-bold">Travel</a>
-                  <a href="#" class="text-white text-sm font-bold">Gift Card</a>
-                  <a
-                    href="https://nft.cryptoxpress.com"
-                    class="text-white text-sm font-bold"
-                    >NFT</a
-                  >
-                </div>
               </div>
 
               <div
-                class="slide-parent flex flex-col justify-center items-center w-full py-4 gap-5"
+                class="drop-btn text-white text-sm font-bold flex justify-center items-center gap-1 cursor-pointer"
               >
-                <a
-                  href="#"
-                  class="text-white text-sm font-bold flex justify-center items-center gap-1"
-                  >Trade
-                  <span class="slide-arrow"
-                    ><i class="material-icons" style="color: #fff"
-                      >arrow_drop_down</i
-                    ></span
-                  ></a
+                <span class="mr-1">My Account</span>
+                <i class="material-icons" style="color: #fff"
+                  >keyboard_arrow_down</i
                 >
-                <div
-                  class="slider w-full h-auto flex flex-col justify-around items-center gap-5 hidden"
-                >
-                  <a href="/staking" class="text-white text-sm font-bold"
-                    >Earn</a
-                  >
-                  <a href="#" class="text-white text-sm font-bold"
-                    >Payments (coming soon)</a
-                  >
-                </div>
-              </div>
 
-              <div class="flex justify-center items-center w-full h-16">
-                <a href="/all-new-xpress" class="text-white text-sm font-bold"
-                  >XPRESS Token</a
+                <!-- list -->
+                <ul
+                  class="dropdown-menu absolute top-10 hidden text-gray-700 pt-1"
                 >
+                  <li>
+                    <a
+                      class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      href="/contact-cryptoxpress-team"
+                      >Contact</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >Login</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >Register</a
+                    >
+                  </li>
+                </ul>
               </div>
+            </div>
 
+            <!-- mobile views -->
+            <div
+              class="w-1/5 xs:flex lg:hidden justify-center items-center"
+              onclick="slideMenu()"
+            >
+              <i class="material-icons" style="color: #fff; width: inherit"
+                >menu_outlined</i
+              >
+            </div>
+
+            <div class="w-3/5 xs:flex lg:hidden justify-center items-center">
+              <a href="/">
+                <img
+                  src="assets/images/CX-Logo-New.png"
+                  alt=""
+                  class="object-contain w-full h-full"
+                />
+              </a>
+            </div>
+            <!-- end of mobile views -->
+
+            <div
+              class="w-1/5 h-full flex justify-center items-center cursor-pointer"
+            >
+              <i class="material-icons" style="color: #fff; width: inherit"
+                >shopping_cart_outlined</i
+              >
+            </div>
+
+            <!-- mobile menu -->
+            <div class="nav-menu absolute w-full h-auto top-16 z-10 hidden">
               <div
-                class="slide-parent flex flex-col justify-center items-center w-full py-4 gap-5"
+                class="flex flex-col justify-center items-center w-full h-auto bg-[#18448D] text-white"
               >
-                <a
-                  href="#"
-                  class="text-white text-sm font-bold flex justify-center items-center gap-1"
-                  >My Account
-                  <span class="slide-arrow"
-                    ><i class="material-icons" style="color: #fff"
-                      >arrow_drop_down</i
-                    ></span
-                  ></a
-                >
                 <div
-                  class="slider w-full h-auto flex flex-col justify-around items-center gap-5 hidden"
+                  class="flex flex-col justify-center items-center w-full h-auto gap-5"
                 >
-                  <a
-                    href="/contact-cryptoxpress-team"
-                    class="text-white text-sm font-bold"
-                    >Contact</a
+                  <div
+                    class="slide-parent flex flex-col justify-center items-center w-full py-4 gap-5"
                   >
-                  <a href="#" class="text-white text-sm font-bold">Login</a>
-                  <a href="#" class="text-white text-sm font-bold">Logout</a>
+                    <a
+                      href="#"
+                      class="text-white text-sm font-bold flex justify-center items-center gap-1"
+                      >Shop
+                      <span class="slide-arrow"
+                        ><i class="material-icons" style="color: #fff"
+                          >arrow_drop_down</i
+                        ></span
+                      >
+                    </a>
+                    <div
+                      class="slider w-full h-auto flex flex-col justify-around items-center gap-5 hidden"
+                    >
+                      <a href="#" class="text-white text-sm font-bold"
+                        >Travel</a
+                      >
+                      <a href="#" class="text-white text-sm font-bold"
+                        >Gift Card</a
+                      >
+                      <a
+                        href="https://nft.cryptoxpress.com"
+                        class="text-white text-sm font-bold"
+                        >NFT</a
+                      >
+                    </div>
+                  </div>
+
+                  <div
+                    class="slide-parent flex flex-col justify-center items-center w-full py-4 gap-5"
+                  >
+                    <a
+                      href="#"
+                      class="text-white text-sm font-bold flex justify-center items-center gap-1"
+                      >Trade
+                      <span class="slide-arrow"
+                        ><i class="material-icons" style="color: #fff"
+                          >arrow_drop_down</i
+                        ></span
+                      ></a
+                    >
+                    <div
+                      class="slider w-full h-auto flex flex-col justify-around items-center gap-5 hidden"
+                    >
+                      <a href="/staking" class="text-white text-sm font-bold"
+                        >Earn</a
+                      >
+                      <a href="#" class="text-white text-sm font-bold"
+                        >Payments (coming soon)</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="flex justify-center items-center w-full h-16">
+                    <a
+                      href="/all-new-xpress"
+                      class="text-white text-sm font-bold"
+                      >XPRESS Token</a
+                    >
+                  </div>
+
+                  <div
+                    class="slide-parent flex flex-col justify-center items-center w-full py-4 gap-5"
+                  >
+                    <a
+                      href="#"
+                      class="text-white text-sm font-bold flex justify-center items-center gap-1"
+                      >My Account
+                      <span class="slide-arrow"
+                        ><i class="material-icons" style="color: #fff"
+                          >arrow_drop_down</i
+                        ></span
+                      ></a
+                    >
+                    <div
+                      class="slider w-full h-auto flex flex-col justify-around items-center gap-5 hidden"
+                    >
+                      <a
+                        href="/contact-cryptoxpress-team"
+                        class="text-white text-sm font-bold"
+                        >Contact</a
+                      >
+                      <a href="#" class="text-white text-sm font-bold">Login</a>
+                      <a href="#" class="text-white text-sm font-bold"
+                        >Logout</a
+                      >
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </nav>
-      <!-- end of navbar -->
-
-      <div id="main" class="main">
-        <div class="hero">
-          <div class="container-l">
-            <div class="w-100">
-              <div class="w-100 hero-content">
-                <div class="cx-float-center">
-                  <img
-                    class="fade-in"
-                    src="assets/images/svgs/CX-Logo-New.svg"
-                    style="width: 180px; margin-bottom: 10px"
-                  />
-                </div>
-
-                <h2 class="hero-h2-text fade-in">Crypto Made Easy</h2>
-
+          </nav>
+          <!-- end of navbar -->
+          <div
+            class="w-full flex flex-col justify-center items-center py-[7.5rem] lg:px-[7.5rem] xs:px-5"
+          >
+            <div
+              class="w-full hero-content flex flex-col justify-center items-center lg:gap-[0.5rem] xs:gap-16"
+            >
+              <div class="cx-float-center">
                 <img
-                  class="img-fluid fade-in-rotate"
-                  alt="Hero"
-                  src="assets/images/cx_Hero_image.png"
+                  class="fade-in w-[400px]"
+                  src="assets/images/svgs/CX-Logo-New.svg"
                 />
+              </div>
 
-                <p class="fade-in">
-                  We are the bridge between your crypto world and everyday life;
-                  NFTs, cryptocurrencies, payments, transfers, and more. All in
-                  one best-in-class digital experience.
-                </p>
+              <!-- <h2 class="hero-h2-text fade-in">Crypto Made Easy</h2> -->
 
-                <div
-                  class="row justify-content-center align-center fade-in"
-                  style="margin-top: 10px"
-                >
-                  <div class="col-3 col-md-3 col-lg-3">
-                    <a
-                      href="https://apps.apple.com/us/app/cryptoxpress/id1591792414"
-                      ><img
-                        class="apple-badge"
-                        src="assets/images/apple-badge-white.svg"
-                        width="100%"
-                    /></a>
-                  </div>
-                  <div class="col-3 col-md-3 col-lg-3">
-                    <a
-                      href="https://play.google.com/store/apps/details?id=com.cryptoxpressmobile"
-                      ><img
-                        src="assets/images/google-play-badge.png"
-                        width="100%"
-                    /></a>
-                  </div>
-                </div>
+              <img
+                class="mx-auto fade-in-rotate"
+                alt="Hero"
+                src="assets/images/cx_Hero_image.png"
+              />
+
+              <p class="fade-in">
+                We are the bridge between your crypto world and everyday life;
+                NFTs, cryptocurrencies, payments, transfers, and more. All in
+                one best-in-class digital experience.
+              </p>
+
+              <div
+                class="flex justify-center items-center w-full gap-5 fade-in"
+                style="margin-top: 10px"
+              >
+                <a
+                  href="https://apps.apple.com/us/app/cryptoxpress/id1591792414"
+                  ><img
+                    class="w-[239px] h-[80px]"
+                    src="assets/images/apple-badge-white.svg"
+                /></a>
+
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.cryptoxpressmobile"
+                  ><img
+                    class="w-[239px] h-[80px]"
+                    src="assets/images/google-play-badge.png"
+                    width="100%"
+                /></a>
               </div>
             </div>
           </div>
         </div>
 
         <div id="seen-on" style="background-color: #fff">
-          <div
-            class="my-5 d-flex flex-column justify-content-center align-items-center"
-          >
+          <div class="my-5 flex flex-col justify-center items-center">
             <div
-              class="d-flex justify-content-around align-items-center w-100 flex-wrap"
+              class="flex justify-around items-center w-full flex-wrap px-10"
             >
               <img
-                class="img m-3"
-                alt="Forbes"
-                src="assets/images/forbes-logo.png"
-                height="22px"
-              />
-              <img
-                class="img m-3"
-                alt="Yahoo Finance"
-                src="assets/images/YahooFinanceLogo.png"
-                height="30px"
-              />
-              <img
-                class="img m-3"
-                alt="Altcoin Buzz"
-                src="assets/images/Altcoin-BuzzLogo.png"
-                height="30px"
-              />
-              <img
-                class="img m-3"
-                alt="Gate.io"
-                src="assets/images/GateIoLogo.png"
-                height="30px"
-              />
-              <img
-                class="img m-3"
-                alt="Pancake Swap"
-                src="assets/images/PancakeSwapLogo.png"
-                height="30px"
-              />
-              <img
-                class="img m-3"
+                class="m-3"
                 alt="Coin Marketcap"
                 src="assets/images/cmc.png"
                 height="30px"
               />
               <img
-                class="img m-3"
+                class="m-3"
                 alt="Coin Gecko"
                 src="assets/images/coin-gecko-logo.png"
+                height="30px"
+              />
+              <img
+                class="m-3"
+                alt="Yahoo Finance"
+                src="assets/images/YahooFinanceLogo.png"
+                height="30px"
+              />
+              <img
+                class="m-3"
+                alt="Forbes"
+                src="assets/images/forbes-logo.png"
+                height="22px"
+              />
+              <img
+                class="m-3"
+                alt="Altcoin Buzz"
+                src="assets/images/Altcoin-BuzzLogo.png"
+                height="30px"
+              />
+              <img
+                class="m-3"
+                alt="Gate.io"
+                src="assets/images/GateIoLogo.png"
+                height="30px"
+              />
+              <img
+                class="m-3"
+                alt="Pancake Swap"
+                src="assets/images/PancakeSwapLogo.png"
                 height="30px"
               />
             </div>
@@ -666,11 +681,9 @@
         </div>
 
         <div
-          class="w-100 d-flex flex-column justify-content-around align-center holiday-book py-5"
+          class="w-full flex flex-col justify-around items-center holiday-book py-5"
         >
-          <div
-            class="w-100 d-flex flex-column justify-content-center align-center"
-          >
+          <div class="w-full flex flex-col justify-center items-center">
             <p class="holiday-heading-1">USE CRYPTO TO</p>
             <p class="holiday-heading-2">Book Holidays</p>
             <p class="holiday-heading-3">
@@ -679,7 +692,7 @@
             </p>
           </div>
 
-          <div class="mt-5 w-100 booking-cards-container">
+          <div class="mt-5 w-full booking-cards-container">
             <div
               class="booking-card"
               style="
@@ -730,12 +743,8 @@
           </div>
         </div>
 
-        <div
-          class="w-100 d-flex flex-column justify-content-around align-center my-5 py-5"
-        >
-          <div
-            class="w-100 d-flex flex-column justify-content-center align-center"
-          >
+        <div class="w-full flex flex-col justify-around items-center my-5 py-5">
+          <div class="w-full flex flex-col justify-center items-center">
             <p class="holiday-heading-1">CONVERT CRYPTO INTO</p>
             <p class="holiday-heading-2">Gift Cards</p>
             <p class="holiday-heading-3">
@@ -768,9 +777,12 @@
             </div>
           </div>
 
-          <div class="gifts-loaded gift-cards-container" id="gift_cards_container"></div>
+          <div
+            class="gifts-loaded gift-cards-container"
+            id="gift_cards_container"
+          ></div>
 
-          <div class="gifts-loaded d-flex justify-content-center align-center">
+          <div class="gifts-loaded flex justify-center items-center">
             <button class="btn btn-link">
               <p class="explore-gift-txt">Explore more brands →</p>
             </button>
@@ -778,11 +790,9 @@
         </div>
 
         <div
-          class="w-100 d-flex flex-column justify-content-around align-center holiday-book mt-5 py-5"
+          class="w-full flex flex-col justify-around items-center holiday-book mt-5 py-5"
         >
-          <div
-            class="w-100 d-flex flex-column justify-content-center align-center"
-          >
+          <div class="w-full flex flex-col justify-center items-center">
             <p class="holiday-heading-1">TRADE CRYPTO AND</p>
             <p class="holiday-heading-2">GROW YOUR PORTFOLIO</p>
             <p class="holiday-heading-3">
@@ -790,6 +800,8 @@
               more, at your fingertips on your phone.
             </p>
           </div>
+
+          <br /><br />
 
           <div
             class="market-loader w-full flex justify-center items-center my-10"
@@ -815,72 +827,80 @@
             </div>
           </div>
 
-          <div class="market-loaded booking-card-popular-dest gap-y-18m hidden">
+          <div
+            class="market-loaded booking-card-popular-dest gap-[18px] hidden"
+          >
             <h2>Market Trend</h2>
 
-            <div class="market-tends-list" id="market-trends-list"></div>
+            <div
+              class="w-full xs:grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 xs:grid-rows-[minmax(200px,auto)] xs:gap-5"
+              id="market-trends-list"
+            ></div>
 
             <h2>Market Movers</h2>
 
-            <div class="market-movers w-100">
-              <nav class="nav nav-pills flex-column flex-sm-row gap-12">
-                <a
-                  class="flex-sm-fill text-sm-center nav-link active"
-                  href="#"
-                  onclick="toggleActive(this)"
-                  >Active</a
-                >
-                <a
-                  class="flex-sm-fill text-sm-center nav-link"
-                  href="#"
-                  onclick="toggleActive(this)"
-                  >Popular</a
-                >
-                <a
-                  class="flex-sm-fill text-sm-center nav-link"
-                  href="#"
-                  onclick="toggleActive(this)"
-                  >Metaverse</a
-                >
-                <a
-                  class="flex-sm-fill text-sm-center nav-link"
-                  href="#"
-                  onclick="toggleActive(this)"
-                  >Entertainment</a
-                >
-                <a
-                  class="flex-sm-fill text-sm-center nav-link"
-                  href="#"
-                  onclick="toggleActive(this)"
-                  >Energy</a
-                >
-                <a
-                  class="flex-sm-fill text-sm-center nav-link"
-                  href="#"
-                  onclick="toggleActive(this)"
-                  >Gaming</a
-                >
-                <a
-                  class="flex-sm-fill text-sm-center nav-link"
-                  href="#"
-                  onclick="toggleActive(this)"
-                  >Music</a
-                >
-                <a
-                  class="flex-sm-fill text-sm-center nav-link"
-                  href="#"
-                  onclick="toggleActive(this)"
-                  >See all 12+</a
-                >
-              </nav>
+            <div class="market-movers w-full">
+              <!--Pills navigation-->
+              <ul
+                class="flex list-none flex-col flex-wrap md:flex-row gap-5"
+                role="tablist"
+              >
+                <li role="presentation">
+                  <button
+                    class="py-[10px] px-[12px] bg-[#F29557] text-white rounded-lg"
+                  >
+                    Popular
+                  </button>
+                </li>
+                <li role="presentation">
+                  <button
+                    class="py-[10px] px-[12px] bg-[#EAEAEA] text-[#808080] border rounded-lg"
+                  >
+                    Metaverse
+                  </button>
+                </li>
+                <li role="presentation">
+                  <button
+                    class="py-[10px] px-[12px] bg-[#EAEAEA] text-[#808080] border rounded-lg"
+                  >
+                    Entertainment
+                  </button>
+                </li>
+                <li role="presentation">
+                  <button
+                    class="py-[10px] px-[12px] bg-[#EAEAEA] text-[#808080] border rounded-lg"
+                  >
+                    Energy
+                  </button>
+                </li>
+                <li role="presentation">
+                  <button
+                    class="py-[10px] px-[12px] bg-[#EAEAEA] text-[#808080] border rounded-lg"
+                  >
+                    Gaming
+                  </button>
+                </li>
+                <li role="presentation">
+                  <button
+                    class="py-[10px] px-[12px] bg-[#EAEAEA] text-[#808080] border rounded-lg"
+                  >
+                    Music
+                  </button>
+                </li>
+                <li role="presentation">
+                  <button
+                    class="py-[10px] px-[12px] bg-[#EAEAEA] text-[#808080] border rounded-lg"
+                  >
+                    See All 12+
+                  </button>
+                </li>
+              </ul>
 
-              <br /><br />
-
-              <div class="overflow-x-auto" id="market_table_container"></div>
+              <div class="resp_table" id="market_table_container"></div>
             </div>
           </div>
 
-          <div class="d-flex justify-content-center align-center">
+          <div class="flex justify-center items-center my-10">
             <button class="btn btn-link">
               <p class="explore-gift-txt">See all coins →</p>
             </button>
@@ -888,9 +908,9 @@
         </div>
 
         <div
-          class="w-100 d-flex flex-column justify-content-around align-center holiday-book py-5"
+          class="w-full flex flex-col justify-around items-center holiday-book pb-5"
         >
-          <div class="booking-card-popular-dest gap-y-18m">
+          <div class="booking-card-popular-dest gap-[18px]">
             <h2>Learn About Cryptocurrency</h2>
             <p>Learn all about cryptocurrency to start investing</p>
 
@@ -918,7 +938,10 @@
                 <span class="sr-only">Loading...</span>
               </div>
             </div>
-            <div class="news-list hidden" id="newsList"></div>
+            <div
+              class="w-full xs:grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 xs:grid-rows-[minmax(200px,auto)] xs:gap-5 hidden"
+              id="newsList"
+            ></div>
           </div>
         </div>
 
@@ -1045,14 +1068,14 @@
     <!-- Jquery and Js Plugins -->
     <script type="text/javascript" src="assets/jquery-2.js"></script>
     <script type="text/javascript" src="assets/popper.js"></script>
-    <script type="text/javascript" src="assets/bootstrap.js"></script>
+    <!-- <script type="text/javascript" src="assets/bootstrap.js"></script> -->
     <!-- Remember to include jQuery :) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
     <!-- Jquery and Js Plugins -->
     <script type="text/javascript" src="assets/jquery-2.js"></script>
     <script type="text/javascript" src="assets/popper.js"></script>
-    <script type="text/javascript" src="assets/bootstrap.js"></script>
+    <!-- <script type="text/javascript" src="assets/bootstrap.js"></script> -->
     <!-- Remember to include jQuery :) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <!-- jQuery Modal -->
@@ -1120,6 +1143,8 @@
         window.open(url);
       }
     </script>
+    <!-- utilities -->
+    <script src="assets/js/utilities.js"></script>
 
     <!-- script for price websockets -->
     <script src="assets/js/24HrTicker.js"></script>
@@ -1144,9 +1169,12 @@
 
         // Hide the navbar when scrolling down, show when scrolling up
         if (scrollTop > minScrollValue) {
+          console.log("Scroll is " + scrollTop);
           navbar.addClass("nav-animation");
+          navbar.addClass("!bg-[#18448D]");
         } else {
           navbar.removeClass("nav-animation");
+          navbar.removeClass("!bg-[#18448D]");
         }
       });
 
