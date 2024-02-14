@@ -167,7 +167,7 @@ const fetchandSanitizeCapitalConfigs = async () => {
 
     homeDisplayCoins = HIGHLIGHT_COINS.map((item) => {
       return _coinInfoSanitized.find((coin) => coin.coin === item);
-    }).filter((item) => typeof item !== "undefined");
+    }).filter((item, ind) => typeof item !== "undefined" && ind <= 7);
 
     marketTrendCoins = TREND_COINS.map((item) => {
       return _coinInfoSanitized.find((coin) => coin.coin === item);
@@ -467,9 +467,21 @@ const renderMarketTable = (priceTickers = null) => {
     `;
   });
 
-  // console.log("Home coins: ", homeDisplayCoins, priceTickers);
+  // console.log(
+  //   "Home coins: ",
+  //   homeDisplayCoins.filter(
+  //     (item) => item !== null && typeof item !== "undefined"
+  //   )
+  // );
   homeDisplayCoins
-    .filter((item) => item !== null && typeof item !== "undefined")
+    .filter(
+      (coin) =>
+        coin !== null &&
+        typeof coin !== "undefined" &&
+        typeof priceTickers[
+          `${getCoinPair(coin.coin.toLowerCase(), quoteAsset.toLowerCase())}`
+        ] !== "undefined"
+    )
     .forEach((coin, index) => {
       let priceTickerObj =
         priceTickers[
@@ -519,7 +531,7 @@ const renderMarketTable = (priceTickers = null) => {
 
   if (table_body.length > 0) {
     const output = `
-      <table class="min-w-full divide-y divide-gray-200 shadow-md my-20 xl:my-0">
+      <table class="min-w-full divide-y divide-gray-200 shadow-md">
         <thead>
             <tr>
                 <th class="px-6 py-3 bg-gray-50 text-xs text-center font-medium text-[#808080] uppercase tracking-wider">
@@ -705,7 +717,7 @@ const updateMarketTableAndTrend = (priceTickers = null) => {
 
 priceTickers.addEventListener("variableChanged", (event) => {
   if (marketsDataRendered) {
-    // updateMarketTableAndTrend(event.detail.newValue);
+    updateMarketTableAndTrend(event.detail.newValue);
   } else {
     renderMarketTable(event.detail.newValue);
     renderMarketTrend(event.detail.newValue);

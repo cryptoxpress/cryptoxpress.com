@@ -579,8 +579,12 @@
             </div>
           </nav>
           <!-- end of navbar -->
+
+          <!-- overlay -->
+          <div class="hero-overlay"></div>
+          <!-- end of overlay -->
           <div
-            class="w-full flex flex-col justify-center items-center py-[7.5rem] lg:px-[7.5rem] xs:px-5"
+            class="w-full flex flex-col justify-center items-center pt-[7.5rem] lg:px-[7.5rem] xs:px-5"
           >
             <div
               class="w-full hero-content flex flex-col justify-center items-center lg:gap-[0.5rem] xs:gap-16"
@@ -607,8 +611,7 @@
               </p>
 
               <div
-                class="flex justify-center items-center w-full gap-5 fade-in"
-                style="margin-top: 10px"
+                class="flex justify-center items-center w-full gap-5 fade-in my-16"
               >
                 <a
                   href="https://apps.apple.com/us/app/cryptoxpress/id1591792414"
@@ -621,7 +624,7 @@
                   href="https://play.google.com/store/apps/details?id=com.cryptoxpressmobile"
                   ><img
                     class="w-[239px] h-[80px]"
-                    src="assets/images/google-play-badge.png"
+                    src="assets/images/google-play-badge.svg"
                     width="100%"
                 /></a>
               </div>
@@ -635,43 +638,42 @@
               class="flex justify-around items-center w-full flex-wrap px-10"
             >
               <img
-                class="m-3"
+                class="m-3 w-[155px] h-[38px]"
                 alt="Coin Marketcap"
                 src="assets/images/cmc.png"
-                height="30px"
               />
               <img
-                class="m-3"
+                class="m-3 w-[155px] h-[38px]"
                 alt="Coin Gecko"
                 src="assets/images/coin-gecko-logo.png"
                 height="30px"
               />
               <img
-                class="m-3"
+                class="m-3 w-[155px] h-[38px]"
                 alt="Yahoo Finance"
                 src="assets/images/YahooFinanceLogo.png"
                 height="30px"
               />
               <img
-                class="m-3"
+                class="m-3 w-[155px] h-[38px]"
                 alt="Forbes"
                 src="assets/images/forbes-logo.png"
                 height="22px"
               />
               <img
-                class="m-3"
+                class="m-3 w-[155px] h-[38px]"
                 alt="Altcoin Buzz"
                 src="assets/images/Altcoin-BuzzLogo.png"
                 height="30px"
               />
               <img
-                class="m-3"
+                class="m-3 w-[155px] h-[38px]"
                 alt="Gate.io"
                 src="assets/images/GateIoLogo.png"
                 height="30px"
               />
               <img
-                class="m-3"
+                class="m-3 w-[155px] h-[38px]"
                 alt="Pancake Swap"
                 src="assets/images/PancakeSwapLogo.png"
                 height="30px"
@@ -681,7 +683,7 @@
         </div>
 
         <div
-          class="w-full flex flex-col justify-around items-center holiday-book py-5"
+          class="w-full flex flex-col justify-around items-center holiday-book py-16"
         >
           <div class="w-full flex flex-col justify-center items-center">
             <p class="holiday-heading-1">USE CRYPTO TO</p>
@@ -743,7 +745,7 @@
           </div>
         </div>
 
-        <div class="w-full flex flex-col justify-around items-center my-5 py-5">
+        <div class="w-full flex flex-col justify-around items-center my-5 py-16">
           <div class="w-full flex flex-col justify-center items-center">
             <p class="holiday-heading-1">CONVERT CRYPTO INTO</p>
             <p class="holiday-heading-2">Gift Cards</p>
@@ -753,7 +755,9 @@
             </p>
           </div>
 
-          <div
+          <!-- loader for gift cards -->
+
+          <!-- <div
             class="gifts-loader w-full flex justify-center items-center my-10"
           >
             <div role="status">
@@ -775,12 +779,69 @@
               </svg>
               <span class="sr-only">Loading...</span>
             </div>
-          </div>
+          </div> -->
+
+          <!-- end of loader for gift cards -->
 
           <div
             class="gifts-loaded gift-cards-container"
             id="gift_cards_container"
-          ></div>
+          >
+            <div class="gift-card">
+              <img
+                src="assets/images/gift_card_dummies/ikea 1.png"
+                alt="gift card"
+              />
+              <div class="gift-footer">
+                <h3>LOREM IPSUM</h3>
+                <p>$xx -$xxx</p>
+              </div>
+            </div>
+
+            <div class="gift-card">
+              <img
+                src="assets/images/gift_card_dummies/the-iconic 1.png"
+                alt="gift card"
+              />
+              <div class="gift-footer">
+                <h3>LOREM IPSUM</h3>
+                <p>$xx -$xxx</p>
+              </div>
+            </div>
+
+            <div class="gift-card">
+              <img
+                src="assets/images/gift_card_dummies/image 1.png"
+                alt="gift card"
+              />
+              <div class="gift-footer">
+                <h3>LOREM IPSUM</h3>
+                <p>$xx -$xxx</p>
+              </div>
+            </div>
+
+            <div class="gift-card">
+              <img
+                src="assets/images/gift_card_dummies/jb1.png"
+                alt="gift card"
+              />
+              <div class="gift-footer">
+                <h3>LOREM IPSUM</h3>
+                <p>$xx -$xxx</p>
+              </div>
+            </div>
+
+            <div class="gift-card">
+              <img
+                src="assets/images/gift_card_dummies/airbnb_2022_latest 1.png"
+                alt="gift card"
+              />
+              <div class="gift-footer">
+                <h3>LOREM IPSUM</h3>
+                <p>$xx -$xxx</p>
+              </div>
+            </div>
+          </div>
 
           <div class="gifts-loaded flex justify-center items-center">
             <button class="btn btn-link">
@@ -790,7 +851,7 @@
         </div>
 
         <div
-          class="w-full flex flex-col justify-around items-center holiday-book mt-5 py-5"
+          class="w-full flex flex-col justify-around items-center holiday-book mt-5 py-16"
         >
           <div class="w-full flex flex-col justify-center items-center">
             <p class="holiday-heading-1">TRADE CRYPTO AND</p>
@@ -840,61 +901,94 @@
             <h2>Market Movers</h2>
 
             <div class="market-movers w-full">
-              <!--Pills navigation-->
-              <ul
-                class="flex list-none flex-col flex-wrap md:flex-row gap-5"
-                role="tablist"
+              <div
+                class="w-full flex flex-col xl:flex-row justify-around items-center gap-5 xl:gap-10"
               >
-                <li role="presentation">
-                  <button
-                    class="py-[10px] px-[12px] bg-[#F29557] text-white rounded-lg"
+                <!--Pills navigation-->
+                <ul
+                  class="flex list-none flex-col flex-wrap md:flex-row gap-5"
+                  role="tablist"
+                >
+                  <li role="presentation">
+                    <button
+                      class="py-[10px] px-[12px] bg-[#F29557] text-white rounded-lg"
+                    >
+                      Popular
+                    </button>
+                  </li>
+                  <li role="presentation">
+                    <button
+                      class="py-[10px] px-[12px] bg-[#EAEAEA] text-[#808080] border rounded-lg"
+                    >
+                      Metaverse
+                    </button>
+                  </li>
+                  <li role="presentation">
+                    <button
+                      class="py-[10px] px-[12px] bg-[#EAEAEA] text-[#808080] border rounded-lg"
+                    >
+                      Entertainment
+                    </button>
+                  </li>
+                  <li role="presentation">
+                    <button
+                      class="py-[10px] px-[12px] bg-[#EAEAEA] text-[#808080] border rounded-lg"
+                    >
+                      Energy
+                    </button>
+                  </li>
+                  <li role="presentation">
+                    <button
+                      class="py-[10px] px-[12px] bg-[#EAEAEA] text-[#808080] border rounded-lg"
+                    >
+                      Gaming
+                    </button>
+                  </li>
+                  <li role="presentation">
+                    <button
+                      class="py-[10px] px-[12px] bg-[#EAEAEA] text-[#808080] border rounded-lg"
+                    >
+                      Music
+                    </button>
+                  </li>
+                  <li role="presentation">
+                    <button
+                      class="py-[10px] px-[12px] bg-[#EAEAEA] text-[#808080] border rounded-lg"
+                    >
+                      See All 12+
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="relative flex-1 w-full xl:w-auto">
+                  <div
+                    class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
                   >
-                    Popular
-                  </button>
-                </li>
-                <li role="presentation">
-                  <button
-                    class="py-[10px] px-[12px] bg-[#EAEAEA] text-[#808080] border rounded-lg"
-                  >
-                    Metaverse
-                  </button>
-                </li>
-                <li role="presentation">
-                  <button
-                    class="py-[10px] px-[12px] bg-[#EAEAEA] text-[#808080] border rounded-lg"
-                  >
-                    Entertainment
-                  </button>
-                </li>
-                <li role="presentation">
-                  <button
-                    class="py-[10px] px-[12px] bg-[#EAEAEA] text-[#808080] border rounded-lg"
-                  >
-                    Energy
-                  </button>
-                </li>
-                <li role="presentation">
-                  <button
-                    class="py-[10px] px-[12px] bg-[#EAEAEA] text-[#808080] border rounded-lg"
-                  >
-                    Gaming
-                  </button>
-                </li>
-                <li role="presentation">
-                  <button
-                    class="py-[10px] px-[12px] bg-[#EAEAEA] text-[#808080] border rounded-lg"
-                  >
-                    Music
-                  </button>
-                </li>
-                <li role="presentation">
-                  <button
-                    class="py-[10px] px-[12px] bg-[#EAEAEA] text-[#808080] border rounded-lg"
-                  >
-                    See All 12+
-                  </button>
-                </li>
-              </ul>
+                    <svg
+                      class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                      />
+                    </svg>
+                  </div>
+                  <input
+                    type="search"
+                    id="default-search"
+                    class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Search Coins..."
+                    required
+                  />
+                </div>
+              </div>
 
               <div class="resp_table" id="market_table_container"></div>
             </div>
@@ -908,7 +1002,7 @@
         </div>
 
         <div
-          class="w-full flex flex-col justify-around items-center holiday-book pb-5"
+          class="w-full flex flex-col justify-around items-center holiday-book pb-8"
         >
           <div class="booking-card-popular-dest gap-[18px]">
             <h2>Learn About Cryptocurrency</h2>
@@ -991,7 +1085,7 @@
                   href="https://play.google.com/store/apps/details?id=com.cryptoxpressmobile"
                   class="button"
                 >
-                  <img src="assets/images/google-play-badge.png" alt="" />
+                  <img src="assets/images/google-play-badge.svg" alt="" />
                 </a>
               </div>
             </div>
@@ -1153,7 +1247,7 @@
     <script src="assets/js/news.js"></script>
 
     <!-- script for gift cards -->
-    <script src="assets/js/gift_cards.js"></script>
+    <!-- <script src="assets/js/gift_cards.js"></script> -->
 
     <!-- newsletter footer script -->
     <script src="assets/js/ui/newsletter_footer.js"></script>
