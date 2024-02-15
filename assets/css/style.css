@@ -1565,16 +1565,41 @@ top:50%; */
     font-weight: 400;
   }
 
+  .popular-dest-list-container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow-x: hidden;
+  }
+
   .popular-dest-list {
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-    overflow-x: auto;
+    overflow-x: hidden;
+  }
+
+  .animate-slide-left {
+    animation: slideLeft 40s infinite linear;
+  }
+
+  .animate-slide-right {
+    animation: slideRight 35s infinite linear;
+  }
+
+  .animate-slide-left:hover,
+  .animate-slide-right:hover,
+  .animate-slide-left:focus,
+  .animate-slide-right:focus {
+    animation-play-state: paused;
   }
 
   .dest-item {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1686,15 +1711,14 @@ top:50%; */
   }
 
   .explore-gift-txt {
-    color: #18448d;
+    color: #18448d !important;
     font-feature-settings: "clig" off, "liga" off;
 
     /* UI Type/text-md/[S] */
-    font-family: "Inter";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px; /* 150% */
+    font-family: "Inter" !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
   }
 
   .market-tends-list {
@@ -3751,12 +3775,6 @@ background: #303c42; */
       font-size: 20px;
     }
 
-    .booking-cards-container {
-      flex-direction: row;
-      gap: 20px;
-      padding: 100px;
-    }
-
     .booking-card {
       width: 650px;
       height: 500px;
@@ -5085,6 +5103,12 @@ background: #303c42; */
       #response {
         left: 0;
       }
+
+      .booking-cards-container {
+        flex-direction: row;
+        gap: 20px;
+        padding: 100px;
+      }
     }
   }
 
@@ -5212,7 +5236,7 @@ background: #303c42; */
 
   .market-movers table td {
     display: grid;
-    grid-template-columns: 25ch auto;
+    grid-template-columns: auto auto;
     margin-bottom: 20px;
   }
 
@@ -5286,5 +5310,23 @@ background: #303c42; */
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50%);
   }
 }

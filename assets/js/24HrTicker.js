@@ -439,23 +439,23 @@ const renderMarketTable = (priceTickers = null) => {
     const currentCoinData = dexTokenPrices[coin?.name?.toUpperCase()];
     table_body += `
     <tr class="bg-white even:bg-gray-100">
-      <td class="px-6 py-4 whitespace-no-wrap">${index + 1}</td>
-      <td class="px-6 py-4 whitespace-no-wrap">
-        <div class="flex flex-row xl:justify-start justify-center items-center gap-5">
-          <img class="icon" src="https://cdn.jsdelivr.net/gh/cryptoxpress/crypto-icons/iconspng/${coin?.coin?.toLowerCase()}.png" alt="">
+      <td class="sm:px-6 sm:py-4 whitespace-no-wrap">${index + 1}</td>
+      <td class="sm:px-6 sm:py-4 whitespace-no-wrap">
+        <div class="flex flex-row xl:justify-start justify-center items-center gap-1 sm:gap-5">
+          <img class="w-[20px] h-[20px] sm:w-[44px] sm:h-[44px]" src="https://cdn.jsdelivr.net/gh/cryptoxpress/crypto-icons/iconspng/${coin?.coin?.toLowerCase()}.png" alt="">
           <span>${coin?.name} | ${coin?.coin}</span>
         </div>
       </td>
-      <td class="px-6 py-4 whitespace-no-wrap" id="${coin?.coin}_last">${
+      <td class="sm:px-6 sm:py-4 whitespace-no-wrap" id="${coin?.coin}_last">${
       currentCoinData?.price
     } USD</td>
-      <td class="px-6 py-4 whitespace-no-wrap" id="${coin?.coin}_change">
+      <td class="sm:px-6 sm:py-4 whitespace-no-wrap" id="${coin?.coin}_change">
         N/A
       </td>
-      <td class="px-6 py-4 whitespace-no-wrap">
+      <td class="sm:px-6 sm:py-4 whitespace-no-wrap" id="${coin?.coin}_stats">
         Market Cap: N/A
       </td>
-      <td class="px-6 py-4 whitespace-no-wrap">
+      <td class="sm:px-6 sm:py-4 whitespace-no-wrap">
         <button
           class="bg-teal-500 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded"
           onclick={handleTradeClick("${coin?.coin}")}
@@ -474,14 +474,7 @@ const renderMarketTable = (priceTickers = null) => {
   //   )
   // );
   homeDisplayCoins
-    .filter(
-      (coin) =>
-        coin !== null &&
-        typeof coin !== "undefined" &&
-        typeof priceTickers[
-          `${getCoinPair(coin.coin.toLowerCase(), quoteAsset.toLowerCase())}`
-        ] !== "undefined"
-    )
+    .filter((coin) => coin !== null && typeof coin !== "undefined")
     .forEach((coin, index) => {
       let priceTickerObj =
         priceTickers[
@@ -490,33 +483,64 @@ const renderMarketTable = (priceTickers = null) => {
       if (priceTickerObj) {
         table_body += `
           <tr class="bg-white even:bg-gray-100">
-            <td class="px-6 py-4 whitespace-no-wrap">${
+            <td class="sm:px-6 sm:py-4 whitespace-no-wrap">${
               index + 1 + DEX_COINS.length
             }</td>
-            <td class="px-6 py-4 whitespace-no-wrap">
-              <div class="flex flex-row xl:justify-start justify-center items-center gap-5">
-                <img class="icon" src="https://cdn.jsdelivr.net/gh/cryptoxpress/crypto-icons/iconspng/${coin?.coin?.toLowerCase()}.png" alt="">
+            <td class="sm:px-6 sm:py-4 whitespace-no-wrap">
+              <div class="flex flex-row xl:justify-start justify-center items-center gap-1 sm:gap-5">
+                <img class="w-[20px] h-[20px] sm:w-[44px] sm:h-[44px]" src="https://cdn.jsdelivr.net/gh/cryptoxpress/crypto-icons/iconspng/${coin?.coin?.toLowerCase()}.png" alt="">
                 <span>${coin?.name} | ${coin?.coin}</span>
               </div>
             </td>
-            <td class="px-6 py-4 whitespace-no-wrap" id="${coin?.coin}_last">${
+            <td class="sm:px-6 sm:py-4 whitespace-no-wrap" id="${coin?.coin}_last">${
           priceTickerObj?.last
         } ${quoteAsset}</td>
-            <td class="px-6 py-4 whitespace-no-wrap ${
+            <td class="sm:px-6 sm:py-4 whitespace-no-wrap ${
               Number(priceTickerObj?.percentage) < 0
                 ? "text-red-500"
                 : "text-green-500"
             }" id="${coin?.coin}_change">
               ${priceTickerObj?.percentage}%
             </td>
-            <td class="px-6 py-4 whitespace-no-wrap">
+            <td class="sm:px-6 sm:py-4 whitespace-no-wrap" id="${coin?.coin}_stats">
               ${
                 Number(priceTickerObj?.percentage) < 0
                   ? '<span style="color: #AE0000;">Market Cap: Down <i class="material-icons">arrow_drop_down</i></span>'
                   : '<span style="color: #0FAE96;">Market Cap: Up <i class="material-icons">arrow_drop_up</i></span>'
               }
             </td>
-            <td class="px-6 py-4 whitespace-no-wrap">
+            <td class="sm:px-6 sm:py-4 whitespace-no-wrap">
+              <button
+                class="bg-teal-500 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded"
+                onclick={handleTradeClick("${coin?.coin}")}
+              >
+                Trade
+              </button>
+            </td>
+          </tr>
+        `;
+      } else {
+        table_body += `
+          <tr class="bg-white even:bg-gray-100">
+            <td class="sm:px-6 sm:py-4 whitespace-no-wrap">${
+              index + 1 + DEX_COINS.length
+            }</td>
+            <td class="sm:px-6 sm:py-4 whitespace-no-wrap">
+              <div class="flex flex-row xl:justify-start justify-center items-center gap-1 sm:gap-5">
+                <img class="w-[20px] h-[20px] sm:w-[44px] sm:h-[44px]" src="https://cdn.jsdelivr.net/gh/cryptoxpress/crypto-icons/iconspng/${coin?.coin?.toLowerCase()}.png" alt="">
+                <span>${coin?.name} | ${coin?.coin}</span>
+              </div>
+            </td>
+            <td class="sm:px-6 sm:py-4 whitespace-no-wrap" id="${
+              coin?.coin
+            }_last">N/A</td>
+            <td class="sm:px-6 sm:py-4 whitespace-no-wrap" id="${coin?.coin}_change">
+              N/A
+            </td>
+            <td class="sm:px-6 sm:py-4 whitespace-no-wrap" id="${coin?.coin}_stats">
+              Market Cap: N/A
+            </td>
+            <td class="sm:px-6 sm:py-4 whitespace-no-wrap">
               <button
                 class="bg-teal-500 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded"
                 onclick={handleTradeClick("${coin?.coin}")}
@@ -628,10 +652,6 @@ const renderMarketTrend = (priceTickers = null) => {
 };
 
 const updateMarketTableAndTrend = (priceTickers = null) => {
-  if (homeDisplayCoins.length !== priceTickers.length) {
-    renderMarketTable(priceTickers);
-    renderMarketTrend(priceTickers);
-  }
   homeDisplayCoins.forEach((coin) => {
     let priceTickerObj =
       priceTickers[`${coin?.coin?.toLowerCase()}${quoteAsset?.toLowerCase()}`];
@@ -673,43 +693,6 @@ const updateMarketTableAndTrend = (priceTickers = null) => {
         }`
       );
     }
-
-    // chart showing
-    // const data = [
-    //   { x: 0, y: 30 },
-    //   { x: 1, y: 40 },
-    //   { x: 2, y: 25 },
-    //   { x: 3, y: 45 },
-    //   { x: 4, y: 35 },
-    // ];
-
-    // const svgWidth = 76;
-    // const svgHeight = 40;
-
-    // // Create SVG element
-    // const svg = d3
-    //   .select("#graph")
-    //   .attr("width", svgWidth)
-    //   .attr("height", svgHeight);
-
-    // // Define line function with curve interpolation
-    // const line = d3
-    //   .line()
-    //   .x((d) => d.x * 50) // Scale x values by 50
-    //   .y((d) => svgHeight - d.y) // Invert y values and scale
-    //   .curve(d3.curveMonotoneX); // Use monotone curve interpolation
-
-    // // Draw line
-    // svg
-    //   .append("path")
-    //   .datum(data)
-    //   .attr("fill", "none")
-    //   .attr("stroke", "steelblue")
-    //   .attr("stroke-width", 2)
-    //   .attr("d", line);
-
-    // // Hide grid lines and axes
-    // svg.selectAll(".domain, .tick line").remove();
   });
 };
 

@@ -6,22 +6,13 @@ const loading = VariableObserver(false);
 
 const getNewsList = async () => {
   loading.setValue(true);
-  const coins = ["btc", "eth", "ltc", "xrp", "doge"];
-  const newsFetchList = [];
+  const resp = await (
+    await fetch(
+      "https://cryptonews-api.com/api/v1/category?section=general&items=8&page=1&token=jenkblftud4ceyamhv7imsovxffsctjjjak9yniq"
+    )
+  ).json();
 
-  for (const coin of coins) {
-    newsFetchList.push(
-      (
-        await fetch(
-          `https://cryptonews-api.com/api/v1?tickers=${coin}&items=3&token=jenkblftud4ceyamhv7imsovxffsctjjjak9yniq`
-        )
-      ).json()
-    );
-  }
-
-  const resp = await Promise.all(newsFetchList);
-
-  return resp.map((item) => item?.data).flat();
+  return resp.data;
 };
 
 // caller
@@ -48,7 +39,9 @@ const renderNewsList = (news = []) => {
     console.log("News list from render: ", newsListElement, news);
     news.forEach((item) => {
       output += `
-			<div class="flex flex-col justify-start align-center news-card" onclick="browseUrl('${item?.news_url}')">
+			<div class="flex flex-col justify-start align-center news-card" onclick="browseUrl('${
+        item?.news_url
+      }')">
 				<img src="${item?.image_url}" alt="">
 				<div class="p-4 flex flex-col gap-3 items-start w-full">
 				<p>${item?.source_name}</p>
