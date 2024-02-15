@@ -60,13 +60,18 @@
     <link rel="stylesheet" href="assets/ionicons.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- import bai jamjuree -->
+    <!-- for font import -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- import bai jamjuree -->
     <link
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <!-- import inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- import material icons -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -143,6 +148,7 @@
           extend: {
             fontFamily: {
               "bai-jamjuree": ["Bai Jamjuree", "sans-serif"],
+              "inter": ["Inter", "sans-serif"],
             },
           },
           screens: {
@@ -361,22 +367,22 @@
           </div>
         </section>
 
-        <section class="lg:my-20 md:y-10 xs:my-5">
+        <section class="my-5">
           <div
             class="flex justify-center items-center lg:px-28 md:px-20 xs:px-8"
           >
-            <div class="flex-1 md:flex flex-col gap-10 xs:w-full">
+            <div class="w-3/5 md:flex flex-col gap-6 xs:w-full px-0 lg:px-5">
               <h1
-                class="lg:text-7xl md:text-5xl xs:text-3xl font-extrabold uppercase"
+                class="font-inter lg:text-7xl md:text-5xl xs:text-3xl font-extrabold uppercase"
               >
                 Contact Us
               </h1>
 
               <form
                 action=""
-                class="flex flex-col justify-center items-center gap-10"
+                class="flex flex-col justify-center items-start gap-6"
               >
-                <div class="relative w-full">
+                <div class="relative w-1/2">
                   <input
                     type="text"
                     id="name"
@@ -391,7 +397,7 @@
                   </label>
                 </div>
 
-                <div class="relative w-full">
+                <div class="relative w-3/4">
                   <input
                     type="email"
                     id="email"
@@ -406,7 +412,7 @@
                   </label>
                 </div>
 
-                <div class="relative w-full">
+                <div class="relative w-3/4 lg:w-2/5">
                   <input
                     type="tel"
                     id="phone"
@@ -441,9 +447,9 @@
             </div>
 
             <div
-              class="flex-1 p-5 md:flex justify-center items-center xs:hidden"
+              class="w-2/5 p-5 xl:flex justify-center items-center hidden"
             >
-              <div class="w-full h-[50rem] overflow-hidden rounded-lg">
+              <div class="w-full h-[30rem] overflow-hidden rounded-lg">
                 <img
                   src="assets/images/about-hero.webp"
                   alt=""

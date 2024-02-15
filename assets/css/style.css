@@ -1591,13 +1591,6 @@ top:50%; */
     animation: slideRight 35s infinite linear;
   }
 
-  .animate-slide-left:hover,
-  .animate-slide-right:hover,
-  .animate-slide-left:focus,
-  .animate-slide-right:focus {
-    animation-play-state: paused;
-  }
-
   .dest-item {
     flex: 1;
     display: flex;
